@@ -2,6 +2,8 @@
 title: Markdown syntax
 subtitle: Quick tips
 layout: post
+cover-img: assets/img/canberra_pana_ballon.jpg
+thumbnail-img: assets/img/canberra_pana_ballon.jpg
 comments: true
 published: true
 tags:
