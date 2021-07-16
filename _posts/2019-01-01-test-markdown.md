@@ -9,24 +9,31 @@ tags:
   - tips
 ---
 
-This is a demo post from Dean's website to show you how to write blog posts with markdown.  
+This is an extension of the demo post from [Dean's website](https://beautifuljekyll.com/) that demostrates some key markdown syntax to use in markdown blog posts for this site (and many other great tools).  
 
 ## Simple syntax
 
-I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into `bold/italics/headings/tables/etc`.
+There are many resources and blogs about how to use markdown. Here is a [5 minutes guide to writing in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into `bold/italics/headings/tables/etc`. Here are some quick notes
+
+Bold text is defined by `**`
 
 **Here is some bold text**
-## Here is a secondary heading
+
+Headings are defined by the number of `#` before a line of text. For example
+`## Here is a secondary heading`
+## Heading
+
+Here is a secondary heading (`##`) and a third heading by `###`.
 ### Here is a third heading
 
 Here's a code chunk:
 
-~~~
+```
 var foo = function(x) {
   return(x + 5);
 }
 foo(3)
-~~~
+```
 
 And here is the same code with syntax highlighting:
 
@@ -49,40 +56,27 @@ foo(3)
 ## Boxes
 You can add notification, warning and error boxes like this:
 
-### Notification
+### Notification, warning and error boxes
 
-{: .box-note}
-**Note:** This is a notification box.
+`{: .box-note} `; `{: .box-warning}`; `{: .box-error}` demos below:
 
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
+{: .box-note} **Note:** This is a notification box.
 
 ### Working with images
 
-> set following yaml variables: `layout: post`; `tags: <tagg_label>`
+{: .box-note} You can set following yaml variables: `layout: post`; `tags: <tagg_label>`
 
-Images live in the `./assets/img/` folder following the same rules as the beautiful jekyll template. Overall jekyll uses liquid tags to and these usually found in the `assets` folder.
+{: .box-warning} Images live in the `./assets/img/` folder following the same rules as the beautiful jekyll template. Overall jekyll uses liquid tags to and these usually found in the `assets` folder.
 
 #### Classic markdown image syntax
 
-How about a yummy crepe? Here are two sections of code for working with markdown syntax (code).
-
-![Crepe: How about a yummy crepe?](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
-
-It can also be centered!
+How about a yummy crepe? Here are two sections of code for working with markdown syntax (code). It can also be centered using `{: .mx-auto.d-block :}`
 
 ![Crepe: It can also be centered!](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .mx-auto.d-block :}
 
 ### Working with tables
 
-Here's a useless table:
+Markdown tables can be difficult to keep formatted. Here's a demo markdown table:
 
 | Number | Next number | Previous number |
 | :------ |:--- | :--- |
@@ -90,3 +84,5 @@ Here's a useless table:
 | Ten | Eleven | Nine |
 | Seven | Eight | Six |
 | Two | Three | One |
+
+An advantage of `RNarkdown` is that you can build autogenerating markdown tables using a range of packages including `knitr`.
