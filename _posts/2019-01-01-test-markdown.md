@@ -22,13 +22,18 @@ Bold text is defined by `**`
 **Here is some bold text**
 
 Headings are defined by the number of `#` before a line of text. For example
-`## Here is a secondary heading`
-## Heading
 
-Here is a secondary heading (`##`) and a third heading by `###`.
+`## Here is a secondary heading`
+
+## Heading (Here is a secondary heading (`##`))
+
+and a third heading by `###`.
+
 ### Here is a third heading
 
-Here's a code chunk:
+## Including code
+
+Here's a code chunk below:
 
 ```
 var foo = function(x) {
@@ -56,19 +61,26 @@ foo(3)
 {% endhighlight %}
 
 ## Boxes
+
 You can add notification, warning and error boxes like this:
 
 ### Notification, warning and error boxes
 
 `{: .box-note} `; `{: .box-warning}`; `{: .box-error}` demos below:
 
-{: .box-note} **Note:** This is a notification box.
+{: .box-note} 
+**Note:** This is a notification box.
 
 ### Working with images
 
-{: .box-note} You can set following yaml variables: `layout: post`; `tags: <tagg_label>`
+{: .box-note} 
+You can set following yaml variables: `layout: post`; `tags: <tagg_label>`
 
-{: .box-warning} Images live in the `./assets/img/` folder following the same rules as the beautiful jekyll template. Overall jekyll uses liquid tags to and these usually found in the `assets` folder.
+{: .box-warning} 
+
+## Images
+
+Images live in the `./assets/img/` folder following the same rules as the beautiful jekyll template. Overall jekyll uses liquid tags to and these usually found in the `assets` folder.
 
 #### Classic markdown image syntax
 
@@ -76,7 +88,11 @@ How about a yummy crepe? Here are two sections of code for working with markdown
 
 ![Crepe: It can also be centered!](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .mx-auto.d-block :}
 
-### Working with tables
+## Tables
+
+Tables can be directly written using markdown syntax or can be built in code and rendered to markdown using a package like `knitr` in R.
+
+### `Markdown` tables
 
 Markdown tables can be difficult to keep formatted. Here's a demo markdown table:
 
@@ -87,4 +103,6 @@ Markdown tables can be difficult to keep formatted. Here's a demo markdown table
 | Seven | Eight | Six |
 | Two | Three | One |
 
-An advantage of `RNarkdown` is that you can build autogenerating markdown tables using a range of packages including `knitr`.
+### `RMarkdown` tables
+
+An advantage of `RMarkdown` is that you can build autogenerating markdown tables using a range of packages including `knitr`.
