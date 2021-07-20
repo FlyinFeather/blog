@@ -1,6 +1,6 @@
 ---
-title: "Markdown syntax"
-subtitle: "Quick tips"
+title: Markdown syntax
+subtitle: Quick tips
 layout: post
 tags:
   - markdown
@@ -11,7 +11,7 @@ published: false
 
 ## Simple syntax
 
-`yaml` is a powerful tool for working with jekyll and github pages. The `yaml` content tells the site generator what to do with the markdown code below and there to get the additional information needed to render the page whether it be a landing page, home page or blog post.
+`yaml` is a powerful framework for working with jekyll and github pages. The `yaml` content tells the site generator (e.g bookdown) what to do with the markdown code. Below are some short notes about yaml headers and the additional information needed to render the page whether it be a landing page, home page or blog post.
 
 
 ```
