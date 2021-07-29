@@ -20,6 +20,22 @@ Google has a huge wealth of location data. It is possible to access and use this
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102728.53602889985!2d149.96889269268158!3d-36.42693204654719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b3e721c18d3ea21%3A0x40609b4904406a0!2sBermagui%20NSW%202546!5e0!3m2!1sen!2sau!4v1625880170565!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
+## A function for use
+
+I have been trying to use and write functions instead of loops in R and this is what I have for a customised iframe function for jekyll posts below. I ahve tried to make it as simple as possible as a function example too.
+
+```{r}
+#parameters
+urladd <- "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102728.53602889985!2d149.96889269268158!3d-36.42693204654719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b3e721c18d3ea21%3A0x40609b4904406a0!2sBermagui%20NSW%202546!5e0!3m2!1sen!2sau!4v1625880170565!5m2!1sen!2sau"
+
+##function
+#iframeFUNC <- 
+#function(urladd){
+#how to include html snippet in function call RMD?
+#<iframe src=urladd width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+#}
+
+```
 ### Shiny apps can be used with `iframe`
 
 The same `iframe` code can be used for a shiny app hosted on the [rstudio shiny server](https://shinyapps.io/) (5 free apps as of June 2021). There is also a package to make uploading and publishing your shiny app much easier [here]("https://rstudio.github.io/rsconnect/") These resources are great tools for accessing and communicating early development of `RShiny` apps over the web. Additional, if you feel bold `golem` is great for shiny development as a package [here](https://cran.r-project.org/web/packages/golem/vignettes/a_start.html).
