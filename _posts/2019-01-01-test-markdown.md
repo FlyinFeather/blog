@@ -15,25 +15,22 @@ This is an extension of the demo post from [Dean's website](https://beautifuljek
 
 ## Simple syntax
 
-There are many resources and blogs about how to use markdown. Here is a [5 minutes guide to writing in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into `bold/italics/headings/tables/etc`. Here are some quick notes
+There are many resources and blogs about how to use markdown. Here is a [5 minutes guide to writing in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into `bold/italics/headings/tables/etc`. Here are some quick notes.
 
-Bold text is defined by `**`
+### Text modifications
 
-**Here is some bold text**
+Bold text is defined by `**`: **Here is some bold text**
 
-Headings are defined by the number of `#` before a line of text. For example
+Headings are defined by the number of `#` before a line of text. For example `##### Here is a fifth level heading` is needed and then the rendered document will have a fifth level heading as below.
+##### Heading (Here is a secondary heading (`##`))
 
-`## Here is a secondary heading`
+and a sixth heading by `######`. This is the max level for a heading by the way...
 
-## Heading (Here is a secondary heading (`##`))
-
-and a third heading by `###`.
-
-### Here is a third heading
+###### Here is a third heading
 
 ## Including code
 
-Here's a code chunk below:
+One of the greatest strengths of markdown extensions such as RMarkdown is the ability to include code chunks within normal text as below:
 
 ```
 var foo = function(x) {
