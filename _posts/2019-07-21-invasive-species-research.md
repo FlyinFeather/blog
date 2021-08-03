@@ -5,8 +5,8 @@ permlink: /invasive-species-modelling.html
 meta-title: "New Zealands moonshot"
 meta-description: "The New Zealand government set a Apollo shot to make NZ free of mammalian predators by 2050."
 bigimg:
-  - "/img/big-imgs/background-image.jpg" : "Auckland Islands, NZ (2011)"
-  - "/img/national-leaders-announce-pfnz2050.png" : "Press release (2016)"
+  - "/assets/img/big-imgs/background-image.jpg" : "Auckland Islands, NZ (2011)"
+  - "/assets/img/national-leaders-announce-pfnz2050.png" : "Press release (2016)"
 published: true
 ---
 
