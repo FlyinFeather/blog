@@ -20,7 +20,7 @@ navbar-links:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Markdown: "https://www.markdowntutorial.com/"
     - Tidyverse: "https://r4ds.had.co.nz/"
-  About Me: "https://davan690.github.io/cv2021/"
+  Contact: "https://davan690.github.io/cv2021/"
 
 # --- Logo --- #
 
@@ -34,8 +34,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
-
+title-img: "assets/img/ecologicalstatistics1_1_original.jpg"
 
 # --- Footer social media links --- #
 
@@ -68,7 +67,7 @@ social-network-links:
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
-rss-description: This is a personal collection of research notes
+rss-description: This is a personal collection of research notes for working with ecological statistics in a reproducible manner.
 
 # --- General options --- #
 
@@ -96,7 +95,7 @@ feed_show_tags: true
 post_search: true
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "statistics,ecology,population modelling,conservation"
 
 # --- Colours / background image --- #
 
@@ -117,7 +116,7 @@ footer-link-col: "#404040"
 # instead of colour
 
 #navbar-img: "/assets/img/bgimage.png"
-footer-img: "/assets/img/bgimage.png"
+footer-img: "/assets/img/background-image.png"
 #page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.

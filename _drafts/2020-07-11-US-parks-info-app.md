@@ -1,19 +1,30 @@
 ---
+title: Mapping national parks in the US
 layout: post
 published: true
 tags:
   - Beech
 ---
 
-# Mapping national parks in the US
+I found this great shiny app that I have managed to reproduce on my shiny server. The next step is to recreate it with some new or different data. Link [here]().
 
-I found this great shiny app that I have managed to reproduce on my shiny server. The next step is to recreate it with some new or different data. Link [here](https://ssnhub.shinyapps.io/shinyMapping/).
-
+[iframe here]
 ## Similar github projects
 
 I have been slowly working on the development of a similar approach to some of the data I work with. I have added this information in combination with other open repositories and resources.
 
-Here is my github repository including some work.
+## News
+
+Here are some other posts associated with this work. 
+
+<div class="post"><ul>
+{% for post in site.tags["beech"] %}
+  <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+    {{ post.description }}
+{% endfor %}
+</ul></div>
+
+## My notes
 
 | <div>
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
@@ -34,19 +45,5 @@ Here is my github repository including some work.
     </div>
 </div>  | This repository is a combination of several shiny tutorials and and the framework from the US parks shiny app here ...  |
 |  Personal draft resources  |  Hosted on `github`   |
-
-  
-## News
-
-Here are some other posts associated with this work. 
-
-<div class="post"><ul>
-{% for post in site.tags["beech"] %}
-  <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
-    {{ post.description }}
-{% endfor %}
-</ul></div>
-
-## My notes
 
 Please excuse any '404' errors as I am learning and working as I go. Using version control and git means that I am able to use other coders templates and test things out before committing.
