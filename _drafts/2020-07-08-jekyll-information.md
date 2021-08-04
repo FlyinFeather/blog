@@ -14,15 +14,16 @@ tags:
 published: true
 ---
 
+One of the great things about github pages and jekyll websites for users of RMarkdown is that the metadata and the information about the contents of the file is stored in the same way as RMarkdown with a `yaml` header at the start of the document containing the additional information and parameters needed for the file to render.
+
+## Main paramaters jekyll posts
+
 These are the main parameters you can place inside a page's `YAML` front matter that Beautiful Jekyll supports.
 
-## Beautiful jekyll Parameter	Descriptions
-
-Insert info here...
+{: .box-note}
+**`title`** Page or blog post title
 
 {: .box-note}
-**title** Page or blog post title
-
 `subtitle`	Short description of page or blog post that goes under the title
 
 `bigimg`	Include a large full-width image at the top of the page. You can either give the path to a single image, or provide a list of images to cycle through (see my personal website as an example).
