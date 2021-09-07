@@ -1,0 +1,33 @@
+---
+title: "R Markdown syntax"
+subtitle: "Quick tips curated from the standard resources found with a google search"
+layout: post
+tags:
+  - rmarkdown
+  - tips
+  - publishing
+comments: true
+---
+
+## Simple syntax
+
+`yaml` is a powerful framework for working with Jekyll and GitHub pages. The `yaml` content tells the site generator (e.g bookdown) what to do with the markdown code. Below are some short notes about yaml headers and the additional information needed to render the page whether it be a landing page, home page or blog post.
+
+```{comments}
+---
+title: Markdown syntax
+subtitle: Quick tips
+layout: post
+comments: true
+published: true
+tags:
+  - markdown
+  - tips
+---
+```
+
+## RMarkdown template
+
+The outcome of this template should render another md file that includes all the necessary content to begin writing a blog post for my [Jekyll](www.jekyll.com) site from within RStudio.
+
+

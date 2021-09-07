@@ -1,26 +1,15 @@
-Lecture #1: Using GitHub
 ---
 title: Using GitHub
-authour: Nicholas J. Gotelli; Anthony Davidson
+authour: Nicholas J. Gotelli;Lauren unknownGOAT; Anthony Davidson
 ---
 
-
-
-
-# Lecture #1: 
-
-#### _Nicholas J. Gotelli_
-
-#### _August 28, 2018_
-
 * * *
-
-### Introductions
-
-*   me
-*   Lauren
+This blog is adapted from _Nicholas J. Gotelli_ lecture in 2018 (_August 28, 2018_ to be exact), and here: 
 
 ### “The Workflow”
+
+FIGURE FOR THIS I HAVE
+
 
 *   get data
     *   hand entry
@@ -36,6 +25,8 @@ authour: Nicholas J. Gotelli; Anthony Davidson
     *   publication quality graphics
 *   write paper
     *   tools for speeding up writing process
+
+
 
 #### Traditional and Modern Computational Tools
 

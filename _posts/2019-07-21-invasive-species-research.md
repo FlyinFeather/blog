@@ -34,7 +34,3 @@ With the continued development of my PhD work I hope to be able to connect commu
     {{ post.description }}
 {% endfor %}
 </ul></div>
-
-## My notes
-
-Please excuse any '404' errors as I am learning and working as I go. Using version control and git means that I am able to use other coders templates and test things out before committing.
