@@ -2,7 +2,7 @@
 layout: post
 title: Book review - Become An Effective Software Engineering Manager
 thumbnail-img: "/assets/img/blog/become-an-effective-software-engineering-manager.jpg"
-redirect_from: /2020-08-30-become-an-effective-software-engineer
+redirect_from: /2020-08-30-become-an-effective-software-engineer/
 tags: [book-review]
 ---
 

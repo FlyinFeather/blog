@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Job search tips to my future self
-redirect_from: /2020-08-19-job-searching-tips-to-my-future-self
+redirect_from: /2020-08-19-job-searching-tips-to-my-future-self/
 ---
 
 This is a note to self. A reminder for when I next look for a job. Over the past few weeks I’ve searched for a new senior engineer plus type role. Strangely, it’s the first time in my career that I’ve interviewed for a senior position. Turns out it’s hard. Here’s a few things I learned.
