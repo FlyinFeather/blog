@@ -33,7 +33,7 @@ This book contains just over 50 tips for building and maintaining a career in so
 
 This book is great for new engineering managers. It’s a succinct overview of how to be a manager and contains useful insights into the mysterious world of senior management. 
 
-**The Salt Path and The Wild Wilence** by Winn Raynor ⭐️ ⭐️ ⭐️ ⭐️  
+**The Salt Path and The Wild Silence** by Winn Raynor ⭐️ ⭐️ ⭐️ ⭐️  
 
 Without giving away what happens The Salt Path and it's sequel, The Wild Silence, is a very moving real life story.
 
