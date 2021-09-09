@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Migrating from Google Blogger to GitHub pages
+redirect_from: /2020-08-02-migrating-from-blogger-to-github-pages
 ---
 
 The post covers how to migrate from Google Blogger to GitHub pages using the wonderfully simple [Beautiful Jekyll project](https://github.com/daattali/beautiful-jekyll).
