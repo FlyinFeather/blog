@@ -1,4 +1,7 @@
-Using R and GitHub: reproducibility in research
+---
+title: Using R and GitHub: reproducibility in research
+---
+# Using R and GitHub: reproducibility in research
 
 [UoC.Git.2018-11-27](https://afilazzola.github.io/UoC.GithubWorkshop.2018/index.html)
 
@@ -7,8 +10,6 @@ Using R and GitHub: reproducibility in research
 *   [Rstudio](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Git.rstudio/Git.rstudio.html)
 *   [Reports](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Reports/Reports.html)
 *   [Websites](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Website/website.html)
-
-# Using R and GitHub: reproducibility in research
 
 #### _Nov 27, 2018_
 
@@ -21,6 +22,7 @@ Using R and GitHub: reproducibility in research
 
 ### Get Tickets
 
+[eventbight link here]
 ## General Information
 
 Statistical software that are also programming languages, such as R, are excellent tools for conducting analyses of biological data. However, many users are not taking full advantage of their capabilities. This workshop is an introduction to some of the resources that are available to R users that have been developed and implemented in the larger programming community. No prior knowledge of R will be necessary, but this workshop will not be an introduction to R basics. Instead, we will focus on using R Studio and Github to easily sync your data and analyses online. Within this workshop we will explore how to maximize reproducibility, collaborate internationally on statistical analyses, present data summaries, data management, and the promotion of open science

@@ -21,8 +21,6 @@ Since the WHO report in early 2020 there has been a massive increase in activity
 
 Overall `github` has created this collection of projects as a organisation called COVID19 and can be found here:
 
-
-
 ## John Coene institute
 
 <iframe src="https://shiny.john-coene.com/coronavirus/" width="100%" height="400px"></iframe>
