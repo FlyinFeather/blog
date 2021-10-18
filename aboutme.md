@@ -7,7 +7,8 @@ published: true
 
 ## Contact
 
+add details here ...
+
 anthony.davidson@canberra.edu.au
 
-[CV here](/cv2021/)
-
+![CV here](/cv2021/)
