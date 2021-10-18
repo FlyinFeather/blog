@@ -1,6 +1,7 @@
-# Title
-
-Chasing variance
+---
+published: false
+---
+# Title: Chasing variance
 
 Is model selection driven by chance? How to tell when working with mixed hierarical models with more than one level. 
 
