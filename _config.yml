@@ -18,6 +18,7 @@ navbar-links:
     - R: "https://www.r-project.org/"
     - RStudio: "https://www.rstudio.com/"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - github pages: "https://pages.github.com/"
     - Markdown: "https://www.markdowntutorial.com/"
     - Tidyverse: "https://r4ds.had.co.nz/"
   Contact: "https://davan690.github.io/cv2021/"
@@ -98,7 +99,6 @@ post_search: true
 keywords: "statistics,ecology,population modelling,conservation"
 
 # --- Colours / background image --- #
-
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
 navbar-col: "#006400"
@@ -117,7 +117,7 @@ footer-hover-col: "#0085A1"
 # instead of colour
 
 #navbar-img: "/assets/img/bgimage.png"
-footer-img: "/assets/img/background-image.png"
+footer-img: "/assets/img/canberra_pana_ballon.jpg"
 #page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
