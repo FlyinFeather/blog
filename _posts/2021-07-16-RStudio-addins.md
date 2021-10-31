@@ -6,7 +6,7 @@ bigimg:
   - "/assets/img/RStudio-Logo.jpg" : "RStudio"
 published: true
 ---
-# RStudio add-ins
+# [RStudio add-ins](https://cran.r-project.org/web/packages/addinslist/readme/README.html)
 
 Dean again has made my life a lot easier than I expected. Addins are an interesting little addition to the additonal coding avaliable under the RStudio platform.
 
@@ -21,3 +21,8 @@ Dean again has made my life a lot easier than I expected. Addins are an interest
 ## Repository magic
 
 [coming]
+## Other helpful packages
+
+```{r}
+
+```
