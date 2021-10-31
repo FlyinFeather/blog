@@ -4,7 +4,6 @@ This is a draft of a draft of a draft blog site. Here I am using this to comment
 
 # Beautiful Jekyll
 
-[![xscode](https://img.shields.io/badge/Available%20on-xs%3Acode-blue?style=?style=plastic&logo=appveyor&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////////VXz1bAAAAAJ0Uk5T/wDltzBKAAAAlUlEQVR42uzXSwqAMAwE0Mn9L+3Ggtgkk35QwcnSJo9S+yGwM9DCooCbgn4YrJ4CIPUcQF7/XSBbx2TEz4sAZ2q1RAECBAiYBlCtvwN+KiYAlG7UDGj59MViT9hOwEqAhYCtAsUZvL6I6W8c2wcbd+LIWSCHSTeSAAECngN4xxIDSK9f4B9t377Wd7H5Nt7/Xz8eAgwAvesLRjYYPuUAAAAASUVORK5CYII=)](https://xscode.com/daattali/beautiful-jekyll)
 [![Gem Version](https://badge.fury.io/rb/beautiful-jekyll-theme.svg)](https://badge.fury.io/rb/beautiful-jekyll-theme)
 
 > By [Dean Attali](https://deanattali.com) &middot; [Demo](https://beautifuljekyll.com/)
@@ -28,7 +27,7 @@ This is a draft of a draft of a draft blog site. Here I am using this to comment
 
 # Features
 
-__Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the latest features.__
+__Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the latest features!__
 
 - **SIMPLE**: The primary goal of Beautiful Jekyll is to allow literally *anyone* to create a website in a few minutes.
 - **Modern**: Uses the latest best practices and technologies to achieve nearly perfect scores on Google Chrome's Audit.
@@ -51,10 +50,9 @@ Developing and maintaining Beautiful Jekyll takes a lot of time and effort - tha
 - [LoadView-Testing](https://www.loadview-testing.com/products/jmeter-load-testing/)
 - [DoFollow](https://dofollow.co.uk/)
 - [\_hyp3ri0n](https://hyperiongray.com)
-- [Gentian Gashi](https://gentiangashi.co.uk/)
 - [Matthew Trontz](https://github.com/mtrontz-the-dev)
 
-[Become a sponsor for Beautiful Jekyll and unlock special rewards\!](https://github.com/sponsors/daattali/sponsorships?tier_id=39856)
+**[Become a sponsor for Beautiful Jekyll and unlock special rewards\!](https://github.com/sponsors/daattali/sponsorships?tier_id=39856)**
 
 # Build your website in 3 steps
 
@@ -63,6 +61,8 @@ There's a very easy way to use this theme, and there's a hard way. For most peop
 ## The easy way (recommended!)
 
 Getting started is *literally* as easy as 1-2-3 :smile:
+
+> A reminder for *advanced users only*: you can follow the instructions for [building locally](https://beautifuljekyll.com/getstarted/#install-steps-hard) if you want more control but higher difficulty
 
 Scroll down to see the steps involved, but here is a 40-second video just as a reference as you work through the steps. If you don't already have a [GitHub account](https://github.com/join), you'll need to sign up.
 
@@ -90,7 +90,9 @@ Note that this was the easy way to *create* your website, but it does come at a 
 
 ## The hard way (using ruby gems)
 
-If you followed the easy method above, then you already have your site and you can skip this section! If you want to use Beautiful Jekyll as a ruby gem instead, follow the [advanced installation instructions](https://beautifuljekyll.com/getstarted/#install-steps-hard). This is harder to set up initially, but it makes it super easy to keep your site up to date with Beautiful Jekyll when more features are added in the future.
+If you followed the easy method above, then you already have your site and you can skip this section!
+
+If you want to use Beautiful Jekyll as a ruby gem instead, follow the [advanced installation instructions](https://beautifuljekyll.com/getstarted/#install-steps-hard). This is harder to set up initially, but it makes it super easy to keep your site up to date with Beautiful Jekyll when more features are added in the future.
 
 # Plans
 
