@@ -12,7 +12,7 @@ layout: post
 published: true
 ---
 
-During the first 6months of 2021 I was lucky enough to help out with a course called "Big Questions in Biology". I have broken up a lot of the resources I used in the class and added them as smaller blog posts to this site for now. Any feedback is great. :).
+During the first 6 months of 2021 I was lucky enough to help out with a course called "Big Questions in Biology". I have broken up a lot of the resources I used in the class and added them as smaller blog posts to this site for now. Any feedback is great. :).
 
 - Using R and RStudio [link coming]
 - Looking into the ALA [link coming]
