@@ -29,5 +29,3 @@ tags:
 ## RMarkdown template
 
 The outcome of this template should render another md file that includes all the necessary content to begin writing a blog post for my [Jekyll](www.jekyll.com) site from within RStudio.
-
-
