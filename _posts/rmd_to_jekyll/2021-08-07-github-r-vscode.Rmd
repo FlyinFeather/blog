@@ -1,10 +1,10 @@
 ---
-title: Using R and GitHub
-subtitle: Reproducibility in research at a realistic speed
+title: "Using R and GitHub"
+subtitle: "Reproducibility in research at a realistic speed"
 output:
-    rmarkdown::github_document:
-    keep_md: true
-    output_dir: ../_posts
+  rmarkdown::github_document: null
+  keep_md: yes
+  output_dir: "../_posts/"
 ---
 
 I have now, after what seems like a lifetime, found a nice conceptial way of working with the scientific workflow. The software and tools I use are open-source and reproducible. This comes at some costs, the main one that comes to mind is a general aspect of humanity that we can never actually get away from....if your spelling isn't right or you math doesn't match the current proof then its you not us....
@@ -73,7 +73,7 @@ This blog was build off many other researchers work but these are the ones that 
 
 #### _Nov 27, 2018_
 
-<img width="500" height="281" src="../../_resources/950e3d9294964d51a3a33e1a6b053a45.jpg"/>
+<!-- <img width="500" height="281" src="../../_resources/950e3d9294964d51a3a33e1a6b053a45.jpg"/> -->
 
 | University of Cincinnati |     |
 | --- | --- |
