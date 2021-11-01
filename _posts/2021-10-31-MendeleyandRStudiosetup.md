@@ -1,6 +1,3 @@
-Mendeley and RStudio basic setup
-================
-
 I have now, after what seems like a lifetime, found a nice conceptial
 way of working with the scientific workflow. The software and tools I
 use are open-source and reproducible. This comes at some costs, the main
@@ -9,8 +6,6 @@ actually get away from….if your spelling isn’t right or you math doesn’t
 match the current proof then its you not us…. This works for 99% of
 projects. The real challenge is knowning when 1% of the projects are
 coming up to support. Use these tools and you will work out how.
-
-\[Manual coming soon….\]
 
 Tools, software, hardware, its a lot to take in but dont try and
 separate them anymore (cite cloud status of the world).
