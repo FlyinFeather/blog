@@ -11,6 +11,8 @@ ehthumbs.db
 Gemfile.lock
 
 beautiful-jekyll-theme-*.gem
+
+._posts\rmd_to_jekyll\.Rproj.user\
 .Rproj.user
 
 ._posts\rmd_to_jekyll\.Rproj.user\
