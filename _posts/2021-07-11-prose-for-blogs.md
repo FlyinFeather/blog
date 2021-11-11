@@ -18,7 +18,7 @@ comments: true
 
 `Prose.io` is a web app that allows the user to access there github content. In other words `prose` is "a content editor for GitHub".
 
-![screenshot.png](/assets/img/proseIOblog_shot.PNG) 
+![screenshot.png](/assets/img/proseIOblog_shot.PNG)
 
 `Prose` is very similar to the visual editor included in older versions of `WordPress` that many people have used for writing blog posts. The offical documentation is [here](https://www.websbytodd.com/documentation/using-prose/).
 
