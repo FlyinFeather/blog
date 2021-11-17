@@ -2,27 +2,28 @@
 published: true
 title: Hosting a website on github using `bookdown` package in R
 ---
+Many of the challenges and blog posts I submitt here are based on using RMarkdown and other packages to render both documents such as pdf and word documents to ...
+
+# Hosting
+
+
+
+
+
+
 
 **Here's the thread for [The Development of Shiny - Part 1 of the Shiny Developer Series](https://community.rstudio.com/t/shiny-developer-series-episode-1-thrad/29491)** using [https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4)
 
 [Hosting bookdown in github](https://community.rstudio.com/t/hosting-bookdown-in-github/20427) uses [R Markdown](https://community.rstudio.com/c/R-Markdown), [bookdown](https://community.rstudio.com/tags/bookdown)
-
-[(L)]
-
 [![](../_resources/ea7d867477480a2d151f9773fa860c9c.png)](https://community.rstudio.com/u/itsmecevi)
-
 [itsmecevi](https://community.rstudio.com/u/itsmecevi)
 [2018-12-24](https://community.rstudio.com/t/hosting-bookdown-in-github/20427)
 
-![](data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' class='fa d-icon d-icon-circle svg-icon svg-node js-evernote-checked' aria-hidden='true' data-evernote-id='282'%3e%3cpath d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z'%3e%3c/path%3e%3c/svg%3e)
 
-"Anybody knows how to publish my bookdown into github? ... Thx"
 
-[![2018-12-24](../_resources/ae8d5a4ab9a965b2480698d1f5d0a63b.png)]()Jan 30](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/8)
+[![2018-12-24: "Anybody knows how to publish my bookdown into github? ... Thx"](../_resources/ae8d5a4ab9a965b2480698d1f5d0a63b.png)]()Jan 30](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/8)
 
 Read all about it in [Publishing Bookdown to github 64](https://bookdown.org/yihui/bookdown/github.html) by [@yihui](https://community.rstudio.com/u/yihui)
-
-#### replies (357)
 
 [![](../_resources/6afc363c273f9b73ebbda69860cb813b.png)3]()
 [![](../_resources/252dc519c347cf5d4f023bf392af4a92.png)]()
