@@ -4,6 +4,12 @@ title: Hosting a website on github using `bookdown` package in R
 ---
 Many of the challenges and blog posts I submitt here are based on using RMarkdown and other packages to render both documents such as pdf and word documents to ... This blog deals with a very small aspect of hrml documents that turns out to be the fundemental rules of internet web pages and the web more generally. The following headings represent the key aspects of this use. Followed by a simple step by step guide and a bunch of resources for other support and approaches to hosting web pages for all to find. If you mean you would like to use GitHub pages to publish or deploy your `bookdown` project and:
 
+# Hosting
+
+Hosting is the word given to the location of the files that people viewing your website will see. FOr people to access your content (even this content) the files need to be in a location and a type that is known and call able. For example, most locations where domain names can be brought, it is also possible to host sites at the locations/servers. However there can be better options to manage this. One way is to use an open source file server such as github. Below in the resource section there are addtional options but we will stick with github to begin with here.
+
+# Guide
+
 ```
 a) you would like to place the rendered book (i.e., the folder `_book` is not in your `.gitignore` file) on GitHub
 b) further, you are OK with placing your rendered book in a folder on your "master" GitHub branch
@@ -22,9 +28,7 @@ To do that:
 4. Push to GitHub, you should see it there.
 ```
 
-# Hosting
 
-Hosting is the word given to the location of the files that people viewing your website will see. FOr people to access your content (even this content) the files need to be in a location and a type that is known and call able. For example, most locations where domain names can be brought, it is also possible to host sites at the locations/servers. However there can be better options to manage this. One way is to use an open source file server such as github. Below in the resource section there are addtional options but we will stick with github to begin with here.
 
 # Resources
 
