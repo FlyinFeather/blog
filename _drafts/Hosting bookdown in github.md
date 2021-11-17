@@ -2,15 +2,31 @@
 published: true
 title: Hosting a website on github using `bookdown` package in R
 ---
-Many of the challenges and blog posts I submitt here are based on using RMarkdown and other packages to render both documents such as pdf and word documents to ...
+Many of the challenges and blog posts I submitt here are based on using RMarkdown and other packages to render both documents such as pdf and word documents to ... This blog deals with a very small aspect of hrml documents that turns out to be the fundemental rules of internet web pages and the web more generally. The following headings represent the key aspects of this use. Followed by a simple step by step guide and a bunch of resources for other support and approaches to hosting web pages for all to find. If you mean you would like to use GitHub pages to publish or deploy your `bookdown` project and:
+
+```
+a) you would like to place the rendered book (i.e., the folder `_book` is not in your `.gitignore` file) on GitHub
+b) further, you are OK with placing your rendered book in a folder on your "master" GitHub branch
+c) even further, you are OK with using a project domain name like
+`http(s)://<username>.github.io/<projectname>`
+
+```
+Then you can take advantage of a [neat trick with GitHub pages 9](https://blog.github.com/2016-08-17-simpler-github-pages-publishing/) which allows you publish to GH pages from the master branch `/docs` folder. 
+
+To do that:
+
+```
+1. Configure source for GH pages through GitHub website as master branch `/docs` folder
+2. Go to your `_bookdown.yml` file and add `output_dir: "docs"` on a line by itself
+3. Serve/preview your book locally
+4. Push to GitHub, you should see it there.
+```
 
 # Hosting
 
+Hosting is the word given to the location of the files that people viewing your website will see. FOr people to access your content (even this content) the files need to be in a location and a type that is known and call able. For example, most locations where domain names can be brought, it is also possible to host sites at the locations/servers. However there can be better options to manage this. One way is to use an open source file server such as github. Below in the resource section there are addtional options but we will stick with github to begin with here.
 
-
-
-
-
+# Resources
 
 **Here's the thread for [The Development of Shiny - Part 1 of the Shiny Developer Series](https://community.rstudio.com/t/shiny-developer-series-episode-1-thrad/29491)** using [https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4)
 
@@ -36,6 +52,8 @@ Read all about it in [Publishing Bookdown to github 64](https://bookdown.org/yih
 [![](../_resources/ea7d867477480a2d151f9773fa860c9c.png)](https://community.rstudio.com/u/itsmecevi)
 [itsmecevi](https://community.rstudio.com/u/itsmecevi)
 [2018-12-24](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/3)
+
+## Extended resources
 
 Thank you. The link is a little bit confusing for me (a lot of technical terms). Do you have some of video or another simple tutorial [@technocrat](https://community.rstudio.com/u/technocrat)
 
@@ -129,25 +147,6 @@ If your question's been answered (even by you!), would you mind choosing a solut
 [Jan 9](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/7)
 
 ![](data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' class='fa d-icon d-icon-circle svg-icon svg-node js-evernote-checked' aria-hidden='true' data-evernote-id='294'%3e%3c/svg%3e)
-
-If you mean you would like to use GitHub pages to publish or deploy your `bookdown` project and:
-
-a) you would like to place the rendered book (i.e., the folder `_book` is not in your `.gitignore` file) on GitHub
-
-b) further, you are OK with placing your rendered book in a folder on your "master" GitHub branch
-
-c) even further, you are OK with using a project domain name like `http(s)://<username>.github.io/<projectname>`
-
-Then you can take advantage of a [neat trick with GitHub pages 9](https://blog.github.com/2016-08-17-simpler-github-pages-publishing/) which allows you publish to GH pages from the master branch `/docs` folder. 
-
-To do that:
-
-```
-1. Configure source for GH pages through GitHub website as master branch `/docs` folder
-2. Go to your `_bookdown.yml` file and add `output_dir: "docs"` on a line by itself
-3. Serve/preview your book locally
-4. Push to GitHub, you should see it there.
-```
 
 ### Suggested Topics
 
