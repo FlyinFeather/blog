@@ -16,92 +16,40 @@ title: Hosting a website on github using `bookdown` package in R
 
 ![](data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' class='fa d-icon d-icon-circle svg-icon svg-node js-evernote-checked' aria-hidden='true' data-evernote-id='282'%3e%3cpath d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z'%3e%3c/path%3e%3c/svg%3e)
 
-Anybody knows how to publish my bookdown into github?
-Thx
-/cevi
+"Anybody knows how to publish my bookdown into github? ... Thx"
 
--
-
-#### created
-
-[![](../_resources/fc8116a690fd8e587de7653e00be9c37.png)]()2018-12-24
-
-- [
-
-#### last reply
-
-[![](../_resources/ae8d5a4ab9a965b2480698d1f5d0a63b.png)]()Jan 30](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/8)
-
-- 7
-
-#### replies
-
-- 357
-
-#### views
-
-- 5
-
-#### users
-
-- 8
-
-#### likes
-
-- 8
-
-#### links
-
-- [![](../_resources/6afc363c273f9b73ebbda69860cb813b.png)3]()
-
-[![](../_resources/252dc519c347cf5d4f023bf392af4a92.png)]()
-[![](../_resources/05382c6af4ec45d64d8fc8c58c04894d.png)]()
-
-[(L)](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4)
-
-[![](../_resources/ef3eb4c46b02f3022d0cdd68bbaf37cb.png)](https://community.rstudio.com/u/technocrat)
-
-[technocrat](https://community.rstudio.com/u/technocrat)
-
-[2018-12-24](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/2)
-
-![](data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' class='fa d-icon d-icon-circle svg-icon svg-node js-evernote-checked' aria-hidden='true' data-evernote-id='283'%3e%3c/svg%3e)
+[![2018-12-24](../_resources/ae8d5a4ab9a965b2480698d1f5d0a63b.png)]()Jan 30](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/8)
 
 Read all about it in [Publishing Bookdown to github 64](https://bookdown.org/yihui/bookdown/github.html) by [@yihui](https://community.rstudio.com/u/yihui)
 
+#### replies (357)
+
+[![](../_resources/6afc363c273f9b73ebbda69860cb813b.png)3]()
+[![](../_resources/252dc519c347cf5d4f023bf392af4a92.png)]()
+[![](../_resources/05382c6af4ec45d64d8fc8c58c04894d.png)]()
 [(L)](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4)
-
+[![](../_resources/ef3eb4c46b02f3022d0cdd68bbaf37cb.png)](https://community.rstudio.com/u/technocrat)
+[technocrat](https://community.rstudio.com/u/technocrat)
+[2018-12-24](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/2)
+[(L)](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4)
 [![](../_resources/ea7d867477480a2d151f9773fa860c9c.png)](https://community.rstudio.com/u/itsmecevi)
-
 [itsmecevi](https://community.rstudio.com/u/itsmecevi)
-
 [2018-12-24](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/3)
-
-![](data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' class='fa d-icon d-icon-circle svg-icon svg-node js-evernote-checked' aria-hidden='true' data-evernote-id='284'%3e%3c/svg%3e)
 
 Thank you. The link is a little bit confusing for me (a lot of technical terms). Do you have some of video or another simple tutorial [@technocrat](https://community.rstudio.com/u/technocrat)
 
 [(L)](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4)
-
 [![](../_resources/ef3eb4c46b02f3022d0cdd68bbaf37cb.png)](https://community.rstudio.com/u/technocrat)
-
 [technocrat](https://community.rstudio.com/u/technocrat)
-
 [2018-12-24](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4)
-
-![](data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' class='fa d-icon d-icon-circle svg-icon svg-node js-evernote-checked' aria-hidden='true' data-evernote-id='285'%3e%3c/svg%3e)
-
-Check
-
- [rachaellappan.github.io 19](https://rachaellappan.github.io/bookdown/)
+[rachaellappan.github.io 19](https://rachaellappan.github.io/bookdown/)
 
 ### [Using Bookdown for tidy documentation](https://rachaellappan.github.io/bookdown/)
 
 In my last blog post, I described how I use R Markdown as a tool in my research to document the analyses I do. I find this very useful to keep a record of the mass of troubleshooting and trial and error I do when I start a new analysis, but when it...
 
-[http://seankross.com/2016/11/17/How-to-Start-a-Bookdown-Book.html 7](http://seankross.com/2016/11/17/How-to-Start-a-Bookdown-Book.html)
-
- [benmarwick.github.io 14](https://benmarwick.github.io/bookdown-ort/)
+- [http://seankross.com/2016/11/17/How-to-Start-a-Bookdown-Book.html 7](http://seankross.com/2016/11/17/How-to-Start-a-Bookdown-Book.html)
+- [benmarwick.github.io 14](https://benmarwick.github.io/bookdown-ort/)
 
 ### [A Minimal Book Example](https://benmarwick.github.io/bookdown-ort/)
 
@@ -189,36 +137,22 @@ b) further, you are OK with placing your rendered book in a folder on your "mast
 
 c) even further, you are OK with using a project domain name like `http(s)://<username>.github.io/<projectname>`
 
-Then you can take advantage of a [neat trick with GitHub pages 9](https://blog.github.com/2016-08-17-simpler-github-pages-publishing/) which allows you publish to GH pages from the master branch `/docs` folder. To do that:
+Then you can take advantage of a [neat trick with GitHub pages 9](https://blog.github.com/2016-08-17-simpler-github-pages-publishing/) which allows you publish to GH pages from the master branch `/docs` folder. 
 
+To do that:
+
+```
 1. Configure source for GH pages through GitHub website as master branch `/docs` folder
-
 2. Go to your `_bookdown.yml` file and add `output_dir: "docs"` on a line by itself
-
 3. Serve/preview your book locally
 4. Push to GitHub, you should see it there.
-
-21 days later
-
-![](data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' class='fa d-icon d-icon-lock svg-icon svg-node js-evernote-checked' aria-hidden='true' data-evernote-id='295'%3e%3c/svg%3e)
-
-[![](../_resources/5b8ae371e745edb53d6950d64d9edab0.png)](https://community.rstudio.com/u/system)
-
-closed Jan 30
-
-This topic was automatically closed 21 days after the last reply. New replies are no longer allowed.
-
-Hello! Looks like you’re enjoying the discussion, but you haven’t signed up for an account yet.
-
-When you create an account, we remember exactly what you’ve read, so you always come right back where you left off. You also get notifications, here and via email, whenever someone replies to you. And you can like posts to share the love. ![](../_resources/22b5b79de03f88e6070a3cbc7eb38487.png)
-
- [no thanks]()
+```
 
 ### Suggested Topics
+
+Want to read more? Browse other topics in [R Markdown](https://community.rstudio.com/c/R-Markdown) or [view latest topics](https://community.rstudio.com/latest).
 
 | Topic | Replies | Activity |
 | --- | --- | --- |
 | ![](data:image/svg+xml,%3csvg class='fa d-icon d-icon-square-o svg-icon svg-string js-evernote-checked' xmlns='http://www.w3.org/2000/svg' data-evernote-id='296'%3e%3cpath d='M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V86c0-3.3 2.7-6 6-6h340c3.3 0 6 2.7 6 6v340c0 3.3-2.7 6-6 6z'%3e%3c/path%3e%3c/svg%3e)<br>[How do I convert R code to HTML?](https://community.rstudio.com/t/how-do-i-convert-r-code-to-html/15218)<br> [R Markdown](https://community.rstudio.com/c/R-Markdown) |  [7](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4) |  [2018-09-29](https://community.rstudio.com/t/how-do-i-convert-r-code-to-html/15218/8) |
 | ![](data:image/svg+xml,%3csvg class='fa d-icon d-icon-square-o svg-icon svg-string js-evernote-checked' xmlns='http://www.w3.org/2000/svg' data-evernote-id='297'%3e%3c/svg%3e)<br>[r/css/md VS R markdown (in One)](https://community.rstudio.com/t/r-css-md-vs-r-markdown-in-one/27950)<br> [R Markdown](https://community.rstudio.com/c/R-Markdown)<br>[rmarkdown](https://community.rstudio.com/tags/rmarkdown) |  [13](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4) |  [8d](https://community.rstudio.com/t/r-css-md-vs-r-markdown-in-one/27950/14) |
-
-### Want to read more? Browse other topics in [R Markdown](https://community.rstudio.com/c/R-Markdown) or [view latest topics](https://community.rstudio.com/latest).
