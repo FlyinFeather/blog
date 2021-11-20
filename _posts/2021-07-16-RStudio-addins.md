@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 permlink: /rstudioaddins.html
 meta-title: Some ideas for using rstudio addins
 bigimg:
@@ -15,9 +15,10 @@ Dean again has made my life a lot easier than I expected. Addins are an interest
 #devtools::install_github("rstudio/addinexamples", type = "source")
 ```
 
+A good basic readme document and webpage can be found at [https://rstudio.github.io/rstudioaddins/#overview](https://rstudio.github.io/rstudioaddins/#overview). 
 ## Personal add-in package?
 
-[coming soon]
+I have been thinking about this as a good way to manage the risk associated with using other peoples addins without understanding the functions they are implmenting in your local enviroment.... a blog extension will be coming soon.....
 
 ## Other helpful packages
 
