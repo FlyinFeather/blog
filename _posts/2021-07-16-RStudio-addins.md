@@ -1,9 +1,9 @@
 ---
 layout: page
-permlink: /invasive-species-modelling.html
-meta-title: "The main open source tool I use"
+permlink: /rstudioaddins.html
+meta-title: Some ideas for using rstudio addins
 bigimg:
-  - "/assets/img/RStudio-Logo.jpg" : "RStudio"
+  - /assets/img/RStudio-Logo.jpg: RStudio
 published: true
 ---
 # [RStudio add-ins](https://cran.r-project.org/web/packages/addinslist/readme/README.html)
@@ -12,24 +12,32 @@ Dean again has made my life a lot easier than I expected. Addins are an interest
 
 ```{r}
 #include html readme here...
+#devtools::install_github("rstudio/addinexamples", type = "source")
 ```
 
-<iframe src="https://embed.waze.com/iframe?zoom=13&lat=-35.145936&lon=149.081142&ct=livemap" width="600" height="450" allowfullscreen></iframe>
+## Personal add-in package?
+
+[coming soon]
 
 ## Other helpful packages
 
-```{r}
+### `iframe`s
 
+<iframe src="https://embed.waze.com/iframe?zoom=13&lat=-35.145936&lon=149.081142&ct=livemap" width="600" height="450" allowfullscreen></iframe>
+
+```{r}
+#using knitr
 ```
-## `gist`s
+### `gist`s
 <iframe src="https://embed.waze.com/iframe?zoom=13&lat=-35.145936&lon=149.081142&ct=livemap" width="600" height="450" allowfullscreen></iframe>
 
 
-## Repository magic
+### Repository magic
 
 [coming]
-## Other helpful packages
+
+### Other helpful packages
 
 ```{r}
-
+#list packages
 ```
