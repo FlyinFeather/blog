@@ -1,0 +1,9 @@
+# A open source project setup
+
+Over the covid19 period I have developed a workflow for generating the backbone of general exploratory research for a range of small businesses in an attempt to begin the process of developing open source tools for small business. There are many lessons and adventures I have had to generate the content I am writing currently. 
+
+This is a difficult workflow to get your head around as there are many aspects of the process that can cause issues and challenges for future development and scalability. Keep me posted on what and where to add additional information to make this understandable.
+
+## Software...
+
+TOKEN soon..
