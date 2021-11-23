@@ -4,11 +4,7 @@ title: github pages info
 
 # Using a custom domain with GitHub Pages
 
-
-
 Modified from "Using a custom domain with GitHub Pages" [GitHub Help]()
-
-
 
 GitHub Pages is available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see "[GitHub's products](https://help.github.com/articles/github-s-products)."
 
