@@ -1,6 +1,7 @@
 ---
 title: Github shiny app
 layout: post
+tags: ["shiny", "RStudio", "R", "statistics", "app", "interactive"]
 permlink: /githubshiny.html
 published: true
 ---

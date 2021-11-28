@@ -4,7 +4,7 @@ title: "KMZ files are just..."
 subtitle: "...zipped KML files"
 image: /img/tools.jpg
 permlink: /kmz-files-kml.html
-tags: ["website", "overview", "general", "kmz"]
+tags: ["mapping", "kml", "GIS", "kmz"]
 bigimg: /img/filing.jpg
 ---
 
