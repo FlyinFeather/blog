@@ -7,6 +7,7 @@ subtitle: "Using my-maps to capture data easily"
 Below is the public `google-my-maps` map that can be modified an worked on from within the window provided below.
 
 <iframe src="https://www.google.com.au/maps/d/u/0/embed?mid=1DAgemW-rkdMHTO8fxnbvbSVF4H0XNLd_" width="640" height="480"></iframe>
+
 {: .box-note}
 **Note:** This can currently me modified and changed by anyone with the link. As it comes more important for the dataset to not be modified by others we will tighten this process up using the leaflet and shiny app process we are using for the mapping and analysis at the bottom of this post.
 
@@ -18,7 +19,7 @@ So far we have saved a `leaflet` `rmd` file as an html file and pasted it from t
 
 To begin with check this is working in your local RStudio enviroment
 
-1. Install the required packages. You need a recent version of the GDAL, GEOS, Proj.4, and UDUNITS libraries installed for this to work on Mac and Linux. More information on that at https://github.com/r-spatial/sf#installling.
+1. Install the required packages. You need a recent version of the GDAL, GEOS, Proj.4, and UDUNITS libraries installed for this to work on Mac and Linux. More information on that at https://github.com/r-spatial/sf.
 
 ```
 devtools::install_github("robinlovelace/geocompr")
