@@ -7,13 +7,13 @@ use-site-title: true
 
 The interesting thing about this post is that this is not exactly what I am hoping for as an end product. only possible because of these tools ([leaflet](https://leafletjs.com/); wiki [on the matter](https://en.wikipedia.org/wiki/Leaflet_(software)) and [shiny](https://rstudio.github.io/leaflet/shiny.html) info).
 
-{% include interactive-maps.html %}
+<!-- {% include interactive-maps.html %} -->
 
 ## Extra resources
 
 To begin with check this is working in your local RStudio enviroment
 
-1. Install the required packages. You need a recent version of the GDAL, GEOS, Proj.4, and UDUNITS libraries installed for this to work on Mac and Linux. More information on that at https://github.com/r-spatial/sf#installling.
+1. Install the required packages. You need a recent version of the GDAL, GEOS, Proj.4, and UDUNITS libraries installed for this to work on Mac and Linux. More information on that at https://github.com/r-spatial/sf.
 
 ```
 devtools::install_github("robinlovelace/geocompr")
