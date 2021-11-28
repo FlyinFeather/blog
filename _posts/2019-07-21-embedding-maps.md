@@ -13,7 +13,7 @@ The interesting thing about this post is that this is not exactly what I am hopi
 
 To begin with check this is working in your local RStudio enviroment
 
-1. Install the required packages. You need a recent version of the GDAL, GEOS, Proj.4, and UDUNITS libraries installed for this to work on Mac and Linux. More information on that at https://github.com/r-spatial/sf.
+1. Install the required packages. You need a recent version of the GDAL, `GEOS`, `Proj.4`, and UDUNITS libraries installed for this to work on Mac and Linux. More information on that at https://github.com/r-spatial/sf.
 
 ```
 devtools::install_github("robinlovelace/geocompr")
