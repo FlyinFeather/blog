@@ -2,8 +2,6 @@
 layout: post
 title: "Creating a rugged GIS data collection method"
 subtitle: "Using my-maps to capture data easily"
-use-site-title: true
-
 ---
 
 Below is the public `google-my-maps` map that can be modified an worked on from within the window provided below.
@@ -14,7 +12,7 @@ Below is the public `google-my-maps` map that can be modified an worked on from 
 
 So far we have saved a `leaflet` `rmd` file as an html file and pasted it from the includes folder of the website. We will tighten this up too. :)
 
-{% include interactive-maps.html %}
+<!--{% include interactive-maps.html %}-->
 
 ## Extra resources
 
