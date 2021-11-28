@@ -5,12 +5,23 @@ subtitle: "Business info for the smarts"
 use-site-title: true
 ---
 
-So somehow over the past few months I have managed to do this for both my main website here and my first publication but I am unsure how I managed it. I have collected a few resources if it breaks or I have to follow another page with google analytics.
+Somehow a few months ago I managed to add google analytics to both my blog website here and my first publication but I am unsure how I managed it.
 
-## Resources
-
-[A stack overflow discussion on the matter](https://stackoverflow.com/questions/17207458/how-to-add-google-analytics-tracking-id-to-github-pages)
+I have now come back to this as I need to set up google analytics for a custom `html` website with a single landing page. 
 
 ## My notes
 
-I was hesitant to get this all working due to having to get envolved with google and things like adwords. For now I only have inserted the single google analytics code for my personal site. 
+I was hesitant to get this all working due to having to get envolved with google and things like adwords. For now I only have inserted the single google analytics code for my personal site.
+
+## Resources
+
+I have collected a few resources to setup another page with google analytics.
+
+- [A stack overflow discussion on the matter](https://stackoverflow.com/questions/17207458/how-to-add-google-analytics-tracking-id-to-github-pages)
+
+<div class="post"><ul>
+{% for post in site.tags["github"] %}
+  <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+    {{ post.description }}
+{% endfor %}
+</ul></div>
