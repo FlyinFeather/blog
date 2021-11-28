@@ -6,8 +6,6 @@ subtitle: "Speaking analytics with shiny and R tools"
 
 The interesting thing about this post is that this is not exactly what I am hoping for as an end product. only possible because of these tools ([leaflet](https://leafletjs.com/); wiki [on the matter](https://en.wikipedia.org/wiki/Leaflet_(software)) and [shiny](https://rstudio.github.io/leaflet/shiny.html) info).
 
-<!-- {% include interactive-maps.html %} -->
-
 ## Extra resources
 
 To begin with check this is working in your local RStudio enviroment
