@@ -3,6 +3,15 @@ title: Adding links in Jekyll websites
 layout: post
 tags: ["jekyll", "website", "resources", "tools"]
 published: true
+cover-img: assets/img/canberra_pana_ballon.jpg
+thumbnail-img: assets/img/canberra_pana_ballon.jpg
+comments: true
+published: true
+tags:
+  - jekyll
+  - tips
+  - rmd
+  - code
 ---
 
 There are many many great resources on the web but linking them to a website can be hard, nont to mention boring task. Here are my notes to try and reduce the instatbility of external web links within webpages and other online content.
@@ -12,10 +21,10 @@ There are many many great resources on the web but linking them to a website can
 I am still not sure how this works exactly but here are some resources for this content.
 
 ```
+[General tools](https://davan690.github.io/general-statistics.md)
+# or
 [General tools](./general-statistics.md)
-[Invasive species research](/invasive-species-research.md)
-[PhD drafts](/thesis-overview.md)
-[Mapping in R](/creating-maps-in-r/)
+
 ```
 
 ## Image links
