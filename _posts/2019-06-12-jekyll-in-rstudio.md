@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jekyll in RStudio"
-subtitle: "A collection of resources for blogging in RStudio"
+subtitle: "A collection of resources for blogging in RStudio using Jekyll"
 image: /img/tools.jpg
 bigimg: /img/RStudio-jekyll-serious-win.PNG
 tags: ["compile", "r", "rmd", "RStudio", "tools", "general"]
@@ -48,8 +48,6 @@ Serving the directory C:\GIT\davan690.github.io at http://127.0.0.1:5652
 4. Stop server
 
 > ```servr::daemon_stop(3)```
-
-
 
 ### ERRORs
 
