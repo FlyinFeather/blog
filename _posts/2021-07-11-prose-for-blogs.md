@@ -33,8 +33,27 @@ comments: true
 I really just use it to enter the text and ideas for blogs. It makes it easier to sit in a cafe and write an idea down that then can be included as a blog post or documentation for a project I am working on. I like using it at the moment because I have been able to test the effectiveness of my markdown code to render the posts and information I use regularly in `R`. A couple of key points that make `prose` good:
 
 1. Makes automatic commit lines when you save
+
 2. Shortcut for saving in windows `ctrl s` works as a automatic commit making it easy to update draft after you have made comments
+
 3. Easy for short passages of text == good for a blog
+
 4. Uses markdown which results in much easier inclusion in other markdown flavours such as RMarkdown
 
 Maybe in the future this will be a good tool to get simple ideas from the notepad to the publication level quicker?
+
+### Prose workflow
+
+Here is a simple step-by-step guide to editting blogs using github and `prose` online.
+
+1. Open web browser and navigate to: [https://prose.io/](https://prose.io/)
+
+2. Authenticate your github account associated with the blog site you want to work on.
+
+3. Navigate to the repository where your blog is kept.
+
+4. Generate a new post. NOTE: this will be saved in the `_drafts` folder until published.
+
+#### Side flows :)
+
+- For editing old posts navigate to the `./_posts/` folder of your blogs repository.
