@@ -14,5 +14,16 @@ Canva, Desyner and many others online
 
 ## Software such as PhotoShop
 
+Photoshop is the photo editting tool many professionals use. There are others but if you want to be linked to licensing of software then this can provide the stability needed for larger operations. This is redundent is small startups...at least to begin with.
+
 ## GIMP open-source "Photoshop"
+
+I have spend most of my time in this platform and the youtube tutorials needed to get up to speed. Here are some of the youtube videos I found very helpful.
+
+### Resources
+
+
+
+
+
 
