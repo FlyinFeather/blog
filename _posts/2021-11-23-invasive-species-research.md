@@ -10,13 +10,6 @@ bigimg:
 published: true
 ---
 
-<div class="list-filters">
-  <a href="/general-statistics" class="list-filter">Statistics</a>
-  <a href="/ecological-statistics" class="list-filter">Ecology</a>
-  <a href="/invasive-species-research" class="list-filter">PhD</a>
-  <a href="https://www.ssnhub.com/beech-publication-wr" class="list-filter">Draft manuscript v1</a>
-</div>
-
 There was lots of press focus at the time (e.g. How [NZ might make PFNZ happen](https://news.nationalgeographic.com/2016/07/new-zealand-invasives-islands-rats-kiwis-conservation/);[Enviroment guide](http://www.environmentguide.org.nz/issues/biodiversity/key-threats/invasive-species/); [NZ geographic PFNZ plan](https://www.wired.com/2016/07/new-zealand-plans-kill-non-human-invasive-mammals/)) and academic interest too (extended info coming but most of the journal articles reference Russell et. al 2015 paper [here](https://academic.oup.com/bioscience/article/65/5/520/323246))
 
 ![](./img/national-leaders-announce-pfnz2050-title.png)
@@ -29,7 +22,7 @@ With the continued development of my PhD work I hope to be able to connect commu
 ## News
 
 <div class="post"><ul>
-{% for post in site.tags["beech"] %}
+{% for post in site.tags["phd"] %}
   <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
     {{ post.description }}
 {% endfor %}

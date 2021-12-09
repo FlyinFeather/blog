@@ -11,6 +11,10 @@ Over the past few months I have developed a a concept of intergrating `html` tem
 
 ![[Check out the draft here](https://davan690.github.io/dynamic_rmd_CV)](/assets/img/method-graf.jpg)
 
+### New Application
+
+coming soon....
+
 ## News
 
 <div class="post"><ul>

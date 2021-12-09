@@ -27,6 +27,19 @@ I am still not sure how this works exactly but here are some resources for this 
 
 ```
 
+## Content (page) links
+
+Direct and indirect links??!
+
+```
+<div class="list-filters">
+  <a href="/general-statistics" class="list-filter">Statistics</a>
+  <a href="/ecological-statistics" class="list-filter">Ecology</a>
+  <a href="/invasive-species-research" class="list-filter">PhD</a>
+  <a href="https://www.ssnhub.com/beech-publication-wr" class="list-filter">Draft manuscript v1</a>
+</div>
+```
+
 ## Image links
 
 ```
