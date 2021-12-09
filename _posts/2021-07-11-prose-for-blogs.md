@@ -54,6 +54,8 @@ Here is a simple step-by-step guide to editting blogs using github and `prose` o
 
 4. Generate a new post. NOTE: this will be saved in the `_drafts` folder until published.
 
+This is a nice quick way to generate a new blog template and file.
+
 #### Side flows :)
 
 - For editing old posts navigate to the `./_posts/` folder of your blogs repository.
