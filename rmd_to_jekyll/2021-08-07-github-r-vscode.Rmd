@@ -2,9 +2,9 @@
 title: "Using R and GitHub"
 subtitle: "Reproducibility in research at a realistic speed"
 output:
-  rmarkdown::github_document: null
-  keep_md: yes
-  output_dir: "../_posts/"
+  rmarkdown::github_document:
+    output_dir: "../_posts/"
+keep_md: yes
 ---
 
 I have now, after what seems like a lifetime, found a nice conceptial way of working with the scientific workflow. The software and tools I use are open-source and reproducible. This comes at some costs, the main one that comes to mind is a general aspect of humanity that we can never actually get away from....if your spelling isn't right or you math doesn't match the current proof then its you not us....

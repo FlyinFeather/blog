@@ -1,6 +1,21 @@
 ---
+title: "`github` pages setup 2021"
+layout: post
+tags:
+  - rmarkdown
+  - tips
+  - publishing
+comments: true
 published: false
+output: github_document
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#knitr directions for jekyll blog
+#coming...
+```
+
 # Configuring a publishing source for GitHub Pages
 
 GitHub Pages is available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see "[GitHub's products](https://help.github.com/articles/github-s-products)."
