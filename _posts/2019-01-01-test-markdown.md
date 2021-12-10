@@ -9,6 +9,10 @@ published: true
 tags:
   - markdown
   - tips
+  - rmd
+  - code
+  - R
+  - reproducible
 ---
 
 This is an extension of the demo post from [Dean's website](https://beautifuljekyll.com/) that demostrates some key markdown syntax to use in markdown blog posts for this site (and many other great tools).  

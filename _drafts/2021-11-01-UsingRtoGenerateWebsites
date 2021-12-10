@@ -1,0 +1,20 @@
+---
+title: Publishing websites one the www
+---
+
+# [10.5.7]('') Publishing websites
+
+R Markdown websites are static HTML sites that can be deployed to any standard web server. 
+All site content (generated documents and supporting files) are copied into the _site directory, so deployment is simply a matter of moving that directory to the appropriate directory of a web server. [cite paper online]
+
+## Site generator
+
+Building static websites requires a "site generator" to configure the site files and assoicated information in a manner that can be used to search and present the data and resources that have been curated.
+
+## HTML and CSS
+
+Using a site generator such as ...
+
+## Final location
+
+## Additional resources

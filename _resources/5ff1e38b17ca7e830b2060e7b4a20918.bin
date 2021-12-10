@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<opml version="1.0">
+    <head>
+        <title>Andrw subscriptions in feedly Cloud</title>
+    </head>
+    <body>
+        <outline text="CompBio" title="CompBio">
+            <outline type="rss" text="Communications of the ACM: blog@CACM" title="Communications of the ACM: blog@CACM" xmlUrl="http://cacm.acm.org/blogs/blog-cacm.rss" htmlUrl="https://cacm.acm.org/blogs/blog-cacm.rss"/>
+            <outline type="rss" text="PLOS Computational Biology: New Articles" title="PLOS Computational Biology: New Articles" xmlUrl="http://www.ploscompbiol.org/article/feed" htmlUrl="https://journals.plos.org/ploscompbiol/"/>
+            <outline type="rss" text="Gödel’s Lost Letter and P=NP" title="Gödel’s Lost Letter and P=NP" xmlUrl="http://rjlipton.wordpress.com/feed/" htmlUrl="https://rjlipton.wordpress.com"/>
+            <outline type="rss" text="q-bio updates on arXiv.org" title="q-bio updates on arXiv.org" xmlUrl="http://arxiv.org/rss/q-bio" htmlUrl="http://arxiv.org/"/>
+            <outline type="rss" text="Computational Statistics and Data Analysis" title="Computational Statistics and Data Analysis" xmlUrl="http://rss.sciencedirect.com/publication/science/01679473" htmlUrl="https://www.sciencedirect.com/journal/computational-statistics-and-data-analysis"/>
+            <outline type="rss" text="bioRxiv Subject Collection: Bioinformatics" title="bioRxiv Subject Collection: Bioinformatics" xmlUrl="http://hwmaint.biorxiv.highwire.org/cgi/collection/rss?coll_alias=bioinformatics" htmlUrl="http://biorxiv.org"/>
+            <outline type="rss" text="Computational Complexity" title="Computational Complexity" xmlUrl="http://blog.computationalcomplexity.org/feeds/posts/default" htmlUrl="https://blog.computationalcomplexity.org/"/>
+        </outline>
+        <outline text="Statistics" title="Statistics">
+            <outline type="rss" text="Nuit Blanche" title="Nuit Blanche" xmlUrl="http://nuit-blanche.blogspot.com/feeds/posts/default" htmlUrl="http://nuit-blanche.blogspot.com/"/>
+            <outline type="rss" text="Data Science 101" title="Data Science 101" xmlUrl="http://datascience101.wordpress.com/feed/" htmlUrl="https://101.datascience.community"/>
+            <outline type="rss" text="KDnuggets" title="KDnuggets" xmlUrl="http://feeds.feedburner.com/kdnuggets-data-mining-analytics" htmlUrl="https://www.kdnuggets.com"/>
+            <outline type="rss" text="stat.AP updates on arXiv.org" title="stat.AP updates on arXiv.org" xmlUrl="http://arxiv.org/rss/stat.AP" htmlUrl="http://arxiv.org/"/>
+            <outline type="rss" text="Big Data, Plainly Spoken" title="Big Data, Plainly Spoken" xmlUrl="http://junkcharts.typepad.com/numbersruleyourworld/atom.xml" htmlUrl="https://junkcharts.typepad.com/numbersruleyourworld/"/>
+            <outline type="rss" text="Statistical Modeling, Causal Inference, and Social Science" title="Statistical Modeling, Causal Inference, and Social Science" xmlUrl="http://www.stat.columbia.edu/~cook/movabletype/mlm/atom.xml" htmlUrl="https://statmodeling.stat.columbia.edu"/>
+            <outline type="rss" text="eagereyes" title="eagereyes" xmlUrl="http://eagereyes.org/atom/feed" htmlUrl="https://eagereyes.org"/>
+            <outline type="rss" text="Machine Learning (Theory)" title="Machine Learning (Theory)" xmlUrl="http://hunch.net/?feed=rss2" htmlUrl="http://hunch.net"/>
+            <outline type="rss" text="John D. Cook" title="John D. Cook" xmlUrl="http://www.johndcook.com/blog/feed/" htmlUrl="https://www.johndcook.com/blog"/>
+        </outline>
+        <outline text="News" title="News">
+            <outline type="rss" text="BBC News - World" title="BBC News - World" xmlUrl="http://feeds.bbci.co.uk/news/world/rss.xml" htmlUrl="https://www.bbc.co.uk/news/"/>
+            <outline type="rss" text="Monkey Cage" title="Monkey Cage" xmlUrl="http://feeds.washingtonpost.com/rss/rss_monkey-cage" htmlUrl="https://www.washingtonpost.com"/>
+            <outline type="rss" text="Reuters: World News" title="Reuters: World News" xmlUrl="http://feeds.reuters.com/reuters/worldNews" htmlUrl="https://www.reuters.com"/>
+            <outline type="rss" text="Al Jazeera World" title="Al Jazeera World" xmlUrl="http://feeds.aljazeera.net/podcasts/aljazeeraworldHD" htmlUrl="http://www.aljazeera.com/programmes/aljazeeraworld/"/>
+            <outline type="rss" text="AlterNet.org: World News" title="AlterNet.org: World News" xmlUrl="http://feeds.feedblitz.com/alternet_world" htmlUrl="http://feeds.feedblitz.com/alternet_world"/>
+        </outline>
+        <outline text="Nature" title="Nature">
+            <outline type="rss" text="Nature Ecology &amp; Evolution - nature.com science feeds" title="Nature Ecology &amp; Evolution - nature.com science feeds" xmlUrl="http://feeds.nature.com/natecolevol/rss/current" htmlUrl="http://feeds.nature.com/natecolevol/rss/current"/>
+            <outline type="rss" text="Nature" title="Nature" xmlUrl="http://www.nature.com/nature/current_issue/rss" htmlUrl="http://feeds.nature.com/nature/rss/current"/>
+            <outline type="rss" text="Proceedings of the National Academy of Sciences current issue" title="Proceedings of the National Academy of Sciences current issue" xmlUrl="http://www.pnas.org/rss/current.xml" htmlUrl="http://www.pnas.org"/>
+            <outline type="rss" text="Science Express TOC RSS Feed" title="Science Express TOC RSS Feed" xmlUrl="http://science.sciencemag.org/rss/express.xml" htmlUrl="http://science.sciencemag.org"/>
+            <outline type="rss" text="Nature Human Behaviour - nature.com science feeds" title="Nature Human Behaviour - nature.com science feeds" xmlUrl="http://feeds.nature.com/nathumbehav/rss/current" htmlUrl="http://feeds.nature.com/nathumbehav/rss/current"/>
+        </outline>
+        <outline text="Ecology" title="Ecology">
+            <outline type="rss" text="Royal Society: Proceedings of the Royal Society B: Biological Sciences: Table of Contents" title="Royal Society: Proceedings of the Royal Society B: Biological Sciences: Table of Contents" xmlUrl="http://rspb.royalsocietypublishing.org/rss/current.xml" htmlUrl="https://royalsocietypublishing.org/loi/rspb?af=R"/>
+            <outline type="rss" text="Wiley: Ecology Letters: Table of Contents" title="Wiley: Ecology Letters: Table of Contents" xmlUrl="http://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1461-0248" htmlUrl="https://onlinelibrary.wiley.com/journal/14610248?af=R"/>
+            <outline type="rss" text="Wiley: Global Change Biology: Table of Contents" title="Wiley: Global Change Biology: Table of Contents" xmlUrl="http://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1365-2486" htmlUrl="https://onlinelibrary.wiley.com/journal/13652486?af=R"/>
+            <outline type="rss" text="Wiley: Ecography: Table of Contents" title="Wiley: Ecography: Table of Contents" xmlUrl="http://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1600-0587" htmlUrl="https://onlinelibrary.wiley.com/journal/16000587?af=R"/>
+            <outline type="rss" text="Wiley: Journal of Ecology: Table of Contents" title="Wiley: Journal of Ecology: Table of Contents" xmlUrl="http://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1365-2745" htmlUrl="https://besjournals.onlinelibrary.wiley.com/journal/13652745?af=R"/>
+            <outline type="rss" text="Wiley: Journal of Applied Ecology: Table of Contents" title="Wiley: Journal of Applied Ecology: Table of Contents" xmlUrl="http://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1365-2664" htmlUrl="https://besjournals.onlinelibrary.wiley.com/journal/13652664?af=R"/>
+            <outline type="rss" text="Nature Plants - nature.com science feeds" title="Nature Plants - nature.com science feeds" xmlUrl="http://feeds.nature.com/nplants/rss/current" htmlUrl="http://feeds.nature.com/nplants/rss/current"/>
+            <outline type="rss" text="Wiley: Oikos: Table of Contents" title="Wiley: Oikos: Table of Contents" xmlUrl="http://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1600-0706" htmlUrl="https://onlinelibrary.wiley.com/journal/16000706?af=R"/>
+            <outline type="rss" text="ScienceDirect Publication: Trends in Ecology &amp; Evolution" title="ScienceDirect Publication: Trends in Ecology &amp; Evolution" xmlUrl="http://rss.sciencedirect.com/publication/science/6081" htmlUrl="http://www.sciencedirect.com"/>
+            <outline type="rss" text="Wiley: Functional Ecology: Table of Contents" title="Wiley: Functional Ecology: Table of Contents" xmlUrl="http://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1365-2435" htmlUrl="https://besjournals.onlinelibrary.wiley.com/journal/13652435?af=R"/>
+            <outline type="rss" text="The University of Chicago Press: The American Naturalist: Table of Contents" title="The University of Chicago Press: The American Naturalist: Table of Contents" xmlUrl="http://www.journals.uchicago.edu/action/showFeed?ui=0&amp;mi=0&amp;ai=sa&amp;jc=an&amp;type=etoc&amp;feed=rss" htmlUrl="https://www.journals.uchicago.edu/loi/an?ai=sa&amp;mi=0&amp;af=R"/>
+            <outline type="rss" text="Landscape Architecture Magazine" title="Landscape Architecture Magazine" xmlUrl="http://landscapearchitecturemagazine.org/feed/" htmlUrl="https://landscapearchitecturemagazine.org"/>
+            <outline type="rss" text="PeerJ:Ecology" title="PeerJ:Ecology" xmlUrl="https://peerj.com/articles/index.rss?subject=1100" htmlUrl="https://peerj.com/articles/?journal=peerj&amp;subject=ecology"/>
+            <outline type="rss" text="Wiley: Molecular Ecology: Table of Contents" title="Wiley: Molecular Ecology: Table of Contents" xmlUrl="http://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1365-294X" htmlUrl="https://onlinelibrary.wiley.com/journal/1365294x?af=R"/>
+            <outline type="rss" text="Wiley: Ecology: Table of Contents" title="Wiley: Ecology: Table of Contents" xmlUrl="http://onlinelibrary.wiley.com/rss/journal/10.1002/(ISSN)1939-9170" htmlUrl="https://esajournals.onlinelibrary.wiley.com/journal/19399170?af=R"/>
+            <outline type="rss" text="Wiley: Ecosphere: Table of Contents" title="Wiley: Ecosphere: Table of Contents" xmlUrl="http://onlinelibrary.wiley.com/rss/journal/10.1002/(ISSN)2150-8925" htmlUrl="https://esajournals.onlinelibrary.wiley.com/journal/21508925?af=R"/>
+        </outline>
+    </body>
+</opml>

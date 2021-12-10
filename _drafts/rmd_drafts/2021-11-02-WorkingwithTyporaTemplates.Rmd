@@ -1,0 +1,21 @@
+# Working with Typora templates
+
+There are some obvious strengths with a text editor such as Typora however using the program to generate and apply themes and templates are a future development I would like to extend for my own personal benifit. Here are my current notes on the matter.
+
+
+
+
+
+
+
+
+
+
+
+## Homework
+
+
+
+```r
+knitr::include_url("https://gotellilab.github.io/Bio381/Homeworks/Homework04_S2021.html")
+```

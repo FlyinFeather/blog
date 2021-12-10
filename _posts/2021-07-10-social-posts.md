@@ -3,6 +3,10 @@ title: "Inserting an social media post"
 published: true
 ---
 
+There are several ways that it is possible to generate static html content that includes aspects of different social media posts and pages. Here are a few quick notes about how I work with these file formats.
+
+## `iframe`
+
 The `iframe` function can be used for many of these aspects as so.....
 
 [insert table of options]

@@ -1,3 +1,8 @@
+---
+title: PhD thesis
+---
+
+
 davan690/davan690.github.io: A website of PhD work and statistics application
 
 [Skip to content](#start-of-content)

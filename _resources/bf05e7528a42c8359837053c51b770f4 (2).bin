@@ -1,0 +1,693 @@
+########################################################################################################
+# LOAD REQUIRED PACKAGES
+
+library(tidyverse)
+
+#===== DATA IMPORT & TIDY =====
+
+habitat <- read.csv("Y:\\Institute for Applied Ecology\\Personnel\\ALLAN\\Masters\\Data\\Tantangara Ck\\XXX Masterfiles for R\\Habitat & PIT survey\\combined_master.csv")
+habitat$depth <- as.numeric(habitat$depth)
+habitat$tag[is.na(habitat$tag)] <- "NONE"
+habitat <- habitat %>%
+  mutate(
+    type = ifelse(tag != "NONE", "fish", "available")) 
+habitat[c("br","b","c","p","g","s","silt")] [is.na(habitat[c("br","b","c","p","g","s","silt")])] <- 0
+habitat[c("rip", "aqu", "und", "leaf")] [is.na(habitat[c("rip", "aqu", "und", "leaf")])] <- "n"
+habitat <- habitat %>%
+  mutate(
+    sub = (
+      br/100  * 0 +
+        b/100   * 256 +
+        c/100   * 64 +
+        p/100   * 4 +
+        g/100   * 2 + 
+        s/100   * 1 +
+        silt/100* 0.5))
+habitat$date <- lubridate::ymd(habitat$date)
+
+#===== CREATE NEW DATA FRAME "MOVEMENT" WHICH SUMMARISES DISTANCE MOVED & HOMERANGE ===== 
+
+movement <- habitat %>%
+  filter(!(tag == "NONE")) %>%          # Remove habitat characterisation rows
+  filter(!(tag == "385905"|             # Remove tags that are confirmed lost
+           tag == "386103"|
+           tag == "305901"|
+           tag == "306224"|
+           tag == "396941")) %>%  
+  filter(!(tag == "397179"|             # Remove test tags (if accidently entered in datasheet eg. 17/5/18, #396966)
+           tag == "396966"| 
+           tag == "307031"|
+           tag == "387298"|
+           tag == "305547"|
+           tag == "304306")
+         ) %>%
+  group_by(tag) %>%                     
+  filter(n()>1) %>%             # Remove fish with only 1 observation (ie. release location)
+  ungroup() %>%
+  group_by(tag, date) %>%
+  summarise(
+    lon = first(lon)            # Keep only first observation per day
+    ) %>%       
+  group_by(tag) %>%
+  mutate(
+    movement = as.numeric(lon - lag(lon)) # Calculate distance moved since last observation - including distance from release to 1st obs (possibly dodgy larger than their actual home range, but does show they are capable of moving large distances)
+    ) %>%
+  group_by(tag) %>%
+  mutate(
+# Would be ideal to get the secondary_movement data in here
+    )
+
+# Create the secondary_movement column (ie excluding the first movement, when the fish moved from the release location)
+secondary_movement <- slice(group_by(movement, tag), 3:n())
+colnames(secondary_movement)[4] <- "second"
+movement <- merge(movement, secondary_movement, all = TRUE)
+
+#===== MOVEMENT MAP ===== 
+
+ggplot(movement, aes(x = date, y = lon, colour = tag, group = tag))+
+  geom_point(position = "jitter", shape = 1)+
+  geom_path()+
+  scale_y_continuous(breaks = seq(-20,200,50))+
+  labs(y = "Longitude (m)", x = "Date", group = "Fish #", colour = "Tag #")+
+  guides(colour = guide_legend(ncol = 1))+
+  theme_classic()+ 
+  geom_hline(yintercept = c(0,35,85,130,180,200), alpha = 0.25)  # These are the e-fisher runs where fish were caught & released, might have been interesting if fish remianed in particular zones
+ 
+#  + facet_wrap(~tag) Helps see when fish were detected
+
+
+#===== LABELLED MOVEMENT MAP, FOR USE IN THE FIELD =====
+
+# Create a labels dataframe, of the last observation of each fish
+labels <- habitat %>%
+  filter(!tag == "NONE") %>%
+  group_by(tag) %>%
+  summarise(last = last(lon), 
+            date = last(date))
+labels$label <- paste(labels$last, "m", labels$tag)
+
+# Plot last detection & movement
+ggplot(movement, aes(x = date, y = lon, group = tag))+
+  geom_hline(yintercept = c(0,35,85,130,180,200), alpha = 0.25, linetype = 2)+  # These are the e-fisher runs where fish were caught & released, might have been interesting if fish remianed in particular zones
+  geom_point()+
+  geom_path(alpha = 0.5)+
+  scale_y_continuous(breaks = seq(-20,200,10))+
+  labs(y = "Longitude", x = "Date", group = "Fish #", colour = "Tag #")+
+  ggrepel::geom_label_repel(data = labels, aes(label = label, y = last, x = date))+
+  theme_bw()+
+  theme(legend.position = "none")
+
+#===== PRINTABLE MOVEMENT TABLE ===== 
+
+# Movement table with only 1st pass
+movement2 <- habitat %>%
+  filter(!(tag == "NONE")) %>%          # Remove habitat characterisation rows
+  group_by(tag) %>%                     
+  group_by(date, tag) %>%
+  summarise(lon = first(lon))           # Keep only first observation per day
+movement_table <- movement2 %>% spread(date, lon)
+movement_table2 <- movement_table[,1:3]
+movement_table2 <- cbind.data.frame(tag = movement_table2$tag, release = rowSums(movement_table2[, -1], na.rm = TRUE)) 
+movement_table3 <- movement_table[,-c(2:3)]
+movement_table4 <- merge(movement_table2, movement_table3, by = "tag")
+
+View(movement_table4)   
+write.csv(movement_table4, file = "Movement Table.csv")    # Table gets saved in working directory
+
+# Movement table with both 1st and second pass for each fish
+movement3 <- habitat %>%
+  filter(!(tag == "NONE")) %>%          # Remove habitat characterisation rows
+  filter(!(tag == "385905"|             # Remove tags that are lost or suspected to be dead
+           tag == "386103"|
+           tag == "305901"|
+           tag == "306224"|
+           tag == "396941")) %>%  
+  filter(!(tag == "397179"|             # Remove test tags (if accidently entered in datasheet eg. 17/5/18, #396966)
+           tag == "396966"| 
+           tag == "307031"|
+           tag == "387298"|
+           tag == "305547"|
+           tag == "304306")
+  ) %>%
+  group_by(tag) %>%                     
+  group_by(date, pass, tag) %>%
+  summarise(lon = lon) %>%
+  ungroup()
+movement3$date_pass <- paste(movement3$date,"_",movement3$pass)           # Combine 'date' and 'pass' as "date_pass"
+movement3[,c("date","pass")] <- NULL                                      # Remove original separate 'date' and 'pass' columns
+movement_table3a <- movement3 %>% spread(date_pass, lon)                  # Change from 'long' to 'wide' format
+movement_table3c <- cbind.data.frame(tag = movement_table3a$tag, release = rowSums(movement_table3a[, c(2:3)], na.rm = TRUE)) # Combine 17 & 18 Jan columns as 'release' locations, because each fish only has 1 observation over these 2 days
+movement_table3d <- movement_table3a[,-c(2:3)]                            # Remove original columns for 17 & 18 Jan
+movement_table3d <- merge(movement_table3c, movement_table3d, by = "tag") # Merge new 'release' column into original df
+
+View(movement_table3d)   
+write.csv(movement_table3d, file = "Movement Table.csv")                  # Table gets saved in working directory
+
+# Add in test tags
+test_tags <- c("1 - 397179", "2 - 396966", "3 - 307031", "4 - 387298", "5 - 305547", "6 - 304306")
+# Or just add them into the df in excel
+
+
+#===== MOVEMENT MAP BY DAY & PASS ============
+
+habitat %>%
+  filter(date > "2018-01-18") %>%
+  filter(!(tag == "NONE")) %>%          # Remove habitat characterisation rows
+  filter(!(tag == "396941")) %>%        # Remove tags that are (suspected to be) lost/dead
+  group_by(tag) %>%                     
+  filter(n()>1) %>%                     # Remove fish with only 1 observation (ie. release location)
+  ungroup() %>%
+  group_by(tag, date) %>%
+  group_by(tag) %>%
+  mutate(movement = (lon - lag(lon))) %>%  # Calculate distance moved since last observation
+  ggplot(aes(x = pass, y = lon, colour = tag, group = tag))+
+  geom_hline(yintercept = c(0,35,85,130,180,200), alpha = 0.5)+ # These are the e-fisher runs where fish were caught & released
+  geom_point()+
+  geom_path()+
+  scale_y_continuous(breaks = seq(-20,200,10))+
+  labs(y = "Location within study area (Longitude [m])", x = "Pass", colour = "Tag #")+
+  facet_wrap(~date, nrow = 1)
+
+#===== Number of detections, per fish and overall ==========
+detections <- movement %>%
+  group_by(tag) %>%
+  summarise(detects = n()-1) %>%
+  group_by(detects) %>%
+  summarise(n = n())
+
+detections_plot <- movement %>%
+  filter(date > "2018-01-18") %>%
+  group_by(date) %>%
+  summarise(n = n()) %>%
+  ungroup()
+
+# Number of detections per sampling date (includes all passes)
+ggplot(detections_plot, aes(x = date, y = n))+
+  geom_col()
+  # fill = pass could be good in these plots
+
+  
+# Number of times each fish has been detected (only includes one count per date)
+movement %>%
+  group_by(date, tag) %>%
+  mutate(
+    lon = first(lon)
+  ) %>%
+  group_by(tag) %>%
+  summarise(
+    detects = n()-1
+    ) %>%
+  group_by(detects) %>%
+  summarise(
+    n = n()
+  ) %>%
+  ggplot(aes(detects, n))+
+  geom_col()+
+  scale_y_continuous(breaks = seq(0, 10, by = 1))+
+  scale_x_continuous(breaks = seq(0, 6, by = 1))
+
+detections_2 <- movement %>%
+    group_by(date, tag) %>%
+    mutate(
+      lon = first(lon)
+    ) %>%
+    group_by(tag) %>%
+    summarise(
+      detects = n()-1
+    ) %>%
+    group_by(detects) %>%
+    summarise(
+      n = n()
+    )
+
+detections_2 <- detections_2[order(desc(detections_2$detects)),]
+detections_2 <- detections_2 %>%
+  mutate(
+    cumulative_detects = cumsum(n)
+  ) %>%
+  mutate(
+    prop = round(cumulative_detects/38*100)
+  )
+
+# Add in a row for 0 detections
+detections_2$detects <- as.factor(detections_2$detects)                    # Make number of detects a factor, optherwise it's tricky to add zero in the mix
+
+zero <- data.frame(as.character("None"), NA, NA, NA)                       # Create a row for zero detects, in separate df
+names(zero) <- c("detects", "n", "cumulative_detects", "prop")             # Give the zero df the same names as detctions_2, so it can be rbinded (vertically merged)
+detections_2 <- rbind(detections_2, zero)                                  # Merge the zero df in
+
+only_one_detect <- detections_2[(nrow(detections_2)-1), "cumulative_detects"]  # Define the number of fish that have been detected only once
+zero_detects <- (33 - only_one_detect)[1,1]
+
+detections_2$detects <- as.character(detections_2$detects)
+
+
+detections_2 <- detections_2 %>%
+  mutate(
+    cumulative_detects = ifelse(detects == "None", zero_detects, cumulative_detects), 
+    detects = ifelse(detects == "None", 0, detects), 
+    prop = round(cumulative_detects/35*100)
+)
+
+detections_2 <- detections_2 %>%
+  mutate(
+    detects = ifelse(detects == "None", 0, detects)
+  )
+
+detections_2 %>%
+  ggplot(aes(detects, cumulative_detects, fill = factor(cumulative_detects)))+
+  geom_col(alpha = 0.75)+
+  scale_y_continuous(limits = c(0, 30))+
+  labs(
+    y = "Number of fish", 
+    x = "Number of detections"
+  )+
+  geom_text(aes(detects, cumulative_detects, label = paste(paste("n =", cumulative_detects, sep = " "), paste(prop, "%", sep = ""), sep = ", "), vjust = -1), size = 3)+
+  theme_classic()+
+  theme(legend.position = "none")
+
+
+#   22 fish have been re-detected (as of Feb survey)
+#     10 fish have been re-detected twice
+#     12 fish have been re-detected once
+#         9 of these were detected during the 'thorough' survey in FEB, so only 3 have dropped off the radar
+
+#===== Number of new detections each time =====
+
+new_detections <- movement %>%
+  filter(date > "2018-01-18") %>%
+  group_by(tag) %>%
+  summarise(
+    first = first(date)
+  ) %>%
+  group_by(first) %>%
+  summarise(
+    new = n()
+  ) %>%
+  mutate(
+    cum = cumsum(new), 
+    sample_number = seq_along(first)
+  )
+new_detections
+
+new_detections %>%
+  ggplot(aes(first, cum, fill = factor(first)))+
+  geom_col()+
+  geom_line()
+
+new_detections %>%
+  ggplot(aes(sample_number, new))+
+  geom_col(aes(fill = factor(first)), show.legend = FALSE)+
+  geom_smooth(method = "lm", se = F)+
+  scale_y_continuous(breaks = seq(0, 12, by = 1))+
+  theme_classic()+
+  labs(
+    x = "Sample Number", 
+    y = "Number of new fish detected"
+  )
+
+# New observations as a function of sample number - negative linear relationship
+m1 <- lm(new ~ sample_number, new_detections)
+summary(m1)
+# r2 = 0.92/0.90
+
+
+#===== Number of detections ~ water temp =====
+
+det <- movement %>%
+  filter(date > "2018-01-18") %>%
+  group_by(date) %>%
+  summarise(n = n()) %>%
+  ungroup()
+
+det %>%
+  ggplot(aes(date, n))+
+  geom_point(aes(colour = factor(date)), show.legend = FALSE)+
+  geom_line()
+
+#===== Water temp data ==============
+
+# ALL THIS CODE COPIED FROM SEPARATE R PROJECT & SCRIPTS CALLED "temp_data.Rproj" & "tantangara.Rscript"
+
+
+# IMPORT & TIDY DATA
+
+library(readxl)
+library(lubridate)
+
+tantangara <- readxl::read_excel("//stafffiles.win.canberra.edu.au/Homes$/s435269/Windows Profile/Desktop/Temp Loggers - Tantangara & Jibolaro/tantangara_ck.xlsx")
+tantangara$datetime <- ymd_hms(tantangara$datetime)                 # Convert to datetime format
+tantangara <- tantangara %>% 
+  mutate(date = format(tantangara$datetime, format = "%Y-%m-%d"))   # Create separate date column
+tantangara$date <- ymd(tantangara$date)                             # Put it in the right format
+tantangara <- tantangara[order(tantangara$date),]                   # Reorder df by date
+tantangara$site <- tantangara$`logger site`                         # New column "site"
+tantangara$`logger site` <- NULL                                    # Remove old "logger site" column - this is the long way of changing the name of the column
+tantangara$temp <- as.numeric(tantangara$temp)                      # Make sure temp is in the right 'numeric' format
+
+# First summary df
+tan_sum <- tantangara %>%                           
+  mutate(date = format(datetime, format = "%Y-%m-%d")) %>%        # Date
+  group_by(date, site) %>%                                        # Retain unique values for each site
+  summarise(
+    min = min(temp),                                              # Min, mean and max temps
+    mean = mean(temp), 
+    max = max(temp)
+  ) %>%
+  filter(date > "2016-11-26") %>%                                 # Remove data from the days it wasn't in the creek or wasn't recording correctly
+  filter(!(date >= "2017-10-10" &
+             date <= "2017-10-21")) %>%
+  ungroup %>%
+  mutate(
+    date = ymd(date)
+  )
+
+# Second summary df (long format)
+tan_sum_long <- gather(tan_sum, temp, value, min:max) %>%
+  group_by(date, value, site, temp) %>%
+  summarise(
+    tempvalue = first(value)
+  ) %>%
+  mutate(
+    period = ifelse(date < "2017-10-01", "1", '2')
+  )
+
+#--------------------- 
+
+tan_sum %>%
+  filter(site == "upstream") %>%
+  ggplot(aes(date, mean))+
+  geom_path()
+
+ggplot()+
+  geom_col(data = det, aes(date, n), fill = "purple", alpha = 0.5)+
+  geom_line(data = subset(tan_sum, date > "2018-01-18" & site == "upstream"), aes(date, mean), colour = "red")
+
+# Other things to plot on this model:
+#     rainfall (possibly including a rainfall lag or something)
+#     water velocity (mean velocity collected during habitat characterisation)
+#     water depth (mean depth collected during habitat characterisation)
+#     start time (ie time of day) survey done
+#     duration of survey (probably correlated because finding fish means you drop the markers and fuck around a bit more, so this probably won't be predictive)
+#     efficiency of dummy detection
+# ??? abundance of certain substrates or cover items as collected during habitat surveys
+
+# linear mixed effects model including the above factors
+
+
+
+#===== MOVEMENT HISTOGRAM ======
+
+# Histogram
+ggplot(movement, aes(x = movement)) +
+  geom_histogram(binwidth = 1)+
+  scale_x_continuous(breaks = seq(-200,200,10))+
+  labs(y = "Number of Movements", x = "Distance Moved (m)")+
+  geom_vline(xintercept = 0)
+
+
+#===== MOVEMENT DENSITY (two tailed) ======
+
+# Density Plot (Good)
+ggplot(movement, aes(movement))+                     
+  geom_density(bw = 5)+                              # bw = bandwidth (degree of smoothing, chosen manually based on getting rid of bumps, but not widening the peak out too much)
+  labs(y = "Density", x = "Distance Moved (m)")+
+  theme_classic()
+
+
+# Now this density plot only includes the second observations (excluding the movement of fish from release location to first fix)
+movement %>%
+  gather(key, value, "movement":"second") %>%
+  ggplot(aes(value, colour = key))+
+  geom_density(bw = 5)
+# As I suspected - this removes some of the larger movement, and appears to restrict the home range more
+# Will have to consider the decrease in n(fixes) by doing this exclusion of first fixes
+  
+
+
+
+# Example found on stackoverflow;
+
+movement$movement <- as.numeric(as.character(movement$movement))   # Make movement column numeric
+dens <- density(movement$movement, bw = 5, na.rm = TRUE)           # Define the data in a density way, bw = bandwidth (smoothing), remove NAs
+plot(dens)
+
+q1  <- quantile(movement$movement, .01, na.rm = TRUE)
+q5  <- quantile(movement$movement, .05, na.rm = TRUE)
+q25 <- quantile(movement$movement, .25, na.rm = TRUE)
+q50 <- quantile(movement$movement, .50, na.rm = TRUE)
+q75 <- quantile(movement$movement, .75, na.rm = TRUE)              # Calculate 75th percentile
+q95 <- quantile(movement$movement, .95, na.rm = TRUE)              # Calculate 95th percentile
+q99  <- quantile(movement$movement, .99, na.rm = TRUE)
+
+quantiles <- as.numeric(round(c(q1, q5, q25, q50, q75, q95, q99)))
+
+dd <- with(dens, data.frame(x,y))
+qplot(x, y, data = dd, geom = "line")+
+  geom_ribbon(data = subset(dd, x > q75 & x < q95), aes(ymax = y), ymin = 0, fill = "red", colour = NA, alpha = 0.5)
+
+
+# BEYOND THE EXAMPLE;
+
+# geom_ribbon does the job, have to specify the bounds of the ribbon
+ggplot(dd, aes(x, y))+                 # geom_line plots it nicely, bw is predefined way back in 'dens'
+  geom_line()+
+  theme_classic()+
+  geom_ribbon(data = subset(dd, x < q1), aes(ymax = y), ymin = 0, fill = "red")+
+  geom_ribbon(data = subset(dd, x > q1 & x < q5), aes(ymax = y), ymin = 0, fill = "orange")+
+  geom_ribbon(data = subset(dd, x > q5 & x < q25), aes(ymax = y), ymin = 0, fill = "green")+
+  geom_ribbon(data = subset(dd, x > q25 & x < q50), aes(ymax = y), ymin = 0, fill = "blue")+
+  geom_ribbon(data = subset(dd, x > q50 & x < q75), aes(ymax = y), ymin = 0, fill = "blue")+
+  geom_ribbon(data = subset(dd, x > q75 & x < q95), aes(ymax = y), ymin = 0, fill = "green")+
+  geom_ribbon(data = subset(dd, x > q95 & x < q99), aes(ymax = y), ymin = 0, fill = "orange")+
+  geom_ribbon(data = subset(dd, x > q99), aes(ymax = y), ymin = 0, fill = "red")
+
+# "Hot" colours
+d <- RColorBrewer::brewer.pal(n = 8, "YlOrRd")[4:7]  # Define the colours you want (from scale_colour_brewer)
+
+ggplot(dd, aes(x, y))+                                             # geom_line plots it nicely, bw is predefined way back in 'dens'
+  geom_line(colour = "white", show.legend = FALSE)+
+  theme_classic()+
+  geom_ribbon(data = subset(dd, x <= q1), aes(ymax = y, linetype = NA), ymin = 0, fill = d[1])+
+  geom_ribbon(data = subset(dd, x > q1 & x <= q5), aes(ymax = y, linetype = NA), ymin = 0, fill = d[2])+
+  geom_ribbon(data = subset(dd, x > q5 & x <= q25), aes(ymax = y, linetype = NA), ymin = 0, fill = d[3])+
+  geom_ribbon(data = subset(dd, x > q25 & x <= q75), aes(ymax = y, linetype = NA), ymin = 0, fill = d[4])+
+  geom_ribbon(data = subset(dd, x > q75 & x <= q95), aes(ymax = y, linetype = NA), ymin = 0, fill = d[3])+
+  geom_ribbon(data = subset(dd, x > q95 & x <= q99), aes(ymax = y, linetype = NA), ymin = 0, fill = d[2])+
+  geom_ribbon(data = subset(dd, x > q99), aes(ymax = y, linetype = NA), ymin = 0, fill = d[1])+
+  scale_y_continuous(labels = NULL, name = "Density")+
+  scale_x_continuous(breaks = c(quantiles), name = "Movement Distance (m)")+
+  theme(
+    axis.ticks.y = element_blank()
+  )
+
+
+# Adding dashed lines for the quantiles, rather than colours
+
+# Need to create a df using 'quantiles' as a column, and interpolate using 'dd' df to get the density estiamtions for those values of x
+# Then, geom_linerange() with values from quantiles as the lines, dashed preferably
+
+
+# Quantiles df returns the percentiles of distances moved, for determining home range based on percentiles
+
+# Surely this could be functionalised
+q0.5  <- quantile(movement$movement, .005, na.rm = TRUE)
+q1  <- quantile(movement$movement, .01, na.rm = TRUE)
+q2.5  <- quantile(movement$movement, .025, na.rm = TRUE)
+q5  <- quantile(movement$movement, .05, na.rm = TRUE)
+q12.5 <- quantile(movement$movement, 0.125, na.rm = TRUE)
+q25 <- quantile(movement$movement, .25, na.rm = TRUE)
+q50 <- quantile(movement$movement, .50, na.rm = TRUE)
+q75 <- quantile(movement$movement, .75, na.rm = TRUE) 
+q87.5 <- quantile(movement$movement, .875, na.rm = TRUE) 
+q95 <- quantile(movement$movement, .95, na.rm = TRUE)
+q97.5  <- quantile(movement$movement, .975, na.rm = TRUE)
+q99  <- quantile(movement$movement, .99, na.rm = TRUE)
+q99.5  <- quantile(movement$movement, .995, na.rm = TRUE)
+
+quantiles <- as.numeric(round(c(q0.5, q1, q2.5, q5, q12.5, q25, q50, q75, q87.5, q95, q97.5, q99, q99.5)))
+
+quantile_function <- approxfun(dd$x, dd$y)  # Use approxfun to interpolate the value of y (density) for each of the quantiles, for use in drawing vertical lines on the plot
+
+quantiles_df <- data.frame(quantile = c(0.5, 1, 2.5, 5, 12.5, 25, 50, 75, 87.5, 95, 97.5, 99, 99.5),
+                        x = quantiles) %>%
+  mutate(
+    y = quantile_function(x)
+    )
+colnames(quantiles_df)[1] <- "percentile"
+
+quantiles_df
+
+
+
+
+
+# Now the same quantiles data, but on the restricted data
+
+movement$second <- as.numeric(as.character(movement$second))       # Make second movement column numeric
+dens_second <- density(movement$second, bw = 5, na.rm = TRUE)           # Define the data in a density way, bw = bandwidth (smoothing), remove NAs
+plot(dens_second)
+
+dd_second <- with(dens_second, data.frame(x,y))
+quantiles_function_second = approxfun(dd_second$x, dd_second$y)
+
+quantiles_df_second <- data.frame(percentile = c(0.5, 1, 2.5, 5, 12.5, 25, 50, 75, 87.5, 95, 97.5, 99, 99.5)) %>%
+  mutate(
+    x_second = round(as.numeric(quantile(movement$second, percentile/100, na.rm = TRUE))),
+    y_second = quantiles_function_second(x_second)
+  )
+
+
+# So now we have the densities at the percentiles
+
+# Merge with the original quantiles df which includes first movement observation
+
+quantiles_both <- merge(quantiles_df, quantiles_df_second, by = "percentile")
+quantiles_both
+# So, looking at the numbers, the 'second' df has a tighter home range
+
+quantiles_df_second_labels <- quantiles_df_second %>%
+  filter(
+      percentile == 25|
+      percentile == 75|
+      percentile == 5|
+      percentile == 95|
+      percentile == 1|
+      percentile == 99
+  )
+
+ggplot(dd_second, aes(x, y))+
+  geom_line()+
+  theme_classic()+
+  scale_x_continuous(breaks = c(quantiles_df_second_labels$x_second))
+
+quantiles_df_second
+
+# In 50% of fixes, fish had moved 4 m or less
+# 75% = 15m
+# 90% = 47m
+# 99% = 170m
+
+
+
+
+
+
+
+
+
+
+
+
+#
+
+density_plot <- ggplot(dd, aes(x, y))+
+  geom_line()+
+  theme_classic()+
+  theme(
+    axis.ticks.y = element_blank(), 
+    axis.text.y = element_blank()
+    )+
+  labs(
+    y = "Density", 
+    x = "Movement Distance (m)"
+    )+
+  scale_x_continuous(breaks = seq(-200, 60, by = 20))
+density_plot
+
+
+  + geom_linerange(data = quantiles_df, aes(x, ymax = y, ymin = 0), linetype = "dashed")
+  + geom_text(data = quantiles_df, aes(x = x, y = 0, label = quantile))+
+  + ggrepel::geom_label_repel(data = quantiles_df, aes(x = x, y = 0, label =))
+
+
+
+
+
+
+
+# geom_area is a special form of geom_ribbon where ymin is fixed at 0, hence a tidier code
+ggplot(dd, aes(x, y))+                 
+  geom_line()+
+  geom_area(data = subset(dd, x > q75 & x < q95), aes(y = y), fill = "red", colour = NA, alpha = 0.5)+
+  theme_classic()
+
+
+qplot(x, y, data = dd, geom = "line")  # looks identical to geom_line
+
+
+ggplot(dd, aes(x, y))+
+  geom_line(aes(colour = ..y..), size = 2)   # Gradient of colour on the geom_line
+
+
+
+
+
+# geom_freqpoly(binwidth = 1, aes(colour = factor(date)))    
+# Use colour & facetting to show shift in movement patterns over time perhaps?
+
+#   POSSIBLY EXCLUDE THE RELEASE LOCATION AS A POSITION, AS IT WAS HUMAN-INFLUENCED. FISH MAY HAVE MOVED BACK 'HOME' IN THE FIRST WEEK, RATHER THAN NORMAL MOVEMENT
+
+#   2 OPTIONS FOR MOVEMENT:
+#       1. AS A PRODUCT OF ORIGINAL RELEASE LOCATION (USED IN ALL BATCH-MARKING STUDIES)
+#             - LOOK FOR FISH 'RETURNING HOME' AFTER E-FISHING, ie. LARGE INITIAL MOVEMENT FROM RELEASE LOCATION TO 'HOME'
+#               FOLLOWED BY SMALL MOVEMENTS AROUND 'HOME'
+#       2. AS A PRODUCT OF PREVIOUS KNOWN POSITION (ONLY POSSIBLE FOR UNIQUELY MARKED FISH, EG. THIS STUDY)
+
+movement %>% 
+  filter(date >= "2018-02-17") %>%
+  ggplot(aes(x = movement))+
+  geom_freqpoly(binwidth = 10)+
+  scale_x_continuous(breaks = seq(-200,100,10))+
+  facet_wrap(~date)                                 # Is there a correlation b/w date and d/s movement? ie. has some event pushed fish downstream maybe??
+
+movement %>% 
+  filter(date > "2018-01-18") %>%
+  ggplot(aes(movement, colour = factor(date), group = factor(date)))+
+  geom_density(bw = 5)+
+  scale_x_continuous(breaks = seq(-200,100,10))+
+  facet_wrap(~date, ncol = 1)
+  
+  # Is there a correlation b/w date and d/s movement? ie. has some event pushed fish downstream maybe??
+
+
+#===== Single tail density plot =====
+# Could be good to show how far fish can move, ragardless of direction
+# Unless we reckon they're more likely to move one way or another (density plot may indicate so...)
+plot 
+
+
+
+#===== MOVEMENT BOXPLOTS =====
+
+movement %>%
+  filter(date > "2018-01-18") %>%
+  ggplot(aes(factor(date), movement, group = date))+
+  geom_boxplot()
+
+movement %>%
+  ggplot(aes(date, movement))+
+  geom_boxplot()+
+  coord_flip()
+
+
+#===== Greatest distances moved by fish ##############
+movement <- movement %>%
+  mutate(
+    dist_moved = movement
+  )
+movement_ordered <- movement[order(movement$dist_moved),]
+# View(movement_ordered)
+# Biggest move was -173 m,  by fish 306236
+movement %>%
+  filter(
+    tag == "306236"
+  )
+# The fish moved downstream 173 m, and then moved upstream 0 & 5 m 
+# so probably isn't dead fish or tag drift
+#===== HOME RANGE =====
+# Plot homerange as a function of each percentile determinant.
+# also compare a plot of a subset of data when the largest movement (-173) is excluded from percentile calculations
+
+
+################################################################
