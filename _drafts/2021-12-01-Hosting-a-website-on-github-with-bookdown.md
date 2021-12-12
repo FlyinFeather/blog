@@ -1,6 +1,6 @@
 ---
-published: true
 title: Github hosting
+published: true
 ---
 
 Many of the challenges and blog posts I submitt here are based on using RMarkdown and other packages to render both documents such as pdf and word documents to ... This blog deals with a very small aspect of hrml documents that turns out to be the fundemental rules of internet web pages and the web more generally. The following headings represent the key aspects of this use. Followed by a simple step by step guide and a bunch of resources for other support and approaches to hosting web pages for all to find. If you mean you would like to use GitHub pages to publish or deploy your `bookdown` project and:
