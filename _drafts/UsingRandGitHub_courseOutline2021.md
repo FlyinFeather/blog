@@ -1,17 +1,17 @@
 ---
-title: Using R and GitHub: reproducibility in research
+lastmod: '2021-12-20T22:48:10.33
 ---
 # Using R and GitHub: reproducibility in research
 
 [UoC.Git.2018-11-27](https://afilazzola.github.io/UoC.GithubWorkshop.2018/index.html)
 
-*   [info](https://afilazzola.github.io/UoC.GithubWorkshop.2018/index.html)
-*   [Github](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Github/Github.html)
-*   [Rstudio](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Git.rstudio/Git.rstudio.html)
-*   [Reports](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Reports/Reports.html)
-*   [Websites](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Website/website.html)
+* [info](https://afilazzola.github.io/UoC.GithubWorkshop.2018/index.html)
+* [Github](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Github/Github.html)
+* [Rstudio](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Git.rstudio/Git.rstudio.html)
+* [Reports](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Reports/Reports.html)
+* [Websites](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Website/website.html)
 
-#### _Dec 10, 2021_
+_Dec 10, 2021_
 
 <img width="500" height="281" src="../../_resources/950e3d9294964d51a3a33e1a6b053a45.jpg"/>
 
@@ -64,7 +64,6 @@ Information on how to install Git for each OS is provided by [Software Carpentry
 
 [R](http://www.r-project.org/) is a programming language that is especially powerful for data exploration, visualization, and statistical analysis. To interact with R, we use [RStudio](http://www.rstudio.com/).
 
-  
 | Windows | Mac OS X | Linux |
 | --- | --- | --- |
 | Install R by downloading and running [this .exe](http://cran.r-project.org/bin/windows/base/release.htm) file from [CRAN](http://cran.r-project.org/index.html). Please also install the [RStudio IDE](http://www.rstudio.com/ide/download/desktop). | Install R by downloading and running [this .pkg](http://cran.r-project.org/bin/macosx/R-latest.pkg) file from [CRAN](http://cran.r-project.org/index.html). Please also install the [RStudio IDE](http://www.rstudio.com/ide/download/desktop). | You can download the binary files for your distribution from [CRAN](http://cran.r-project.org/index.html). Please also install the [RStudio IDE](http://www.rstudio.com/ide/download/desktop) |

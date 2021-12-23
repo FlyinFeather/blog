@@ -1,11 +1,18 @@
 ---
 layout: post
-title: "Jekyll in RStudio"
-subtitle: "A collection of resources for blogging in RStudio using Jekyll"
+title: Jekyll in RStudio
+subtitle: A collection of resources for blogging in RStudio using Jekyll
 image: /img/tools.jpg
 bigimg: /img/RStudio-jekyll-serious-win.PNG
-tags: ["compile", "r", "rmd", "RStudio", "tools", "general"]
+tags:
+    - compile
+    - r
+    - rmd
+    - RStudio
+    - tools
+    - general
 permalink: /rmd-to-jekyll.html
+lastmod: '2021-12-20T22:26:03.546Z'
 ---
 
 As with all github projects there always seems to be someone else who has managed to explain and write a blog about what you need, just when you need it... I wish :)
