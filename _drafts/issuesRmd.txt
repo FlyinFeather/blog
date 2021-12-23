@@ -1,3 +1,0 @@
-## My notes
-
-Please excuse any '404' errors as I am learning and working as I go. Using version control and git means that I am able to use other coders templates and test things out before committing.

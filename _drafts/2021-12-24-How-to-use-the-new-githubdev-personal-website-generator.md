@@ -1,4 +1,10 @@
-How to use the new github.dev personal website generator
+---
+title: Using the github website generator within RMarkdown
+---
+
+This is an idea I have just recently had to combine some of the RMarkdown code to take advantage of the approach used here for R users working on opensource development packages (rather than full software development).
+
+# How to use the new `github.dev` personal website generator
 
 <img width="669" height="297" src="../_resources/47d36615807441728dd594e60762c875.png"/>  
 
