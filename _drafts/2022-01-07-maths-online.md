@@ -9,8 +9,7 @@ As the development of interactive web apps has become more common there are have
 
 - Demso webapp [here](https://www.desmos.com/)
 	- API help guide [here](https://www.desmos.com/api/v1.6/docs/index.html)
-
-- mathology apps
+- Geoebra: [https://www.geogebra.org/m/mPwa7SKk](https://www.geogebra.org/m/mPwa7SKk)
 - Standford apps
 - more coming soon
 
@@ -18,5 +17,5 @@ As the development of interactive web apps has become more common there are have
 
 Here are some good content about simple maths topics that I have used to develop my understanding of core mathmatics.
 
-- onebluethree...]
+- onebluethree: 
 - mathologer
