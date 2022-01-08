@@ -1,8 +1,13 @@
 ---
-title: PhD thesis
+title: A PhD concept
+published: true
+subtitle: An application of RMarkdown
 ---
+A website of PhD work and statistics applications: https://davan690.github.io
 
-davan690/davan690.github.io: A website of PhD work and statistics application
+At the very beginning of my PhD I had the vision of creating a running blog that contained a dayly writing task or two. I saw this as an easy way to extend the value of a PhD and increase the readership and other communication aspects of my research.
+
+At the time (2016) it was not easily possible to access the resources and other information to undertake such tasks. Now it is possible using the tools included in RStudio and the associated R packages. This content is part of this development process of my current research.
 
 [Skip to content](#start-of-content)
 
@@ -14,7 +19,7 @@ davan690/davan690.github.io: A website of PhD work and statistics application
 
 [Explore](https://github.com/explore)
 
-<img width="20" height="20" src="../../_resources/9c73b0abbcd747e3a7eda5fc4d05d322.jpg"/>
+<img width="20" height="20" src="assets/imgs/9c73b0abbcd747e3a7eda5fc4d05d322.jpg"/>
 
 *   Watch [0](https://github.com/davan690/davan690.github.io/watchers)
     
