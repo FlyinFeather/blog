@@ -49,7 +49,7 @@ write to `/docs/CNAME`.
 
 3.  Under your repository name, click **Settings**.
 
-    <img width="521" height="57" src="../_resources/43eb79b43f96494ea83f5033d25a2861.png"/>
+    <img width="521" height="57" src="_resources/43eb79b43f96494ea83f5033d25a2861.png"/>
 
 4.  Use the Select source drop-down menu to select **master branch /docs
     folder** as your GitHub Pages publishing source.
@@ -62,7 +62,7 @@ write to `/docs/CNAME`.
 
 5.  Click **Save**.
 
-    <img width="521" height="164" src="../_resources/99d712290b714de4bae771a8da939118.png"/>
+    <img width="521" height="164" src="_resources/99d712290b714de4bae771a8da939118.png"/>
 
 ### [Further Reading](#further-reading)
 
