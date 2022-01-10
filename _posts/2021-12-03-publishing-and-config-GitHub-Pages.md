@@ -71,4 +71,4 @@ write to `/docs/CNAME`.
 
 #  DISCUSSION
 
-<iframe src="https://discord.com/widget?id=925234894064476181&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<iframe src="https://discord.com/widget?id=921966599181856818&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
