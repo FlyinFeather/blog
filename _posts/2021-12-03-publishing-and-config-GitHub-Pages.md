@@ -1,9 +1,8 @@
 ---
+title: "`github` pages setup 2021"
 lastmod: '2021-12-10T03:38:55.915Z'
 published: true
 ---
-`github` pages setup 2021
-================
 
 # Configuring a publishing source for GitHub Pages
 
