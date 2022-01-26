@@ -1,10 +1,10 @@
 ---
-title: "`github` pages setup 2021"
+title: '`github` pages setup 2021'
 lastmod: '2021-12-10T03:38:55.915Z'
 published: true
 ---
 
-# Configuring a publishing source for GitHub Pages
+# Publishing on GitHub using `github pages`
 
 GitHub Pages is available in public repositories with GitHub Free, and
 in public and private repositories with GitHub Pro, GitHub Team, GitHub
