@@ -1,17 +1,21 @@
 ---
-lastmod: '2021-12-20T22:48:10.33
+lastmod: '2021-12-20'
 ---
 # Using R and GitHub: reproducibility in research
 
 [UoC.Git.2018-11-27](https://afilazzola.github.io/UoC.GithubWorkshop.2018/index.html)
 
 * [info](https://afilazzola.github.io/UoC.GithubWorkshop.2018/index.html)
+
 * [Github](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Github/Github.html)
+
 * [Rstudio](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Git.rstudio/Git.rstudio.html)
+
 * [Reports](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Reports/Reports.html)
+
 * [Websites](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Website/website.html)
 
-_Dec 10, 2021_
+'Dec 10, 2021'
 
 <img width="500" height="281" src="../../_resources/950e3d9294964d51a3a33e1a6b053a45.jpg"/>
 

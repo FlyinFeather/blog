@@ -2,7 +2,8 @@
 layout: post
 title:  "Algebra Defenitions and When to Use Them"
 date:   2019-09-17 15:00:56 +1000
-categories: jekyll update
+publish: true
+keywords: ["Math", "Basic", "Foundation"]
 ---
 
 

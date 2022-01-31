@@ -17,7 +17,7 @@ As the development of interactive web apps has become more common there are have
 
 Here are some good content about simple maths topics that I have used to develop my understanding of core mathmatics.
 
-- onebluethree: 
+- onebluethree [website]
 - mathologer
 
 ## Flip cards and other learning tools
