@@ -38,7 +38,7 @@ library(tidyverse)
 library(ggplot2)
 ```
 
-```{r kmz-kml}
+```{r kmzKml}
 
 nc <- st_read(system.file("shape/nc.shp", package="sf"), quiet = TRUE)
 # limit to first 2 counties
