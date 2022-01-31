@@ -24,7 +24,7 @@ Follow these steps:
 
 1. Download data
 
-![1563249969502](./assets/img/kml-mymaps-download.png)
+![Download data from google mymaps](./assets/img/kml-mymaps-download.png)
 
 1. Add `.zip` to `.kml` file
 2. Unzip renamed file (as per normal in windows)
@@ -39,7 +39,6 @@ library(ggplot2)
 ```
 
 ```{r kmzKml}
-
 nc <- st_read(system.file("shape/nc.shp", package="sf"), quiet = TRUE)
 # limit to first 2 counties
 nc <- nc[1:2,]
