@@ -24,7 +24,7 @@ Follow these steps:
 
 1. Download data
 
-![1563249969502](./img/kml-mymaps-download.png)
+![1563249969502](./assets/img/kml-mymaps-download.png)
 
 1. Add `.zip` to `.kml` file
 2. Unzip renamed file (as per normal in windows)
