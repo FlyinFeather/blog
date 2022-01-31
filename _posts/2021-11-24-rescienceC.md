@@ -9,7 +9,7 @@ published: true
 
 ReScienceC is a open source journal hosted and curated entirely on github. This journal has been active for over three years and is a interesting concept were computational reproducibility is reached and documented in a totally transparent and reproducible manner.
 
-![image-20211123114716568](assets/img/ReScienceScreenshot1.png)
+![Landing page for Reproducible Scientific Journal](/assets/img/ReScienceScreenshot1.png)
 
 ## Article submission process
 

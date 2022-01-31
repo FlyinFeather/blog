@@ -28,11 +28,9 @@ Currently I am working in a dynamic `HTML5` template and rendering different asp
 
 ### Logos and avatars
 
-I thought hard and logo about generating logos and other image content in R using packages like ImageMagic and others.
+I thought hard and long about generating logos and other image content in R using packages like ImageMagic and others. Indeed I have opted for using a simple online editor to layout images and setting up content sizing etc for printing. For business cards and other image content it works well enough...
 
-Indeed I have opted for using a simple online editor to layout images and setting up content sizing etc for printing.
-
-![image-20211120093739791](/assets/img/image-20211120093739791.png)
+![Arjacent Projects business card demo](assets/img/arjacentprojectsCard.png)
 
 ## Glossary of terms
 
