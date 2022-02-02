@@ -1,0 +1,68 @@
+---
+title: "Overview"
+output: rmarkdown::html_document: 
+		default
+---
+
+## Key `yml` content
+
+
+
+
+```
+subtitle: "placeholder"
+# imagehead1: "placeholder"
+# image1test: "placeholder"
+# thumbs1test: "placeholder"
+# imagehead2: "placeholder"
+# image2test: "placeholder"
+# thumbs2test: "placeholder"
+# imagehead3: "Surfing"
+# image3test: "placeholder"
+# thumbs3test: "placeholder"
+# imagehead4: "placeholder"
+# image4test: "placeholder"
+# thumbs4test: "placeholder"
+output: bookdown::gitbook
+site: bookdown::bookdown_site
+```
+
+
+
+```{r message = FALSE, warning = FALSE, echo = FALSE}
+library(knitr)
+knitr::opts_chunk$set(message = FALSE,   #code messages suppressed
+                      warning = FALSE,   #warning messages suppressed
+                      echo = FALSE,   #no code meta-information given
+                      cache = FALSE) #nothing will change if this is left constant
+```
+
+# {#conts}
+
+
+```{r results = "asis"}
+library(tidyverse)
+library(here)
+
+# dat <- read_csv(here::here("data/projectSUMS.csv"))
+# 
+# dat1 <- dat %>%
+#           select(date,project_descript, Links) %>%
+#             transmute(Date = date,
+#                       Project = project_descript,
+#                       Links = Links)
+# 
+# options(knitr.kable.NA = "")
+# kableExtra::kable(dplyr::select(dat1, Project, Links))
+```
+
+### Footer
+
+```
+<!-- fa are fontawesome, ai are academicons -->
+<i class="fa fa-envelope"></i> <a href="mailto:anthony.davidson@canberra.edu.au">anthony.davidson@canberra.edu.au<br/>
+<i class="fa fa-github"></i> <a href="http://github.com/davan690">davan690</a><br/>
+<i class="fa fa-twitter"></i> <a href="http://twitter.com/antsstats">antsstats</a><br/>
+<i class="ai ai-orcid"></i> <a href="https://orcid.org/0000-0003-1476-3861">ORCiD</a>
+```
+
