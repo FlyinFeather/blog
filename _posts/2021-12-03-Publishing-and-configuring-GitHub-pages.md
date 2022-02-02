@@ -43,12 +43,12 @@ write to `/docs/CNAME`.
 
 3.  Under your repository name, click **Settings**.
 
-    <img width="521" height="57" src="_resources/43eb79b43f96494ea83f5033d25a2861.png"/>
+   <!-- <img width="521" height="57" src="_resources/43eb79b43f96494ea83f5033d25a2861.png"/> --> 
 
 4.  Use the Select source drop-down menu to select **master branch /docs
     folder** as your GitHub Pages publishing source.
 
-    ![select-master-branch-docs-folder-as-source](docs/assets/img/masterBranch.png)
+    ![select-master-branch-docs-folder-as-source](assets/img/masterBranch.png)
 
     **Tip:** The **master branch /docs folder** source setting will not
     appear as an option if the `/docs` folder doesn’t exist on the
@@ -56,13 +56,21 @@ write to `/docs/CNAME`.
 
 5.  Click **Save**.
 
-    <img width="521" height="164" src="assets/img/githubpagesSave.png"/>
+  <!-- <img width="521" height="164" src="assets/img/githubpagesSave.png"/> -->  
 
 ### [Further Reading](#further-reading)
 
 -   [Viewing branches in your
     repository](https://help.github.com/en/articles/viewing-branches-in-your-repository/)
 
+#### [GitHub]("https://github.com")
+
+*   [Contact GitHub](https://github.com/contact)
+*   [Pricing](https://github.com/pricing)
+*   [API](https://developer.github.com)
+*   [Training](https://training.github.com)
+*   [Blog](https://github.blog)
+*   [About](https://github.com/about)
 #  DISCUSSION
 
 <iframe src="https://discord.com/widget?id=921966599181856818&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
