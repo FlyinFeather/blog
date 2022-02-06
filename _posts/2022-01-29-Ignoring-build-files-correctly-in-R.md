@@ -1,3 +1,7 @@
+---
+tags: ["coding", "R", "github", "resources", "tools", "git"]
+---
+
 # ignoring defined build files
 
 There are different ways to ignore files depending on the workflow and software being used. When working in RStudio the two core ignore files are:
