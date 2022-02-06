@@ -22,7 +22,7 @@ For more information about the different types of GitHub Pages sites,
 see “[User, Organization, and Project
 Pages](https://help.github.com/en/articles/user-organization-and-project-pages).”
 
-## [Publishing your GitHub Pages site from a `/docs` folder on your `master` branch](#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch)
+## Publishing your GitHub Pages site from a `/docs` folder on your `master` branch
 
 To publish your site’s source files from a `/docs` folder on your `master` branch, you must have a `master` branch and your repository must:
 
@@ -48,7 +48,7 @@ write to `/docs/CNAME`.
 4.  Use the Select source drop-down menu to select **master branch /docs
     folder** as your GitHub Pages publishing source.
 
-    ![select-master-branch-docs-folder-as-source](assets/img/masterBranch.png)
+    ![select-master-branch-docs-folder-as-source](/assets/img/masterBranch.png)
 
     **Tip:** The **master branch /docs folder** source setting will not
     appear as an option if the `/docs` folder doesn’t exist on the
@@ -56,7 +56,7 @@ write to `/docs/CNAME`.
 
 5.  Click **Save**.
 
-  <!-- <img width="521" height="164" src="assets/img/githubpagesSave.png"/> -->  
+<img width="521" height="164" src="/assets/img/githubpagesSave.png"/>  
 
 ### [Further Reading](#further-reading)
 
