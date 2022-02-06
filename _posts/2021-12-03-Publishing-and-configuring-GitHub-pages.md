@@ -64,7 +64,7 @@ write to `/docs/CNAME`.
 
 -   [Viewing branches in your
     repository](https://help.github.com/en/articles/viewing-branches-in-your-repository/)
-
+- [https://www.codecademy.com/article/f1-u3-github-pages](https://www.codecademy.com/article/f1-u3-github-pages)
 #### [GitHub]("https://github.com")
 
 *   [Contact GitHub](https://github.com/contact)
@@ -73,6 +73,5 @@ write to `/docs/CNAME`.
 *   [Training](https://training.github.com)
 *   [Blog](https://github.blog)
 *   [About](https://github.com/about)
-#  DISCUSSION
 
-<iframe src="https://discord.com/widget?id=921966599181856818&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<!--<iframe src="https://discord.com/widget?id=921966599181856818&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>-->
