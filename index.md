@@ -1,4 +1,10 @@
 ---
+subtitle: Reproducible ecology
+css: "/css/index.css"
+meta-title: "Anthony Davidson"
+meta-description: "Population ecology and reproducibility"
+bigimg:
+  - "/img/van_life_sunset_v1.jpg" : "Victorica, Australia"
 layout: home
 title: Reproducible ecology
 subtitle: My personal blog
@@ -7,3 +13,4 @@ bigimg:
   - /assets/img/national-leaders-announce-pfnz2050.png: Press release (2016)
 published: true
 ---
+
