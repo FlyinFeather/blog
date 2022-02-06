@@ -7,10 +7,14 @@ published: true
 # Publishing on GitHub using `github pages`
 
 GitHub Pages is available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see “[GitHub’s
-products](https://help.github.com/articles/github-s-products).”
+products](https://help.github.com/articles/github-s-products)."
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/QyFcl_Fba-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You can configure GitHub Pages to publish your site’s source files from `master`, `gh-pages`, or a `/docs` folder on your `master` branch for
 Project Pages and other Pages sites that meet certain criteria.
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/alMTZlYdIl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 If your site is a User or Organization Page that has a repository named
 `<username>.github.io`or `<orgname>.github.io`, you cannot publish your
@@ -22,7 +26,7 @@ For more information about the different types of GitHub Pages sites,
 see “[User, Organization, and Project
 Pages](https://help.github.com/en/articles/user-organization-and-project-pages).”
 
-## Publishing your GitHub Pages site from a `/docs` folder on your `master` branch
+## `/docs` folder on your `master` branch
 
 To publish your site’s source files from a `/docs` folder on your `master` branch, you must have a `master` branch and your repository must:
 
