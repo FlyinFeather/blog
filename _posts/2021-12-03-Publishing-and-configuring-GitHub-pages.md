@@ -48,11 +48,9 @@ write to `/docs/CNAME`.
 4.  Use the Select source drop-down menu to select **master branch /docs
     folder** as your GitHub Pages publishing source.
 
-    ![select-master-branch-docs-folder-as-source](/assets/img/masterBranch.png)
+![select-master-branch-docs-folder-as-source](/assets/img/masterBranch.png)
 
-    **Tip:** The **master branch /docs folder** source setting will not
-    appear as an option if the `/docs` folder doesn’t exist on the
-    `master` branch.
+> **Tip:** The **master branch /docs folder** source setting will not appear as an option if the `/docs` folder doesn’t exist on the `master` branch.
 
 5.  Click **Save**.
 
