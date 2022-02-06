@@ -22,6 +22,10 @@ On top of this the code for accessing images and other content varies between pr
 - github hosting
 - git version control
 
+## For jekyll this works
+
+![Landing page for Reproducible Scientific Journal](/assets/img/ReScienceScreenshot1.png)
+
 ## Overview
 
 Currently I am working in a dynamic `HTML5` template and rendering different aspects of the original template into RMarkdown workflow for html_documents. As I have little background in such matters before now I have tried to work with existing packages and framework I manage to find in the open source community. I find it very challenging to frame up images for different blog posts, images and presentations without the following cheat guides and "work arounds".
@@ -30,7 +34,7 @@ Currently I am working in a dynamic `HTML5` template and rendering different asp
 
 I thought hard and long about generating logos and other image content in R using packages like ImageMagic and others. Indeed I have opted for using a simple online editor to layout images and setting up content sizing etc for printing. For business cards and other image content it works well enough...
 
-![Arjacent Projects business card demo](assets/img/arjacentprojectsCard.png)
+![Arjacent Projects business card demo](/assets/img/arjacentprojectsCard.png)
 
 ## Glossary of terms
 
