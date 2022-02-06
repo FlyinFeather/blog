@@ -1,5 +1,4 @@
 ---
-published: true
 title: Maths online
 subtitle: Interactive maps in the real world
 ---
