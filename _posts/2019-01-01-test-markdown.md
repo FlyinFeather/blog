@@ -11,7 +11,6 @@ tags:
   - tips
   - rmd
   - code
-  - R
   - reproducible
 ---
 

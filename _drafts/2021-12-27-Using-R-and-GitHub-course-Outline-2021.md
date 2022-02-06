@@ -74,6 +74,6 @@ Information on how to install Git for each OS is provided by [Software Carpentry
 
 ## Other workshops
 
-If you enjoyed this workshop and were interested in learning more, I also run a workshop on R-basics and Introduction to Generalized Linear Modelling (GLM) found [here](https://afilazzola.github.io/YorkU.GLM.2017-04-28/). I also have a short introduction on using [Functions in R](https://afilazzola.github.io/Functions.workshop.YorkU2017/).
+If you are interested in undertaking courses like this I am currently based in Australia and enjoy developing and working alongside njoyed this workshop and were interested in learning more, I also run a workshop on R-basics and Introduction to Generalized Linear Modelling (GLM) found [here](https://afilazzola.github.io/YorkU.GLM.2017-04-28/). I also have a short introduction on using [Functions in R](https://afilazzola.github.io/Functions.workshop.YorkU2017/).
 
 You can find similar style workshops, usually that are longer and go into more detail, with [Software Carpentry](https://software-carpentry.org/). They have teachers available globally and cover all forms of programming beyond R.
