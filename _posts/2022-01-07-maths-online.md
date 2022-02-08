@@ -28,4 +28,10 @@ Here are some good content about simple maths topics that I have used to develop
 
 ## Flip cards and other learning tools
 
-Another way I have found it possible to learn some of the more labourous facts of the world, such as the rules of trigonometry and calculus. I haven't found many free tools for this but there are plently of "trials" and other free aspects of many platforms. The one I have used the most for flipcards is called [https://quizlet.com/](https://quizlet.com/)
+Another way I have found it possible to learn some of the more labourous facts of the world, such as the rules of trigonometry and calculus. I haven't found many free tools for this but there are plently of "trials" and other free aspects of many platforms. The one I have used the most for flipcards is called [https://quizlet.com/](https://quizlet.com/).
+
+# Working with Wolframalpha api
+
+Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+
+<script src="https://gist.github.com/sebkopf/a8bf2033f3eda527fa61.js"></script>
