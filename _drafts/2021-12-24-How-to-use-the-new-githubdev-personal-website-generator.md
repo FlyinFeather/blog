@@ -6,7 +6,7 @@ This is an idea I have just recently had to combine some of the RMarkdown code t
 
 # How to use the new `github.dev` personal website generator
 
-<img width="669" height="297" src="../_resources/47d36615807441728dd594e60762c875.png"/>  
+<img width="669" height="297" src="assets/img/47d36615807441728dd594e60762c875.png"/>  
 
 **[github.dev](https://github.dev/)** is a new community project by GitHub that lives on the [.dev TLD](https://domains.google/tld/dev/). With it, you can fork, customize and deploy a personal site that shows your GitHub bio and contributions, powered by the [GitHub API](https://developer.github.com/v3/), [GitHub Pages](https://pages.github.com/), and [Jekyll](https://jekyllrb.com/).
 
@@ -16,7 +16,7 @@ Personally, I like this project because it gives developers an alternative way t
 
 If you already know how to fork a repo and use the command line, I can show you how to get your own github.dev instance up and running in about 10 minutes.
 
-![Ryan Gosling saying ok](../_resources/7ed79a9617554bf88b8e86e63e882cb9.webp)
+![Ryan Gosling saying ok](assets/img/7ed79a9617554bf88b8e86e63e882cb9.webp)
 
 ## Get started
 
@@ -73,7 +73,7 @@ No further customization is required (feel free to skip down to [#deployment](#d
 
 By default, github.dev assumes you are interested in CSS, Web Design, and Sass. But what if you prefer PostCSS or are not actually a devsigner? Don’t worry, it’s easy to change.
 
-![Red easy button](../_resources/70a61b9dfe354606b425bd7162a9521f.gif)
+![Red easy button](assets/img/70a61b9dfe354606b425bd7162a9521f.gif)
 
 Open up `_config.yml` with your favorite text editor and find the `topics` section. Make changes to the YAML to add, update and remove topics. Here’s how you would add the [awesome topic](https://github.com/topics/awesome) for example:
 
@@ -113,7 +113,7 @@ In `_config.yml`, you can set `style: dark`. This will make your visitors’ fac
 
 The [customization section](https://github.com/github/personal-website#customization) of the README contains several more ways to really make your site your own. You can even add a blog, too.
 
-![Cat carrying tiger stuffed animal](../_resources/d4d4e7b9934549aea44a89b9f292f64e.gif)
+![Cat carrying tiger stuffed animal](assets/img/d4d4e7b9934549aea44a89b9f292f64e.gif)
 
 ## Deployment
 
@@ -140,7 +140,7 @@ Wait a few minutes and your site should be live at `https://{username}.github.io
 
 You can confirm this in the environment tab on the GitHub repo:
 
-<img width="669" height="95" src="../_resources/ff625dd6ac80435f8a96d3c0f985eb63.png"/>
+<img width="669" height="95" src="assets/img/ff625dd6ac80435f8a96d3c0f985eb63.png"/>
 
 Troubleshooting: if for some reason the site doesn’t load after a few minutes, try the URL `https://{username}.github.io/index.html` instead. If that works, there may have been a caching issue, and you’ll just need to wait a bit before you can access the site without the `index.html`.
 

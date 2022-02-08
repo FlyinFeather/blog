@@ -17,7 +17,7 @@ lastmod: '2021-12-20'
 
 'Dec 10, 2021'
 
-<img width="500" height="281" src="../../_resources/950e3d9294964d51a3a33e1a6b053a45.jpg"/>
+<img width="500" height="281" src="../assets/img/950e3d9294964d51a3a33e1a6b053a45.jpg"/>
 
 | University of Cincinnati |     |
 | --- | --- |

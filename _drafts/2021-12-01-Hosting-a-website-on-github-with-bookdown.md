@@ -36,25 +36,25 @@ To do that:
 **Here's the thread for [The Development of Shiny - Part 1 of the Shiny Developer Series](https://community.rstudio.com/t/shiny-developer-series-episode-1-thrad/29491)** using [https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4)
 
 [Hosting bookdown in github](https://community.rstudio.com/t/hosting-bookdown-in-github/20427) uses [R Markdown](https://community.rstudio.com/c/R-Markdown), [bookdown](https://community.rstudio.com/tags/bookdown)
-[![](../_resources/ea7d867477480a2d151f9773fa860c9c.png)](https://community.rstudio.com/u/itsmecevi)
+[![](assets/img/ea7d867477480a2d151f9773fa860c9c.png)](https://community.rstudio.com/u/itsmecevi)
 [itsmecevi](https://community.rstudio.com/u/itsmecevi)
 [2018-12-24](https://community.rstudio.com/t/hosting-bookdown-in-github/20427)
 
 
 
-[![2018-12-24: "Anybody knows how to publish my bookdown into github? ... Thx"](../_resources/ae8d5a4ab9a965b2480698d1f5d0a63b.png)]()Jan 30](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/8)
+[![2018-12-24: "Anybody knows how to publish my bookdown into github? ... Thx"](assets/img/ae8d5a4ab9a965b2480698d1f5d0a63b.png)]()Jan 30](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/8)
 
 Read all about it in [Publishing Bookdown to github 64](https://bookdown.org/yihui/bookdown/github.html) by [@yihui](https://community.rstudio.com/u/yihui)
 
-[![](../_resources/6afc363c273f9b73ebbda69860cb813b.png)3]()
-[![](../_resources/252dc519c347cf5d4f023bf392af4a92.png)]()
-[![](../_resources/05382c6af4ec45d64d8fc8c58c04894d.png)]()
+[![](assets/img/6afc363c273f9b73ebbda69860cb813b.png)3]()
+[![](assets/img/252dc519c347cf5d4f023bf392af4a92.png)]()
+[![](assets/img/05382c6af4ec45d64d8fc8c58c04894d.png)]()
 [(L)](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4)
-[![](../_resources/ef3eb4c46b02f3022d0cdd68bbaf37cb.png)](https://community.rstudio.com/u/technocrat)
+[![](assets/img/ef3eb4c46b02f3022d0cdd68bbaf37cb.png)](https://community.rstudio.com/u/technocrat)
 [technocrat](https://community.rstudio.com/u/technocrat)
 [2018-12-24](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/2)
 [(L)](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4)
-[![](../_resources/ea7d867477480a2d151f9773fa860c9c.png)](https://community.rstudio.com/u/itsmecevi)
+[![](assets/img/ea7d867477480a2d151f9773fa860c9c.png)](https://community.rstudio.com/u/itsmecevi)
 [itsmecevi](https://community.rstudio.com/u/itsmecevi)
 [2018-12-24](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/3)
 
@@ -63,7 +63,7 @@ Read all about it in [Publishing Bookdown to github 64](https://bookdown.org/yih
 Thank you. The link is a little bit confusing for me (a lot of technical terms). Do you have some of video or another simple tutorial [@technocrat](https://community.rstudio.com/u/technocrat)
 
 [(L)](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4)
-[![](../_resources/ef3eb4c46b02f3022d0cdd68bbaf37cb.png)](https://community.rstudio.com/u/technocrat)
+[![](assets/img/ef3eb4c46b02f3022d0cdd68bbaf37cb.png)](https://community.rstudio.com/u/technocrat)
 [technocrat](https://community.rstudio.com/u/technocrat)
 [2018-12-24](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4)
 [rachaellappan.github.io 19](https://rachaellappan.github.io/bookdown/)
@@ -79,9 +79,9 @@ In my last blog post, I described how I use R Markdown as a tool in my research 
 
 This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.
 
- ![](../_resources/36e47e74810a0d8c32a77f495c49cf8e.png)  [Data Science Heroes Blog – 28 Aug 18 20](https://blog.datascienceheroes.com/how-to-self-publish-a-book-customizing-bookdown/)
+ ![](assets/img/36e47e74810a0d8c32a77f495c49cf8e.png)  [Data Science Heroes Blog – 28 Aug 18 20](https://blog.datascienceheroes.com/how-to-self-publish-a-book-customizing-bookdown/)
 
-![](../_resources/f879dd505681482a0bd644d0dde835fa.jpg)
+![](assets/img/f879dd505681482a0bd644d0dde835fa.jpg)
 
 ### [How to self-publish a book: Customizing Bookdown](https://blog.datascienceheroes.com/how-to-self-publish-a-book-customizing-bookdown/)
 
@@ -105,7 +105,7 @@ I looked around. There was the judge, the bailiff, the court clerk, the stenogra
 
 [(L)](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4)
 
-[![](../_resources/ea7d867477480a2d151f9773fa860c9c.png)](https://community.rstudio.com/u/itsmecevi)
+[![](assets/img/ea7d867477480a2d151f9773fa860c9c.png)](https://community.rstudio.com/u/itsmecevi)
 
 [itsmecevi](https://community.rstudio.com/u/itsmecevi)
 
@@ -117,7 +117,7 @@ Thank you-[@technocrat](https://community.rstudio.com/u/technocrat). I will try 
 
 [(L)](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4)
 
-[![](../_resources/3d9708a0dfd127f367a70b4a38641a17.png)](https://community.rstudio.com/u/cderv)
+[![](assets/img/3d9708a0dfd127f367a70b4a38641a17.png)](https://community.rstudio.com/u/cderv)
 
 [cderv](https://community.rstudio.com/u/cderv)![](data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' class='fa d-icon d-icon-shield-alt svg-icon svg-node js-evernote-checked' aria-hidden='true' data-evernote-id='288'%3e%3cpath d='M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z'%3e%3c/path%3e%3c/svg%3e)Sustainer
 
@@ -129,7 +129,7 @@ If your question's been answered (even by you!), would you mind choosing a solut
 
 ![](data:image/svg+xml,%3csvg class='fa d-icon d-icon-chevron-down svg-icon svg-string js-evernote-checked' xmlns='http://www.w3.org/2000/svg' data-evernote-id='291'%3e%3cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z'%3e%3c/path%3e%3c/svg%3e)
 
- ![](../_resources/887eeb8158f13abf70c091fc7dccbe94.png)  [FAQ: How do I mark a solution?](https://community.rstudio.com/t/faq-how-do-i-choose-a-solution/5633)  [meta](https://community.rstudio.com/c/meta)
+ ![](assets/img/887eeb8158f13abf70c091fc7dccbe94.png)  [FAQ: How do I mark a solution?](https://community.rstudio.com/t/faq-how-do-i-choose-a-solution/5633)  [meta](https://community.rstudio.com/c/meta)
 
 >  If your question has been answered don't forget to mark the solution Folks in the future can come along and easily see what worked for you.
 
@@ -145,7 +145,7 @@ If your question's been answered (even by you!), would you mind choosing a solut
 
 [(L)](https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4)
 
-[![](../_resources/6b653e93afc3d1b22729b4a084c00c79.png)](https://community.rstudio.com/u/apreshill)
+[![](assets/img/6b653e93afc3d1b22729b4a084c00c79.png)](https://community.rstudio.com/u/apreshill)
 
 [apreshill](https://community.rstudio.com/u/apreshill)![](data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' class='fa d-icon d-icon-shield-alt svg-icon svg-node js-evernote-checked' aria-hidden='true' data-evernote-id='293'%3e%3c/svg%3e)[RStudio Employee](https://community.rstudio.com/g/RStudioEmployee)
 

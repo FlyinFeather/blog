@@ -18,7 +18,7 @@ I investigated these resources last year when I was trying to work with `wordpre
 Whoa. Some people are really friggin’ smart. Well, lots of people are, but right now I’m specifically referring to Duncan Temple Lang ([@duncantl](http://twitter.com/duncantl)), who developed the R package, RWordPress, and William K. Morris ([@wkmor1](http://twitter.com/wkmor1)), Yihui Xie ([@xieyihui](http://twitter.com/xieyihui)), and Jared Lander ([@jaredlander](http://twitter.com/jaredlander)), who developed the knit2wp function in knitr. These two packages make it possible to write a blog post in R Markdown and then publish it directly to a WordPress site. This post walks you through the steps to do so, inspired in large part by [Xie’s instructions](https://yihui.name/knitr/demo/wordpress).
 
 [cue sparklers]
-![](../../_resources/80aba8c8c7b20e4ecca23a26879ba7a1.jpg)
+![](../assets/img/80aba8c8c7b20e4ecca23a26879ba7a1.jpg)
 
 ## Three Easy Steps
 
@@ -75,7 +75,7 @@ It’s also worth pointing out something I learned from Kris Shaffer ([@krisshaf
 
 He made the good point that one should retain personal copies of one’s posts. When you have your blog post saved in .Rmd format, you’ve achieved this goal. Bonus.
 
-[  [](../../_resources/948b2d7d8a656c98a7512e29222dae8d.webp)''](https://giphy.com/gifs/win-nXxOjZrbnbRxS?utm_source=iframe&utm_medium=embed&utm_campaign=Embeds&utm_term=)
+[  [](../assets/img/948b2d7d8a656c98a7512e29222dae8d.webp)''](https://giphy.com/gifs/win-nXxOjZrbnbRxS?utm_source=iframe&utm_medium=embed&utm_campaign=Embeds&utm_term=)
 
  ![](data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' class='_1kUT9JUnNbAcSluG824OLJ js-evernote-checked' data-evernote-id='28'%3e %3cdefs data-evernote-id='73' class='js-evernote-checked'%3e %3cclipPath id='cutout' data-evernote-id='74' class='js-evernote-checked'%3e %3crect x='-41' y='0' width='100%25' height='100%25' data-evernote-id='75' class='js-evernote-checked'%3e%3c/rect%3e %3crect x='0' y='41' width='100%25' height='100%25' data-evernote-id='76' class='js-evernote-checked'%3e%3c/rect%3e %3c/clipPath%3e %3c/defs%3e %3c/svg%3e)
 
