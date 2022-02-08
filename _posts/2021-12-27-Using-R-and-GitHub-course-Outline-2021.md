@@ -3,6 +3,27 @@ lastmod: '2021-12-20'
 ---
 # Using R and GitHub: reproducibility in research
 
+#### Note on version control (`git`)
+
+Please install Git **before** installing R Studio. This allows seamless
+integration between the two programs because R Studio looks for Git on
+your computer, but Git does not look for R Studio. In the past,
+installation in the opposite order has been known to create issues. If
+you already installed R Studio and Git, but do not see the Git Tab in R
+Studio then you can follow [this support
+page](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
+to troubleshoot.
+
+Learning new tools (how to learn how to do things in R).
+
+-   `GitHub` (for tracking and documenting your work)
+-   `RMarkdown` (to easily build webpages and pdfs with or without R code)
+-   `Beamer` (pdf slides that blow away Powerpoint presentations)
+-   `Regular Expressions` (find-and-replace on steroids)
+-   `LaTeX` (for type-setting equations and improving your slides)
+-   `Git` (version control)
+
+
 [UoC.Git.2018-11-27](https://afilazzola.github.io/UoC.GithubWorkshop.2018/index.html)
 
 * [info](https://afilazzola.github.io/UoC.GithubWorkshop.2018/index.html)
@@ -15,18 +36,14 @@ lastmod: '2021-12-20'
 
 * [Websites](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Website/website.html)
 
-'Dec 10, 2021'
-
-<img width="500" height="281" src="../assets/img/950e3d9294964d51a3a33e1a6b053a45.jpg"/>
-
-| University of Cincinnati |     |
+| Australian National University |  University of Canberra   |
 | --- | --- |
-| Nov 27, 2018 | **Instructor**: [Anthony Davidson](http://davan690.github.io) |
+| March 2022 | **Instructor**: [Anthony Davidson](http://davan690.github.io) |
 | [TBD] | **Co-instructors**: [TBD] |
 
 ### Get Tickets
 
-[eventbight link here]
+[eventbight link coming soon here]
 
 ## General Information
 
@@ -36,20 +53,26 @@ Statistical software that are also programming languages, such as R, are excelle
 
 **Where**: [coming soon]
 
-**Requirements**: Participants should bring a laptop with a Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) with administrative privileges. If you want to work along during tutorial, you must have both Git & R studio installed on your own computer (See below for instructions). However, you are still welcome to attend because all examples will be presented via a projector in the classroom.
+**Requirements**: Participants should bring a laptop with a Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) with administrative privileges. If you want to work along during tutorial, you must have both `Git`, `R` and `RStudio` installed on your own computer (See below for instructions). However, you are still welcome to attend because all examples will be presented via slides in the classroom and on github.
 
 **Contact**: Please contact [anthony.davidson@canberra.edu.au](mailto:anthony.davidson@canberra.edu.au) for more information.
 
 ## Schedule
 
-\[Live Notepad\]
+I have developed this course from an program hosted on github from 
+https://afilazzola.github.io
+
+```{r}
+#input timetable from csv here....
+
+```
 
 | Time | Goal |
 | --- | --- |
 | 11:30 am | Meet & greet. Test software |
 | 11:40 am | [Github Introduction](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Github/Github.html) |
 | 12:20 pm | [Github and R Studio](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Git.rstudio/Git.rstudio.html) |
-| 1:00 pm | [Creating Reports with R Studio](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Reports/Reports.html) |
+| 1:00 pm | [Creating Reports with RStudio](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Reports/Reports.html) |
 | 1:15 pm | [Publish Reports and websites](https://afilazzola.github.io/UoC.GithubWorkshop.2018/Website/website.html) |
 
 ## Software

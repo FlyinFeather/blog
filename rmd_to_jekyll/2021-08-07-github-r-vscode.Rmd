@@ -29,17 +29,21 @@ These are the extensions or almost shorthand names for the applications and uses
 *   Regular Expressions (find-and-replace on steroids)
 *   LaTeX (for type-setting equations and improving your slides)
 
+### Operating system
+
+Windows and mac so far. The linux learning curve is coming for me soon I think
 ### Software
 
-I just think of these as the actual programs or files you have to add to your local/personal operating system to make the code or program you want to work (before packages for specific projects are added)
+I just think of these as the actual programs you have to add to your local/personal operating system that makes the code and/or packages you want to work with.
 
-*   Git 
-*   LaTeX
+*   VS Code
+*   RStudio
 
 ### Hardware
 
-Windows and mac so far. The linux learning curve is coming for me soon I think
-
+*   Git 
+*   LaTeX
+*   R
 ## Resources
 
 Learning new tools (how to learn how to do things in R)

@@ -1,8 +1,10 @@
 ---
-title: A journal for open science "ReScienceC"
+title: "A journal for open science `ReScienceC`"
 layout: post
-permlink: /reScienceC_blog1.html
-published: true
+tags:
+- reproducibility
+- publication
+- manuscript
 ---
 
 # ReScience C
