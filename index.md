@@ -3,14 +3,13 @@ subtitle: Reproducible ecology
 css: "/css/index.css"
 meta-title: "Anthony Davidson"
 meta-description: "Population ecology and reproducibility"
-bigimg:
-  - "/img/van_life_sunset_v1.jpg" : "Victorica, Australia"
 layout: home
-title: Reproducible ecology
 subtitle: My personal blog
 bigimg:
+  - "/img/van_life_sunset_v1.jpg" : "Victorica, Australia"
   - /assets/img/big-imgs/background-image.jpg: 'Auckland Islands, NZ (2011)'
   - /assets/img/national-leaders-announce-pfnz2050.png: Press release (2016)
 published: true
 ---
 
+I work with R and Rstudio and in this blog site I practise intergating R with Jekyll in RMarkdown for blog publishing on github pages. This means that some of the challenging parts of web deployment and development are shortened at the cost of other aspects. Working in the open science community allows me to develop these tools for future researchers at little future costs.
