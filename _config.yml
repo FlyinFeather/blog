@@ -46,7 +46,7 @@ social-network-links:
   facebook: davan690
   github: davan690
   twitter: ANTSstats
-#  patreon: yourname
+  patreon: statisticsnetwork
 #  youtube: c/yourname
 #  medium: yourname
 #  reddit: yourname
@@ -188,7 +188,7 @@ google_analytics: "UA-103591108-3"
  #   </script>
     
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
-fb_comment_id: "359831624564663"
+#fb_comment_id: "359831624564663"
 
 # To use Utterances comments: (0) uncomment the following section, (1) fill in
 # "repository" (make sure the repository is public), (2) Enable Issues in your repository,
