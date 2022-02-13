@@ -1,13 +1,15 @@
 ---
-title: "All blog posts so far..."
+title: "Collecting posts and tags on jekyll websites"
 layout: page
 image: /img/RStudio_library.jpg
 permlink: /all-posts.html
 ---
 
+A good way to manage large amounts of 
+
 This is a full list of all my blog posts so far. An easy way to find what I am on about is to use `ctrl + F` in chrome on this page and search....
 
-  {% for post in site.posts %}
+{% for post in site.posts %}
   <article>
     <h2>
       <a href="{{ post.url }}">
