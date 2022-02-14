@@ -16,3 +16,14 @@ Following the "embed" code from google the iframe looks like so:
 <iframe src="https://calendar.google.com/calendar/embed?src=9hmas5pdt163gakl50kkjbf33g%40group.calendar.google.com&ctz=Australia%2FSydney" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 It is possible to modify this in several different ways.
+
+## google maps iframe code
+
+Within a `iframe` snippit there are several attributes that can be quickly modified, these include:
+
+### `width`
+### `height`
+### frameborder
+### `style`
+
+These can apply style to the iframe using css. It is best to keep the css in a different file to html and markdown documents.
