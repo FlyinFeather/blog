@@ -23,3 +23,7 @@ Hopefully, there are bits of code below for tricky bits of R and other like prog
 
 <script src="https://gist.github.com/davan690/256d78a1f02eba01727b973a65f10a21.js"></script>
 
+## github website gist
+
+<script src="https://gist.github.com/davan690/3e34dd10692a6d8b380463d0f74f3b4c.js"></script>
+
