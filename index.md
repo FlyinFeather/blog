@@ -8,5 +8,6 @@ subtitle: My personal blog
 cover-img:
   - /assets/img/van_life_sunset_v1.jpg: "Victorica, Australia"
   - /assets/img/background-image.jpg: 'Auckland Islands, NZ (2011)'
+  - /assets/img/canberra_pana_ballon.jpg: "Canberra, Australia (2020)"
 published: true
 ---
