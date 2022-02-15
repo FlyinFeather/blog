@@ -10,6 +10,6 @@ cover-img:
   - /assets/img/background-image.jpg: 'Auckland Islands, NZ (2011)'
   - /assets/img/canberra_pana_ballon.jpg: "Canberra, Australia (2020)"
   - assets/img/home_image1.jpg: "Victorica, Australia (2018)"
-  - assets/img/ecologicalstatistics2_1_original.jpg: "New Zealand (Mike Jones)
+  - assets/img/ecologicalstatistics2_1_original.jpg: "New Zealand (Mike Jones)"
 published: true
 ---
