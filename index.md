@@ -1,5 +1,5 @@
 ---
-subtitle: Reproducible ecology
+title: Reproducible ecology
 css: "/css/index.css"
 meta-title: "Anthony R Davidson"
 meta-description: "Population ecology and reproducibility"
