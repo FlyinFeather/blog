@@ -6,6 +6,10 @@
 		{
 			"name": "RyansProjects",
 			"path": "../RyansProjects"
+		},
+		{
+			"name": "reproducible-bookdown",
+			"path": "../reproducible-bookdown"
 		}
 	],
 	"settings": {}
