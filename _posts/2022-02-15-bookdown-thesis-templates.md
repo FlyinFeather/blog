@@ -2,13 +2,17 @@
 title: "Bookdown thesis examples"
 subtitle: "Maybe there is some helpful code in here"
 layout: post
-image:  /img/ab-test-testing-ss-1920.jpg
-bigimg: /img/filing.jpg
+image:  assets/img/ab-test-testing-ss-1920.jpg
+bigimg: assets/img/filing.jpg
 tags: ["markdown", "website", "tools", "rmd", "jekyll", "TTS"]
 permalink: /bookdown-template.html
 ---
 
-![1561590863143](../img/chinese-bookdown.png)
+## ucDown
+
+I have developed a template for the University of Canberra using RMarkdown. The template can be accessed using the following link: [ucDown]("https://davan690.github.io/ucdown/#introduction")
+
+## Other github projects for thesis writing
 
 How do I change the language of this repository?
 
@@ -88,3 +92,7 @@ I think there may be some gems in here but I don’t speak English!?!
     </div>
   </div>
 </div>
+
+## Links
+
+![chinese bookdown example](assets/img/chinese-bookdown.png)
