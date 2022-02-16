@@ -4,6 +4,7 @@ title: "Jekyll metadata"
 subtitle: "Quick tips"
 thumbnail-img: "/assets/img/method-graf.jpg"
 gh-repo: daattali/beautiful-jekyll
+cover-img: "assets/img/method-graf.jpg"
 gh-badge:
   - star
   - fork
