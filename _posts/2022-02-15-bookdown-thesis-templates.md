@@ -8,11 +8,19 @@ tags: ["markdown", "website", "tools", "rmd", "jekyll", "TTS"]
 permalink: /bookdown-template.html
 ---
 
+# Overview
+
+Using RMarkdown and RStudio to render static documents (pdf, html, docx) can be helpful for incorperating style rules and reproducible methods. It can be just as painful if complex extensions and modifications fail to work as the complexity of the pipeline can make problem solving challenging. Below are a collection of packages that work around writing thesis documents using multiple RMarkdown files in R. I have also created a template for UC thesis documents (`ucdown`) that can be found on github under `davan690/ucdown`. To install ucdown run the following command in RStudio:
+
+[coming...]
+
 ## ucDown
 
 I have developed a template for the University of Canberra using RMarkdown. The template can be accessed using the following link: [ucDown]("https://davan690.github.io/ucdown/#introduction")
 
 ## Other github projects for thesis writing
+
+
 
 How do I change the language of this repository?
 
@@ -20,6 +28,7 @@ How do I change the language of this repository?
 
 I think there may be some gems in here but I don’t speak English!?!
 
+<p>
 <div class="spacer"></div>
 <div class="row text-center">
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
@@ -92,7 +101,12 @@ I think there may be some gems in here but I don’t speak English!?!
     </div>
   </div>
 </div>
+</p>
 
-## Links
+## Other template examples
+
+- Guitar books
+- Journal Articles
+- Chinese translations
 
 ![chinese bookdown example](assets/img/chinese-bookdown.png)
