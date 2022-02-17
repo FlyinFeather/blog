@@ -5,7 +5,6 @@ layout: post
 image:  assets/img/ab-test-testing-ss-1920.jpg
 bigimg: assets/img/filing.jpg
 tags: ["markdown", "website", "tools", "rmd", "jekyll", "TTS"]
-permalink: /bookdown-template.html
 ---
 
 # Overview
