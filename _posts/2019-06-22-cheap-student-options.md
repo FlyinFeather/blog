@@ -1,12 +1,13 @@
 ---
-title: "Making stickers instead of business cards"
-subtitle: "A student option"
+title: "Making stickers and business cards"
+subtitle: "On a student budget"
 layout: post
 tags: ["general", "overview", "website", "research", "tools", "business"]
-image: /img/avery-labels.png
-bigimg: /img/avery-labels.png
-permlink: stickers.html
+image: assets/img/avery-labels.png
+bigimg: assets/img/avery-labels.png
 ---
+
+https://www.canva.com/design/DAE47TyDc_s/LkWFUEh_Wmtod7HqSh58ww/view?utm_content=DAE47TyDc_s&utm_campaign=designshare&utm_medium=link&utm_source=shareyourdesignpanel
 
 As I am finishing up my PhD and working out how to build a career in academia I have ran out of money and resources in the long drawn-out finishing line.
 

@@ -3,32 +3,32 @@ title: "Building a QR code"
 subtitle: "And why you might bother"
 layout: post
 tags: ["general", "overview", "website", "research", "tools"]
-image: /img/qr-banner.png
-bigimg: /img/qr-banner.png
+image: assets/img/qr-banner.png
+bigimg: assets/img/qr-banner.png
 permlink: fun-and-games.html
 ---
 
-[QR codes](https://en.wikipedia.org/wiki/QR_code) are all the rage in many developing and developed countries [just a few blog posts here](). Below are my simple steps to quickly making a single QR code.
+[QR codes](https://en.wikipedia.org/wiki/QR_code) are all the rage in the past few years. Below are my simple steps to quickly making a single QR code either online or through R.
 
-![1561093251760](./img/qr-banner.png)
+![QR codes can be a great way to pass links on](assets/img/qr-banner.png)
 
-## My notes
+## General steps
 
-1. Pick a simple option for a online tool to do it.
+A straightforward way to generate a QR code is to pick one of the many online tools to do it. Here are a few I have used (note some of the links might be broken):
 
    - One option [here](https://www.qr-code-generator.com/)
    - Another one [here](https://www.the-qrcode-generator.com/): This one is a little simpler
    - I used this [one](https://www.qrcode-monkey.com/): I liked this one because of easy custom image insert but im sure they are all “much of a muchness”
    - Medium blog https://medium.com/@gliechtenstein/build-a-qrcode-barcode-scanning-app-with-26-lines-of-json-b83453d39197
-https://www.qrcode-monkey.com/#about
+   - https://www.qrcode-monkey.com/#about
 
-   ![1561093052334](./img/qr-codes.png)
+![QR codes online](assets/img/qr-codes.png)
 
 ##### Outcome
 
 ...try scanning it??
 
-![1561093165857](./img/1561093165857.png)
+![1561093165857](assets/img/1561093165857.png)
 
 ## Tutorials
 
