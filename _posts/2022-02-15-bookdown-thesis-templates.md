@@ -2,7 +2,7 @@
 title: "Bookdown thesis examples"
 subtitle: "Maybe there is some helpful code in here"
 layout: post
-image:  assets/img/ab-test-testing-ss-1920.jpg
+image:  assets/img/bookdown_logo.png
 bigimg: assets/img/filing.jpg
 tags: ["markdown", "website", "tools", "rmd", "jekyll", "TTS"]
 ---
