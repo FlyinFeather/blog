@@ -3,9 +3,8 @@ title: "Building a QR code"
 subtitle: "And why you might bother"
 layout: post
 tags: ["general", "overview", "website", "research", "tools"]
-image: assets/img/qr-banner.png
-bigimg: assets/img/qr-banner.png
-permlink: fun-and-games.html
+cover-img: assets/img/qrbanner.png
+thumbnail-img: assets/img/qrbanner.png
 ---
 
 [QR codes](https://en.wikipedia.org/wiki/QR_code) are all the rage in the past few years. Below are my simple steps to quickly making a single QR code either online or through R.
