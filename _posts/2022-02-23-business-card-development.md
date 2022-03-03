@@ -7,7 +7,7 @@ tags: ["general", "overview", "website", "research", "cards", "business"]
 #thumbnail-img: assets/img/qrbanner.png
 ---
 
-![QR codes can be a great way to pass links on](assets/img/Businesscards2022.png)
+![QR codes can be a great way to pass links on](./assets/img/Businesscards2022.png)
 
 ## General steps
   
