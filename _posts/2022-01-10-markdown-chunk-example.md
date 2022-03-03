@@ -16,12 +16,11 @@ published: true
 
 In an RMarkdown document there are several aspects of the structure that help make many of the reproducible leverage points achievable. `chunks` are one of these aspects.
 
-A `chunk is incapsulated in $```$ and $```$ where the language that will be exucted being wrapped in `{}` as below for a R chunk:
+A `chunk is incapsulated in $```$ and $```$ where the language that will be exucted being wrapped in` `{}` as below for a R chunk:
 
-```
 
 ```{r}
-```
+
 
 ```
 
