@@ -44,6 +44,8 @@ Direct and indirect links??!
 
 ```
 
+![Landing page for Reproducible Scientific Journal](/assets/img/ReScienceScreenshot1.png)
+
 ```
 
 ## Additional information

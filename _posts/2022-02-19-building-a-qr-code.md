@@ -9,7 +9,7 @@ thumbnail-img: assets/img/qrbanner.png
 
 [QR codes](https://en.wikipedia.org/wiki/QR_code) have been all the rage in the past few years. Below are my simple steps to quickly making a single QR code either online, using a design application (e.g. Canvas) or through R.
 
-![QR codes can be a great way to pass links on](assets/img/qr-banner.png)
+![QR codes can be a great way to pass links on](/assets/img/qr-banner.png)
 
 ## General steps
   
@@ -21,13 +21,13 @@ A straightforward way to generate a QR code is to pick one of the many online to
    - Medium blog https://medium.com/@gliechtenstein/build-a-qrcode-barcode-scanning-app-with-26-lines-of-json-b83453d39197
    - https://www.qrcode-monkey.com/#about
 
-![QR codes online](assets/img/qr-codes.png)
+![QR codes online](/assets/img/qrcodes.png)
 
 ##### Outcome
 
 ...try scanning it??
 
-![1561093165857](assets/img/1561093165857.png)
+![1561093165857](/assets/img/1561093165857.png)
 
 ## Tutorials
 
@@ -35,7 +35,7 @@ There could be a bit to come here....
 
 ### Further points
 
-- There are different types of QR readers (small explaination [here]())
+- There are different things that QR codes can be used for including url links, pdfs,
 - Here is an online [https://www.qrstuff.com/ scanner](https://www.qrstuff.com/scan)
 
 ### An extention
@@ -44,12 +44,8 @@ I have used a simple design app made for data scientists and social media advert
 
 ##### And Another
 
-This same tech is used for creating and catalogueing databases (even jekyll ones)
+This same tech is used for creating and catalogueing databases (even jekyll ones).
 
-https://github.com/barnhill/barcodelib/issues/64
-
-https://github.com/zint/zint
-
-https://github.com/zint
-
-https://github.com/nayuki/QR-Code-generator
+- [barcodelib](https://github.com/barnhill/barcodelib/)
+- [zint](https://github.com/zint/zint)
+- [QR-generator](https://github.com/nayuki/QR-Code-generator)

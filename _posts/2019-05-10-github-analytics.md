@@ -3,6 +3,7 @@ layout: post
 title: "Tracking a github website using google analytics"
 subtitle: "Business info for the smarts"
 use-site-title: true
+tags: ["general", "overview", "website", "resources", "tools", "index"]
 ---
 
 Somehow a few months ago I managed to add google analytics to both my blog website here and my first publication but I am unsure how I managed it.
@@ -11,11 +12,11 @@ I have now come back to this as I need to set up google analytics for a custom `
 
 ## My notes
 
-I was hesitant to get this all working due to having to get envolved with google and things like adwords. For now I only have inserted the single google analytics code for my personal site.
+I was hesitant to get this all working due to having to get involved with google and things like google adwords. For now I only have inserted the single google analytics code for my personal site. It is not much harder to add additional tracking tags using google's tag tracker.
 
 ## Resources
 
-I have collected a few resources to setup another page with google analytics.
+I have collected a few resources to setup another page with google analytics. It is helpful to therefore have a google account setup for the project. There are limitations to the use of google however it can be helpful to upgrade if projects get bigger or more security savvy.
 
 - [A stack overflow discussion on the matter](https://stackoverflow.com/questions/17207458/how-to-add-google-analytics-tracking-id-to-github-pages)
 
