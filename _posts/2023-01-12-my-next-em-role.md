@@ -1,0 +1,20 @@
+---
+layout: post
+title: What will I do differently in my next engineering manager role?
+tags: [software-engineering-management]
+---
+
+It’s almost the last day of my first full time engineering manager role. Sadly, the company was in turmoil when I joined so my tenure was short. This post reflects that I was only there a few months. Most of my time was spent onboarding. Even so, I’ve learned a lot and I’ve been thinking about what went well and what I will do differently in my new role. 
+
+**What went well?**
+* Learning the products and services. This involves reading documentation, speaking to people, asking questions and making lots of notes.
+* Learning current work and roadmap. It’s important to understand what the team is doing and why. Much of this is picked up from the team ceremonies, time with a product manager, more questions and more notes.
+* First 1 to 1s. These are really important for building trust, setting the tone and making a good impression with your team. I like to run getting to know you sessions where I share some information about myself and learn about each team member. We cover topics like where they live, family, how they got into software engineering, work history, current role in the team, current goals, career goals, what they want from a manager, what they want from a 1 to 1 and so on.
+* Starting to create a network. Management can be lonely, so establishing relationships is really important. Partly for building knowledge and partly for support. I work from home so this takes more intent than being in an office. I start by asking my manager for a list of people to talk to, then put some time in their calendars. This typically includes other engineering managers in my department, product managers from teams that work with mine, managers up the chain and engineers from other teams. It’s also useful to speak to people from parts of the business your team doesn’t work with to get a better understanding of the wider business.
+* Learning how the team works. I aim to listen, observe and make a lot of notes in the first few months. What are the team’s ceremonies? What are the team’s processes? What works? What could be improved? Once I have more understanding and context I can use my beginners mind to suggest improvements.
+
+**What will I do differently?**
+* Write some code. There are many articles about whether engineering managers should write code. This role was described as being hands off. There was no expectation for me to write code and I didn’t have enough experience to gauge my technical involvement. With more experience I have formed an opinion. I believe managers should write code, [with some caveats](https://medium.com/hackernoon/how-and-why-should-managers-code-323751799664). It’s important for many reasons. Primarily, without understanding the code it’s difficult to understand the work, the problems the engineers face and take part in technical discussions.
+* Spend more time with engineers. I was very nervous about reducing the engineer's focus time. I was hesitant to book meetings to learn more about the code and products. This held me back. It’s okay to use more of your team’s time in the first few months. 
+* Include engineers in meetings if they don't have context. As a manager you will be involved in more meetings than the engineers you manage. I've learned there's no value being involved in a meeting where you don't have enough knowledge to contribute and give feedback to your team. In this scenario you need to invite someone from your team who does have this knowledge.
+* Don’t put pressure on myself to know everything. When I start a new job my brain is bursting with questions. Who should I speak to? How does the product work? How do I book annual leave? How do I approve annual leave? How do performance reviews, promotions, pay rises and bonuses work? That’s just the start. This stresses me out. I need to write down my questions and prioritise them. What do I need to know now and what can I leave until later? In the first few weeks my priority should be meeting people and learning the products. Most of my questions can wait.
