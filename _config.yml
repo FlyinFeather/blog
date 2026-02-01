@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Personal Website
+title: "~/john.lauron"
 
 # Your name to show in the footer
 author: John Lauron
@@ -127,17 +127,18 @@ navbar-var-length: false
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
-navbar-border-col: "#DDDDDD"
-page-col: "#FFFFFF"
-text-col: "#404040"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#EAEAEA"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-footer-hover-col: "#0085A1"
+# Hacker Theme Colors - Dark terminal aesthetic
+navbar-col: "#0a0a0f"
+navbar-text-col: "#c9d1d9"
+navbar-border-col: "#00ff4150"
+page-col: "#0a0a0f"
+text-col: "#c9d1d9"
+link-col: "#00ffff"
+hover-col: "#00ff41"
+footer-col: "#0d1117"
+footer-text-col: "#6e7681"
+footer-link-col: "#00ffff"
+footer-hover-col: "#00ff41"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
@@ -147,15 +148,15 @@ footer-hover-col: "#0085A1"
 #page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-#mobile-theme-col: "#0085A1"
+mobile-theme-col: "#0a0a0f"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-#site-css:
-#  - "/assets/css/custom-styles.css"
+site-css:
+  - "/assets/css/hacker-theme.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
-#site-js:
-#  - "/assets/js/custom-script.js"
+site-js:
+  - "/assets/js/hacker-effects.js"
 
 #################################
 # --- Web Analytics Section --- #
