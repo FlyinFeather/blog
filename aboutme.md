@@ -4,13 +4,24 @@ title: About me
 subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Hi there 👋 I'm Kaijun Su
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+🔭 I’m currently studying at **Beijing Jiaotong University**
 
-What else do you need?
+🌱 I’m currently learning **Electrical Engineering**
 
-### My story
+⚡ Passionate about power systems, embedded systems, and intelligent control
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+📫 How to reach me:
+- Email: <a href="mailto:25521449@bjtu.edu.cn">25521449@bjtu.edu.cn</a> / <a href="mailto:sukaijun233@gmail.com">sukaijun233@gmail.com</a>
+
+---
+### 🛠️ Tech Stack
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=flat&logo=mathworks&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat&logo=arduino&logoColor=white)
+
+---
+### 📊 GitHub Stats
+![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=SKJrpg&show_icons=true&theme=radical)
