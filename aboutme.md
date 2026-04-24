@@ -13,7 +13,7 @@ Hi there 👋 I'm Kaijun Su
 ⚡ Passionate about power systems, embedded systems, and intelligent control
 
 📫 How to reach me:
-- Email: <a href="mailto:25521449@bjtu.edu.cn">25521449@bjtu.edu.cn</a> / <a href="mailto:sukaijun233@gmail.com">sukaijun233@gmail.com</a>
+- Email: <a href="mailto:sukaijun233@gmail.com">sukaijun233@gmail.com</a>
 
 ---
 ### 🛠️ Tech Stack
