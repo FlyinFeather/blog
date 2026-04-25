@@ -20,12 +20,11 @@ author: SKJrpg
 ###############################################
 
 navbar-links:
-    Blog: "blog"
-    Resources:
-      - Beautiful Jekyll: "https://beautifuljekyll.com"
-      - Learn markdown: "https://www.markdowntutorial.com/"
-    About Me: "aboutme"
-    示例页面: "example"
+  Blog: "blog"
+  Resources:
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Learn markdown: "https://www.markdowntutorial.com/"
+  About Me: "aboutme"
 
 ################
 # --- Logo --- #
@@ -94,18 +93,14 @@ rss-description: This website is a virtual proof that I'm awesome
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: false
   email: true
-  facebook: false
   github: true
-  linkedin: false
-  vk: false
-  reddit: false
   steam: true
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyHomePage.com"
+url-pretty: "skjrpg.github.io"
+url: "https://skjrpg.github.io"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
