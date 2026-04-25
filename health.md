@@ -27,3 +27,8 @@ subtitle: Cloudflare Pages 与自定义域名的快速排错指南
 如果你愿意，我也可以把这个诊断清单整理成一个更规范的工作流文档，并将关键步骤自动化脚本附在仓库中。你希望这样做吗？
 
 附加：新增一个域名健康状态区域，帮助快速判断 CF Pages 的域名绑定、DNS、TLS、缓存等状态。页面中已添加一个简单的健康区域：<span class="domain-status">未检测</span>，并提供 quick check 脚本。 
+
+附加：ASCII 诊断脚本（Windows 可执行）
+- 在项目中新增工具：`tools/cf_diag_ascii.bat`，直接在 Windows 环境执行：
+  - 打开命令行，进入仓库根目录，执行 `tools\cf_diag_ascii.bat`。
+- 诊断结果会写入 `tools/cf_diag_ascii.log`，可用于快速定位 DNS、连接与 Hitokoto 请求的健康情况。

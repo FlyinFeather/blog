@@ -26,7 +26,7 @@ try {
   Write-Host "HTTP 请求失败: $_" -ForegroundColor Red
 }
 
-Write-Host "`n3) Hitokoto API 状态" -ForegroundColor Yellow
+Write-Host "`n3) Hitokoto API status" -ForegroundColor Yellow
 try {
   $r = Invoke-WebRequest -Uri "https://v1.hitokoto.cn/?encode=json" -UseBasicParsing -TimeoutSec 5
   if ($r.StatusCode -eq 200) {
