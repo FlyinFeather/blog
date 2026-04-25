@@ -6,6 +6,8 @@ subtitle: Cloudflare Pages 与自定义域名的快速排错指南
 
 # 部署诊断
 
+<div id="domain-health">健康状态：未检测</div>
+
 本页面用于快速排查 Cloudflare Pages 部署与自定义域名在静态站点上的常见问题。
 
 - 域名绑定与解析
