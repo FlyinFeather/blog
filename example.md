@@ -1,9 +1,15 @@
-# Example Page
+---
+layout: page
+title: 示例页面
+subtitle: 这是一个演示拉取请求流程的示例页面
+---
 
-This is an example page created to demonstrate the Pull Request process using the `gh` CLI.
+# 示例页面
 
-## Purpose
-To show how to:
-1. Create a new file.
-2. Commit and push it to a feature branch.
-3. Open a Pull Request via the command line.
+这是一个示例页面，用于演示使用 `gh` CLI 的拉取请求流程。
+
+## 目的
+展示如何：
+1. 创建一个新文件。
+2. 在功能分支上提交和推送它。
+3. 通过命令行打开拉取请求。
