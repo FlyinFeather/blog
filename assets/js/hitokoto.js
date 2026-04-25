@@ -2,7 +2,7 @@
   var el = document.querySelector('.home-subheading');
   if (!el) return;
 
-  fetch('https://v1.hitokoto.cn/?c=a&c=b&c=c&c=d&c=e&c=f&c=g&c=h&c.i&c.j&c.k&c.l')
+  fetch('https://v1.hitokoto.cn/')
     .then(function (res) { return res.json(); })
     .then(function (data) {
       var text = data.hitokoto;
@@ -16,7 +16,7 @@
     });
 
   setInterval(function () {
-    fetch('https://v1.hitokoto.cn/?c=a&c=b&c=c&c=d&c=e&c=f&c=g&c=h&c.i&c.j&c.k&c.l')
+    fetch('https://v1.hitokoto.cn/')
       .then(function (res) { return res.json(); })
       .then(function (data) {
         var text = data.hitokoto;
