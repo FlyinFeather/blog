@@ -2,6 +2,7 @@
 layout: post
 title: 从零到一:记录我第一次搭建网站
 subtitle: 终于把自己的主页跑起来了
+cover-img: /assets/img/blog/from-zero-to-one-record-my-first-website/pexels-castorlystock-4112995.jpg
 tags: [Website building, Jekyll, Cloudflare, Diary, Homepage]
 comments: true
 author: SKJrpg
