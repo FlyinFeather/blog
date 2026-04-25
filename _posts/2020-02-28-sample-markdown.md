@@ -4,7 +4,7 @@ title: Sample blog post to learn markdown tips
 subtitle: There's lots to learn!
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [Test]
 comments: true
 mathjax: true
 author: Bill Smith
@@ -88,7 +88,7 @@ You can add notification, warning and error boxes like this:
 
 When hosting a *project site* on GitHub Pages (for example, `https://USERNAME.github.io/MyProject`), URLs that begin with `/` and refer to local files may not work correctly due to how the root URL (`/`) is interpreted by GitHub Pages. You can read more about it [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). To demonstrate the issue, the following local image will be broken **if your site is a project site:**
 
-![Crepe](/assets/img/crepe.jpg)
+![Crepe](/assets/img/blog/sample-markdown/crepe.jpg)
 
 If the above image is broken, then you'll need to follow the instructions [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). Here is proof that it can be fixed:
 

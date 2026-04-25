@@ -2,7 +2,7 @@
 layout: post
 title: 从零到一:记录我第一次搭建网站
 subtitle: 终于把自己的主页跑起来了
-tags: [网站搭建, Jekyll, Cloudflare, 日记, 个人主页]
+tags: [Website building, Jekyll, Cloudflare, Diary, Homepage]
 comments: true
 author: SKJrpg
 ---
@@ -23,4 +23,4 @@ author: SKJrpg
 
 第一次搭站成功，算是给自己开了个好头。
 
-<small>本文章由AI生成.</small>
+<small>(本文章由AI生成)</small>
