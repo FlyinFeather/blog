@@ -1,8 +1,10 @@
+/* Ensure DOM is ready before querying elements to work reliably on CF Pages */
 (function() {
-  const subtitleEl = document.querySelector('.home-subheading') ||
-    document.querySelector('.intro-header .page-heading .page-subheading') ||
-    document.querySelector('.intro-header .home-subheading');
-  if (!subtitleEl) return;
+  document.addEventListener('DOMContentLoaded', function() {
+    const subtitleEl = document.querySelector('.home-subheading') ||
+      document.querySelector('.intro-header .page-heading .page-subheading') ||
+      document.querySelector('.intro-header .home-subheading');
+    if (!subtitleEl) return;
 
   const FALLBACK_QUOTES = [
     '这是一个演示副标题的站点。',
@@ -47,20 +49,21 @@
     }
   }
 
-  (async function init() {
-    const first = await fetchHitokoto(5000);
-    if (first) {
-      renderText(first);
-    } else {
-      renderText(FALLBACK_QUOTES[0]);
-    }
-  })();
+    (async function init() {
+      const first = await fetchHitokoto(5000);
+      if (first) {
+        renderText(first);
+      } else {
+        renderText(FALLBACK_QUOTES[0]);
+      }
+    })();
 
-  // 轮播切换：每 15 秒切换一次
-  setInterval(async function() {
-    const next = await fetchHitokoto(5000);
-    const text = next ? next : FALLBACK_QUOTES[idx % FALLBACK_QUOTES.length];
-    idx++;
-    renderText(text);
-  }, 15000);
+    // 轮播切换：每 15 秒切换一次
+    setInterval(async function() {
+      const next = await fetchHitokoto(5000);
+      const text = next ? next : FALLBACK_QUOTES[idx % FALLBACK_QUOTES.length];
+      idx++;
+      renderText(text);
+    }, 15000);
+  });
 })();
