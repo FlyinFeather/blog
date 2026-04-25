@@ -53,20 +53,20 @@ social-network-links:
   rss: true # remove this line if you don't want to show an RSS link at the bottom
   # facebook: yourname
   github: SKJrpg
-# twitter: yourname
-# patreon: yourname
-# youtube: yourname
-#  whatsapp: yourname
-#  medium: yourname
-#  reddit: yourname or r/yoursubreddit
-#  linkedin: yourname
-#  xing: yourname
-#  stackoverflow: "yourname/yourname"
-#  snapchat: yourname
-#  instagram: yourname
-#  spotify: yourname
-#  telephone: yourphonenumber
-#  steam: yourname
+  # twitter: yourname
+  # patreon: yourname
+  # youtube: yourname
+  #  whatsapp: yourname
+  #  medium: yourname
+  #  reddit: yourname or r/yoursubreddit
+  #  linkedin: yourname
+  #  xing: yourname
+  #  stackoverflow: "yourname/yourname"
+  #  snapchat: yourname
+  #  instagram: yourname
+  #  spotify: yourname
+  #  telephone: yourphonenumber
+  steam: skjrpg233
 #  twitch: yourname
 #  yelp: yourname
 #  telegram: yourname
@@ -96,10 +96,11 @@ share-links-active:
   twitter: false
   email: true
   facebook: false
-  github: false
+  github: true
   linkedin: false
   vk: false
   reddit: false
+  steam: true
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
@@ -301,4 +302,3 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
