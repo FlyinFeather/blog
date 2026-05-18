@@ -39,6 +39,53 @@ keywords: "Adnan Sadik projects, machine learning projects, data science portfol
 
 <div class="projects-section">
 
+<div class="current-project-card">
+<h2>Current Project</h2>
+
+<div class="project-item">
+<div class="project-header">
+<h3>Samsung Health × Insurance AI</h3>
+<div class="tech-stack">
+<span class="tech-tag">LangGraph</span>
+<span class="tech-tag">Claude API</span>
+<span class="tech-tag">FastAPI</span>
+<span class="tech-tag">Next.js</span>
+</div>
+</div>
+<p>
+  Transforming life insurance from a static contract into an active health partnership. Built under Samsung Lifenology Lab's entrepreneurial program with direct funding and mentorship. The system continuously ingests Samsung Health wearable signals and orchestrates a multi-agent AI pipeline to score longitudinal risk, surface personalized health interventions, and dynamically align coverage with real health trajectories — incentivizing better habits through premium reductions.
+</p>
+<ul class="project-highlights">
+  <li>Multi-agent AI pipeline using LangGraph to orchestrate health risk assessment, intervention recommendation, and coverage optimization workflows.</li>
+  <li>Real-time ingestion of Samsung Health wearable data (activity, sleep, heart rate) with anomaly detection and trend analysis.</li>
+  <li>Dynamic premium adjustment engine that aligns insurance terms with longitudinal health behaviors, creating economic incentives for wellness.</li>
+  <li>Full-stack deployment: FastAPI backend for ML/AI orchestration and Next.js frontend for member dashboard and health insights.</li>
+</ul>
+
+<div class="shi-card" style="background: linear-gradient(135deg, #F0E5D8 0%, #FAF3E0 100%); border-radius: 10px; padding: 20px; margin: 20px 0; border-left: 4px solid #D95F18;">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+    <div>
+      <div style="font-size: 12px; color: #8a7060; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase;">Active Entrepreneurial Initiative</div>
+      <div style="font-size: 18px; font-weight: 700; color: #3A2C29; margin-top: 6px;">Samsung Health × Insurance</div>
+    </div>
+    <div style="background: #D95F18; color: white; padding: 6px 12px; border-radius: 6px; font-size: 11px; font-weight: 600; text-transform: uppercase;">In Progress</div>
+  </div>
+  <hr style="border: none; border-top: 1px solid #D6C6A9; margin: 16px 0;">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 12px;">
+    <div>
+      <div style="color: #8a7060; font-weight: 500; margin-bottom: 8px;">Program</div>
+      <div style="color: #3A2C29; font-weight: 600;">Samsung Lifenology Lab<br>Student-Led Funded Initiative</div>
+    </div>
+    <div>
+      <div style="color: #8a7060; font-weight: 500; margin-bottom: 8px;">Focus Areas</div>
+      <div style="color: #3A2C29;">AI/ML Architecture, Wearable Integration, Multi-Agent Systems</div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
 <div class="completed-projects-card">
 <h2> Completed Projects</h2>
 

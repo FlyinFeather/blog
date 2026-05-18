@@ -59,6 +59,16 @@ keywords: "Adnan Sadik resume, data scientist, machine learning experience, AI r
 
 <div class="experience-item">
   <div class="company-header">
+    <h3>Samsung Lifenology Lab, South Korea</h3>
+    <span class="role">Student Entrepreneur & Lead AI/ML Architect</span>
+    <span class="date">Nov 2025 – Present</span>
+  </div>
+  <p>Building Samsung Health × Insurance AI system under the Samsung Lifenology Lab entrepreneurial program with direct funding and mentorship. Architecting multi-agent AI pipeline that ingests wearable signals, scores longitudinal health risk, surfaces personalized interventions, and dynamically adjusts insurance coverage.</p>
+  <p><strong>Core Problem:</strong> How can continuous wearable health signals be transformed into actionable, personalized interventions that align insurance products with real health trajectories, incentivizing preventive behaviors through dynamic coverage and premium reductions?</p>
+</div>
+
+<div class="experience-item">
+  <div class="company-header">
     <h3>Huawei, Hong Kong SAR</h3>
     <span class="role">Research & Software Intern</span>
     <span class="date">Dec 2025 – Mar 2026</span>
@@ -66,8 +76,6 @@ keywords: "Adnan Sadik resume, data scientist, machine learning experience, AI r
   <p>Worked at Huawei Theory Lab on Algorithms and AI Systems, focusing on LLM inference algorithms and optimal cache management using C++ and CUDA.</p>
   <p> <strong>Core Problem</strong>: How can memory and caching be managed in hybrid architectures that integrate attention and Mamba layers to optimize latency and throughput? </p>
 </div>
-
-
 
 <div class="experience-item">
   <div class="company-header">
@@ -116,6 +124,19 @@ keywords: "Adnan Sadik resume, data scientist, machine learning experience, AI r
 
 <div class="section-card">
 <h2>Projects</h2>
+
+<div class="project-item">
+<div class="project-header">
+<h3>Samsung Health × Insurance AI</h3>
+<div class="tech-stack">
+<span class="tech-tag">LangGraph</span>
+<span class="tech-tag">Claude API</span>
+<span class="tech-tag">FastAPI</span>
+<span class="tech-tag">Next.js</span>
+</div>
+</div>
+<p>Multi-agent AI pipeline transforming insurance from static contracts to active health partnerships. Ingests Samsung Health wearable signals, scores longitudinal risk, and dynamically aligns coverage with real health trajectories.</p>
+</div>
 
 <div class="project-item">
 <div class="project-header">
