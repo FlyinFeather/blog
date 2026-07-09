@@ -1,0 +1,30 @@
+---
+layout: default
+title: CV
+permalink: /cv/
+---
+<div class="page-wrapper">
+  <div class="page-topbar-outer">
+    <nav class="page-topbar">
+      <a class="site-name" href="/">{{ site.name }}</a>
+      <a class="nav-link" href="/about/">About</a>
+      <a class="nav-link" href="/research/">Research</a>
+      <a class="nav-link active" href="/cv/">CV</a>
+      <a class="nav-link" href="/resources/">Resources</a>
+    </nav>
+  </div>
+  <div class="page-content" style="padding: 0; display: flex; flex-direction: column; height: calc(100vh - 60px);">
+    <embed
+      src="{{ site.cv_pdf_url }}"
+      type="application/pdf"
+      width="100%"
+      style="flex: 1; min-height: 80vh; border: none;"
+    />
+    <p style="text-align: center; padding: 0.75rem; font-size: 0.9rem;">
+      <a href="{{ site.cv_pdf_url }}" target="_blank" rel="noopener">Download / open in new tab</a>
+    </p>
+  </div>
+  <footer class="site-footer">
+    {{ site.name }} &copy; {{ site.time | date: "%Y" }}
+  </footer>
+</div>
