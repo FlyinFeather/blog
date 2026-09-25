@@ -1,16 +1,19 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: 翩如羽翔 矫若云翥
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+> 翩若惊鸿，婉若游龙。
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+慕洛神，摹辞韵，叶平仄，构短章。
 
-What else do you need?
+**翩翼起伏，矫势屈伸。**  
+**羽翔寓凤，云翥藏龙。**  
+**一逸一奮，意象互映。**  
+**迹纵随波，志当遐翥。**  
+**一退一進，物我同归。**
 
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+`注1：翠翔，隐翠虬之龙；云翥，藏兴云之龙。`<br>
+`注2：翩、翼、翔、翥从羽，奮、進含隹，雙之空行。逸、迹、随、遐、退、進，皆从辵，足之尘行。一翱一逐，形神相契。`<br>
+`注3：幺者，细丝也；玄，象双丝绞络。二行交织谓之玄，殊途同归是谓玄同。`
