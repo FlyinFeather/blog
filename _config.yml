@@ -56,7 +56,7 @@ social-network-links:
   email: "flyinfeather@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
   github: flyinfeather
-  x: FlyinFeather
+  twitter: FlyinFeather
   facebook: Flyin_Feather
 #  patreon: DeanAttali
 #  youtube: "@flyinfeather"
@@ -97,9 +97,9 @@ rss-description: This website is a virtual proof that I'm awesome
 
 # Select which social network share links to show in posts
 share-links-active:
-  x: true
+  twitter: true
   facebook: true
-  linkedin: false
+  linkedin: true
   vk: false
   reddit: false
 
