@@ -56,9 +56,9 @@ round-avatar: true
 social-network-links:
   email: "flyinfeather@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: flyinfeather
   github: flyinfeather
   twitter: flyinfeather
+  facebook: flyin_feather
 #  patreon: DeanAttali
 #  youtube: "@flyinfeather"
 #  whatsapp: 15551212
