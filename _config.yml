@@ -21,7 +21,9 @@ author: FlyinFeather
 
 navbar-links:
   About Me: "/aboutme"
-  Archive: "/archive"
+  Archive: 
+    - 归档: "/archive"
+    - 标签: "/tags/"
   Resources:
     - Learn markdown: "https://www.markdowntutorial.com/"
     - 般若冰凌: "https://www.icesofts.com/"
