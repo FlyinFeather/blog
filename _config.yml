@@ -27,7 +27,6 @@ navbar-links:
   Resources:
     - Learn markdown: "https://www.markdowntutorial.com/"
     - 般若冰凌: "https://www.icesofts.com/"
-    - 时间戳: "https://chron.cuixyz.cc/"
   Author's home: "https://cuixyz.com"
 
 ################
@@ -57,7 +56,7 @@ social-network-links:
   email: "flyinfeather@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
   github: flyinfeather
-  twitter: FlyinFeather
+  x: FlyinFeather
   facebook: Flyin_Feather
 #  patreon: DeanAttali
 #  youtube: "@flyinfeather"
@@ -98,7 +97,7 @@ rss-description: This website is a virtual proof that I'm awesome
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
+  x: true
   facebook: true
   linkedin: false
   vk: false
