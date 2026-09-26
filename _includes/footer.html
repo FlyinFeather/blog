@@ -17,7 +17,7 @@
         &nbsp;&bull;&nbsp;
       {% endif %}
       
-        Updated: {{ site.time | date: "%Y-%m-%d" }}
+        Updated: {{ site.posts.first.date | date: "%Y-%m-%d" }}
         
       {% if site.matomo %}
         {% if site.matomo.opt-out %}
