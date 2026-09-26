@@ -11,15 +11,14 @@
         </div>
       {% endif %}
       <p class="copyright text-muted">
-        ©&nbsp;{{ site.time | date: '%Y' }}&nbsp;
+        ©&nbsp;2022-{{ site.time | date: '%Y' }}&nbsp;
       {% if site.author %}
         {{ site.author }}
         &nbsp;&bull;&nbsp;
       {% endif %}
       
         Last updated: {{ site.time | date: "%Y-%m-%d" }}
-        &nbsp;&bull;&nbsp;
-
+        
       {% if site.matomo %}
         {% if site.matomo.opt-out %}
           &nbsp;&bull;&nbsp;
