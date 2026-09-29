@@ -4,9 +4,10 @@ title: 永劫回归
 date: 2026-08-31
 author: 豆包
 layout: post
-categories: Reading
+categories: 勇者不惧
 tags:
   - ob
+  - 读书
 share: true
 ---
 **永劫回归**（Eternal Recurrence）是尼采（Friedrich Nietzsche）提出的一个哲学思想，它是尼采对宇宙、生命和历史的某种深刻反思，特别是在他关于“永劫回归”的概念中体现得尤为明显。
