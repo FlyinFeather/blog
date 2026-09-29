@@ -6,6 +6,7 @@ layout: post
 categories: 知者不惑
 slug: notebook-set
 tags:
+  - 软件
 share: true
 pub-blog: "true"
 blog-path: _posts
