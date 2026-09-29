@@ -37,18 +37,18 @@
             <span class="post-meta">
               {% if page.author %}
                 <span class="d-none d-md-inline">By </span><strong>{{ page.author | strip_html }}</strong>
-                <span class="middot">&middot;</span>
+                <span class="middot">&bull;</span>
               {% endif %}
-              <span class="d-none d-md-inline">Posted on </span>{{ page.date | date: date_format }}
+              <span class="d-none d-md-inline">Posted on </span><strong>{{ page.date | date: date_format }}</strong>
               {% if page.categories.size > 0 %}
-                <span class="middot">&middot;</span>
+                <span class="middot">&bull;</span>
                 <span class="d-none d-md-inline">Categories: </span>
                 {% for category in page.categories %}
-                  <a href="{{ '/categories/' | relative_url }}#{{ category }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+                  <a href="{{ '/categories/' | relative_url }}#{{ category }}"><strong>{{ category }}</strong></a>{% unless forloop.last %}, {% endunless %}
                 {% endfor %}
               {% endif %}
               {% if page.readtime %}
-                <span class="middot">&middot;</span>
+                <span class="middot">&bull;</span>
                 {% include readtime.html %}
               {% endif %}
             </span>
