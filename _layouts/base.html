@@ -40,10 +40,10 @@ common-js:
     if (!badge) return;
     var host = window.location.hostname;
     if (host.includes("0c.xyz")) {
-      badge.textContent = " · GH";
+      badge.textContent = "GH";
       badge.style.color = "#2ea44f";  /* GitHub 绿 */
     } else if (host.includes("cuixyz.cc") || host.includes("workers.dev")) {
-      badge.textContent = " · CF";
+      badge.textContent = "CF";
       badge.style.color = "#f6821f";  /* Cloudflare 橙 */
     }
   });
