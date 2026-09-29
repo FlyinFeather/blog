@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\openfile]
+@="URL:OpenFile Protocol"
+"URL Protocol"=""
+
+[HKEY_CURRENT_USER\Software\Classes\openfile\shell\open\command]
+@="powershell.exe -WindowStyle Hidden -ExecutionPolicy Bypass -File \"C:\\Tools\\openfile.ps1\" \"%1\""
