@@ -48,6 +48,15 @@
               {% include readtime.html %}
             {% endif %}
           {% endif %}
+          {% if page.categories.size > 0 %}
+            <span class="post-meta">
+              <span class="d-none d-md-inline middot">&middot;</span>
+              Categories:
+              {% for category in page.categories %}
+                <a href="{{ '/categories/' | relative_url }}#{{ category }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            </span>
+          {% endif %}
         </div>
       </div>
     </div>
