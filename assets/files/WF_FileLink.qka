@@ -1,0 +1,332 @@
+{
+  "LimitSingleInstance": true,
+  "SummaryExpression": "$$",
+  "SubPrograms": [],
+  "Variables": [
+    {
+      "Key": "text",
+      "IsLocked": false,
+      "Type": 0,
+      "Desc": "默认的文本变量",
+      "DefaultValue": "",
+      "SaveState": false,
+      "IsInput": false,
+      "IsOutput": false,
+      "ParamName": null,
+      "InputParamInfo": null,
+      "OutputParamInfo": null,
+      "TableDef": null,
+      "CustomType": null,
+      "Group": null
+    },
+    {
+      "Key": "剪贴板",
+      "IsLocked": false,
+      "Type": 0,
+      "Desc": "",
+      "DefaultValue": "",
+      "SaveState": false,
+      "IsInput": false,
+      "IsOutput": false,
+      "ParamName": "",
+      "InputParamInfo": null,
+      "OutputParamInfo": null,
+      "TableDef": null,
+      "CustomType": null,
+      "Group": ""
+    },
+    {
+      "Key": "结果",
+      "IsLocked": false,
+      "Type": 0,
+      "Desc": "",
+      "DefaultValue": "",
+      "SaveState": false,
+      "IsInput": false,
+      "IsOutput": false,
+      "ParamName": "",
+      "InputParamInfo": null,
+      "OutputParamInfo": null,
+      "TableDef": null,
+      "CustomType": null,
+      "Group": ""
+    },
+    {
+      "Key": "文件名",
+      "IsLocked": false,
+      "Type": 0,
+      "Desc": "",
+      "DefaultValue": "",
+      "SaveState": false,
+      "IsInput": false,
+      "IsOutput": false,
+      "ParamName": "",
+      "InputParamInfo": null,
+      "OutputParamInfo": null,
+      "TableDef": null,
+      "CustomType": null,
+      "Group": ""
+    },
+    {
+      "Key": "规范路径",
+      "IsLocked": false,
+      "Type": 0,
+      "Desc": "",
+      "DefaultValue": "",
+      "SaveState": false,
+      "IsInput": false,
+      "IsOutput": false,
+      "ParamName": "",
+      "InputParamInfo": null,
+      "OutputParamInfo": null,
+      "TableDef": null,
+      "CustomType": null,
+      "Group": ""
+    },
+    {
+      "Key": "复制路径",
+      "IsLocked": false,
+      "Type": 0,
+      "Desc": "",
+      "DefaultValue": "",
+      "SaveState": false,
+      "IsInput": false,
+      "IsOutput": false,
+      "ParamName": "",
+      "InputParamInfo": null,
+      "OutputParamInfo": null,
+      "TableDef": null,
+      "CustomType": null,
+      "Group": ""
+    }
+  ],
+  "Steps": [
+    {
+      "StepRunnerKey": "sys:getClipboardText",
+      "InputParams": {
+        "format": {
+          "VarKey": null,
+          "Value": "UnicodeText"
+        },
+        "waitMs": {
+          "VarKey": null,
+          "Value": "400"
+        },
+        "stopIfFail": {
+          "VarKey": null,
+          "Value": "1"
+        }
+      },
+      "OutputParams": {
+        "isSuccess": null,
+        "output": "复制路径",
+        "url": null,
+        "elapsedMs": null,
+        "errMessage": null
+      },
+      "IfSteps": null,
+      "ElseSteps": null,
+      "Note": "",
+      "Disabled": false,
+      "Collapsed": false,
+      "DelayMs": 0
+    },
+    {
+      "StepRunnerKey": "sys:strReplace",
+      "InputParams": {
+        "type": {
+          "VarKey": null,
+          "Value": "single"
+        },
+        "input": {
+          "VarKey": "复制路径",
+          "Value": null
+        },
+        "old": {
+          "VarKey": null,
+          "Value": "\\"
+        },
+        "new": {
+          "VarKey": null,
+          "Value": "/"
+        },
+        "escapeOld": {
+          "VarKey": null,
+          "Value": "false"
+        },
+        "replaceEscapes": {
+          "VarKey": null,
+          "Value": "true"
+        },
+        "useRegex": {
+          "VarKey": null,
+          "Value": "false"
+        },
+        "ignoreCase": {
+          "VarKey": null,
+          "Value": "false"
+        },
+        "singleLine": {
+          "VarKey": null,
+          "Value": "true"
+        },
+        "multiLine": {
+          "VarKey": null,
+          "Value": "false"
+        }
+      },
+      "OutputParams": {
+        "output": "规范路径"
+      },
+      "IfSteps": null,
+      "ElseSteps": null,
+      "Note": "",
+      "Disabled": false,
+      "Collapsed": false,
+      "DelayMs": 0
+    },
+    {
+      "StepRunnerKey": "sys:pathExtraction",
+      "InputParams": {
+        "operation": {
+          "VarKey": null,
+          "Value": "getInfo"
+        },
+        "path": {
+          "VarKey": "规范路径",
+          "Value": null
+        },
+        "stopIfFail": {
+          "VarKey": null,
+          "Value": "1"
+        }
+      },
+      "OutputParams": {
+        "isSuccess": null,
+        "name": "文件名",
+        "nameNoExt": null,
+        "ext": null,
+        "path": null,
+        "errMessage": null
+      },
+      "IfSteps": null,
+      "ElseSteps": null,
+      "Note": "",
+      "Disabled": false,
+      "Collapsed": false,
+      "DelayMs": 0
+    },
+    {
+      "StepRunnerKey": "sys:formatString",
+      "InputParams": {
+        "formatString": {
+          "VarKey": null,
+          "Value": "[{0}](openfile:///{1})"
+        },
+        "p0": {
+          "VarKey": "文件名",
+          "Value": null
+        },
+        "p1": {
+          "VarKey": "复制路径",
+          "Value": null
+        },
+        "p2": {
+          "VarKey": null,
+          "Value": ""
+        },
+        "p3": {
+          "VarKey": null,
+          "Value": ""
+        },
+        "p4": {
+          "VarKey": null,
+          "Value": ""
+        }
+      },
+      "OutputParams": {
+        "output": "结果"
+      },
+      "IfSteps": null,
+      "ElseSteps": null,
+      "Note": "",
+      "Disabled": false,
+      "Collapsed": false,
+      "DelayMs": 0
+    },
+    {
+      "StepRunnerKey": "sys:writeClipboard",
+      "InputParams": {
+        "type": {
+          "VarKey": null,
+          "Value": "auto"
+        },
+        "input": {
+          "VarKey": "结果",
+          "Value": null
+        },
+        "successMsg": {
+          "VarKey": null,
+          "Value": ""
+        },
+        "stopIfFail": {
+          "VarKey": null,
+          "Value": "1"
+        }
+      },
+      "OutputParams": {
+        "isSuccess": null,
+        "errMessage": null
+      },
+      "IfSteps": null,
+      "ElseSteps": null,
+      "Note": "",
+      "Disabled": false,
+      "Collapsed": false,
+      "DelayMs": 0
+    },
+    {
+      "StepRunnerKey": "sys:outputText",
+      "InputParams": {
+        "content": {
+          "VarKey": "结果",
+          "Value": null
+        },
+        "method": {
+          "VarKey": null,
+          "Value": "paste"
+        },
+        "delayBeforePaste": {
+          "VarKey": null,
+          "Value": "50"
+        },
+        "delayAfterPaste": {
+          "VarKey": null,
+          "Value": "10"
+        },
+        "appendReturn": {
+          "VarKey": null,
+          "Value": "0"
+        },
+        "hideInHistory": {
+          "VarKey": null,
+          "Value": "0"
+        },
+        "stopIfFail": {
+          "VarKey": null,
+          "Value": "1"
+        }
+      },
+      "OutputParams": {
+        "isSuccess": null,
+        "errMessage": null
+      },
+      "IfSteps": null,
+      "ElseSteps": null,
+      "Note": "",
+      "Disabled": false,
+      "Collapsed": false,
+      "DelayMs": 0
+    }
+  ]
+}
