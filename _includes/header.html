@@ -34,20 +34,14 @@
           {% endif %}
           
           {% if include.type == "post" %} 
-            {% if page.author %}
-              By <strong>{{ page.author | strip_html }}</strong><br>
-            {% endif%}
-            <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
-            {% if page.last-updated %}
-              <span class="post-meta">
+            <span class="post-meta">
+              {% if page.author %}
+                By <strong>{{ page.author | strip_html }}</strong>
                 <span class="d-none d-md-inline middot">&middot;</span>
-                Last updated {{ page.last-updated | date: date_format }}
-              </span>
-            {% endif %}
-            {% if page.readtime %}
-              {% include readtime.html %}
-            {% endif %}
-          {% endif %}
+              {% endif %}
+              Posted on {{ page.date | date: date_format }}
+            </span>
+           
           {% if page.categories.size > 0 %}
             <span class="post-meta">
               <span class="d-none d-md-inline middot">&middot;</span>
@@ -56,6 +50,12 @@
                 <a href="{{ '/categories/' | relative_url }}#{{ category }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
               {% endfor %}
             </span>
+          {% endif %}
+
+           {% endif %}
+            {% if page.readtime %}
+              {% include readtime.html %}
+            {% endif %}
           {% endif %}
         </div>
       </div>
