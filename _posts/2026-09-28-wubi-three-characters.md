@@ -1,7 +1,7 @@
 ---
 tags:
-  - 五笔
   - ob
+  - 软件
 slug: wubi-three-characters
 description: ""
 create_time: 2024/7/15 15:58:09
