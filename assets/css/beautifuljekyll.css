@@ -1124,3 +1124,8 @@ pre {
     display: inline-block;
   }
 }
+
+body.dark-mode a.tag-btn.category-btn,
+body.dark-mode a.tag-btn.category-btn:hover {
+  color: #212529 !important;
+}
