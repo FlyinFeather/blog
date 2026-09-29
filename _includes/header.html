@@ -32,28 +32,27 @@
               <h2 class="{{ include.type }}-subheading">{{ page.subtitle | strip_html }}</h2>
             {% endif %}
           {% endif %}
-          
-          {% if include.type == "post" %} 
+          {% if include.type == "post" %}
             <span class="post-meta">
               {% if page.author %}
                 By <strong>{{ page.author | strip_html }}</strong>
                 <span class="d-none d-md-inline middot">&middot;</span>
               {% endif %}
               Posted on {{ page.date | date: date_format }}
-             {% if page.categories.size > 0 %}
-              <span class="d-none d-md-inline middot">&middot;</span>
-              Categories: <strong>
-              {% for category in page.categories %}
-                <a href="{{ '/categories/' | relative_url }}#{{ category }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
-              {% endfor %}</strong>
-            {% endif %}
-            {% if page.readtime %}
-              <span class="d-none d-md-inline middot">&middot;</span>
-              {% include readtime.html %}
-            {% endif %}
+              {% if page.categories.size > 0 %}
+                <span class="d-none d-md-inline middot">&middot;</span>
+                Categories:
+                {% for category in page.categories %}
+                  <a href="{{ '/categories/' | relative_url }}#{{ category }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+              {% endif %}
+              {% if page.readtime %}
+                <span class="d-none d-md-inline middot">&middot;</span>
+                {% include readtime.html %}
+              {% endif %}
             </span>
           {% endif %}
-        </div>
+          </div>
       </div>
     </div>
   </div>
