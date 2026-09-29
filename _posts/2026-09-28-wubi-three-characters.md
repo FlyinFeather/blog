@@ -10,8 +10,9 @@ layout: post
 date: 2024-07-19
 author: ©XYZ
 title: 五笔三字词组取码规则2-1-1
-categories:
+categories: 知者不惑
 share: true
+ca:
 ---
 隐约觉得五笔三字词组取码规则，有些格格不入（与其他字数词组相比），又一直想不出哪里不对劲儿，今天突然开窍——取二码的字不应是最后一字，而应是第一字！
 
