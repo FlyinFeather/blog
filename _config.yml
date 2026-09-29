@@ -23,6 +23,7 @@ navbar-links:
   About Me: "/aboutme"
   Archive: 
     - 归档: "/archive"
+    - 分类: "/categories"
     - 标签: "/tags/"
   Resources:
     - Learn markdown: "https://www.markdowntutorial.com/"
