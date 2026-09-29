@@ -7,9 +7,9 @@ date: 2026-08-30
 slug: nietzsche-swept
 title: 【书摘】当尼采哭泣
 author: 欧文·亚隆
-categories: Reading
+categories: 仁者不忧
 tags:
-  - 微信读书
+  - 读书
 share: "true"
 ---
 # 元数据
