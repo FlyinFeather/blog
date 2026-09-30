@@ -116,14 +116,14 @@ html[data-bs-theme="dark"] #nav-search-exit:hover { color: #fff; }
 .navbar-custom > .container-fluid { display: contents; }
 .navbar-custom { padding-left: 0.5rem; padding-right: 0.5rem; }
 
-/* 视觉顺序：电脑 Home ······ ☯ 链接组；手机 Home ······ ☰ ☯ */
-.navbar-toggler { order: 1; }
+/* 视觉顺序：电脑 Home ····· ☯ 链接组；手机 Home ····· ☯ ☰（开关在汉堡左侧） */
 .theme-toggle {
-  order: 2;
+  order: 1;
   margin-left: auto;     /* 吸收剩余空隙，把右侧元素推到最右 */
   margin-right: 0.35rem; /* 与链接组/汉堡的间距 */
 }
+.navbar-toggler { order: 2; }
 .navbar-collapse { order: 3; }
 
-/* 手机端若想按钮在汉堡左侧（☯ ☰）：把 .navbar-toggler 与 .theme-toggle
-   的 order 值对调（1↔2），其余不变 */
+/* 手机端若想改为开关在汉堡右侧（☰ ☯）：把 .navbar-toggler 与
+   .theme-toggle 的 order 值对调（1↔2），其余不变 */
