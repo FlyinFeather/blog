@@ -11,6 +11,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="main-navbar">
+    {% include theme-toggle.html %}
     <ul class="navbar-nav ml-auto">
       {%- for link in site.navbar-links -%}
         {%- if link[1].first %}
