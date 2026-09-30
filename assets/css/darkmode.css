@@ -125,23 +125,29 @@ html[data-bs-theme="dark"] #nav-search-exit:hover { color: #fff; }
    抬高 navbar 的 z-index，让开关整体位于头像之上。 */
 .navbar-custom { padding-left: 0.5rem; padding-right: 0.5rem; z-index: 1050; }
 
-/* 视觉顺序：电脑 Home ····· ☯ 链接组；手机 Home ····· ☯ ☰（开关在汉堡左侧） */
+/* 视觉顺序：
+   手机端 Home ····· ☯ ☰（开关在汉堡左侧、不进菜单，维持原状）；
+   桌面端 Home ····· 链接组 ☯（开关移到链接组右侧=导航栏最右边缘，固定贴边不漂）。
+   原理：开关位置由 order 控制，不再随链接数量在中间浮动。 */
 .theme-toggle {
   order: 1;
-  margin-left: auto;     /* 吸收剩余空隙，把右侧元素推到最右 */
+  margin-left: auto;     /* 手机端：吸收空隙，把开关+汉堡推到最右 */
   margin-right: 0.35rem; /* 与链接组/汉堡的间距 */
 }
 .navbar-toggler { order: 2; }
 .navbar-collapse { order: 3; }
 
-/* 手机端若想改为开关在汉堡右侧（☰ ☯）：把 .navbar-toggler 与
-   .theme-toggle 的 order 值对调（1↔2），其余不变 */
-
 /* 桌面端：BS4 给 .navbar-collapse 标了 flex-grow:1（占据全部剩余宽度），
-   它吃光空隙后按钮的 margin-left:auto 就失效了（开关被挤到 Home 旁的根因：
-   flex 空隙先被 grow 分配，auto margin 只能拿 grow 分剩的，而 grow=1 分不剩）。
-   归零 grow，让空隙回流给按钮的 margin-left:auto。
-   手机端 collapse 收起时为 display:none，grow 本就不生效，此规则无影响。 */
+   归零 grow + 改用 margin-left:auto 把"链接组+开关"整体推到最右；
+   开关 order:4 排在链接组之后 = 导航栏最右边缘，位置固定不再随链接数漂移。
+   手机端 collapse 收起时为 display:none，此媒体查询不生效，手机端维持上面规则。 */
 @media (min-width: 1200px) {
-  .navbar-expand-xl .navbar-collapse { flex-grow: 0; }
+  .navbar-expand-xl .navbar-collapse {
+    flex-grow: 0;
+    margin-left: auto;   /* 把链接组+开关整体推到最右 */
+  }
+  .theme-toggle {
+    order: 4;            /* 排在链接组之后 = 最右 */
+    margin-left: 0.35rem;/* 与链接组的间距 */
+  }
 }
