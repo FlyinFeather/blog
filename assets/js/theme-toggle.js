@@ -46,8 +46,11 @@
     var icons = document.querySelectorAll('.theme-toggle .theme-icon');
     for (var i = 0; i < icons.length; i++) {
       if (icons[i].classList.contains(SHOW[theme])) {
+        // 直控 inline display，使可见性不依赖 CSS（旧缓存 CSS 也不会冒出多个图标）
+        icons[i].style.display = 'block';
         icons[i].classList.add('is-on');
       } else {
+        icons[i].style.display = 'none';
         icons[i].classList.remove('is-on');
       }
     }
