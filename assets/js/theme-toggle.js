@@ -1,5 +1,5 @@
 // Beautiful Jekyll 暗色模式 - 主题切换交互
-// v2：支持桌面（折叠区内）+ 手机（折叠区外）双按钮实例，class 选择器
+// v3：内联 SVG 图标（不依赖 Font Awesome），class 选择器，单按钮
 // 行为：点击循环 自动 → 浅色 → 深色，偏好存 localStorage('theme')
 (function () {
   'use strict';
@@ -8,10 +8,10 @@
   if (!toggles.length) { return; }
 
   var CYCLE = ['auto', 'light', 'dark'];
-  var ICONS = {
-    auto:  'fa-circle-half-stroke',
-    light: 'fa-sun',
-    dark:  'fa-moon'
+  var SHOW = {
+    auto:  'theme-icon-auto',
+    light: 'theme-icon-light',
+    dark:  'theme-icon-dark'
   };
   var NAMES = {
     auto:  '自动（跟随系统）',
@@ -45,7 +45,11 @@
     document.documentElement.dataset.bsTheme = toApply(theme);
     var icons = document.querySelectorAll('.theme-toggle .theme-icon');
     for (var i = 0; i < icons.length; i++) {
-      icons[i].className = 'theme-icon fas ' + ICONS[theme];
+      if (icons[i].classList.contains(SHOW[theme])) {
+        icons[i].classList.add('is-on');
+      } else {
+        icons[i].classList.remove('is-on');
+      }
     }
     for (var j = 0; j < toggles.length; j++) {
       toggles[j].title = '切换主题（当前：' + NAMES[theme] + '）';
