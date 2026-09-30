@@ -145,33 +145,3 @@ let BeautifulJekyllJS = {
 // 2fc73a3a967e97599c9763d05e564189
 
 document.addEventListener('DOMContentLoaded', BeautifulJekyllJS.init);
-
-# 深浅主题
-document.addEventListener('DOMContentLoaded', function() {
-  var toggle = document.getElementById('theme-toggle');
-  if (!toggle) return;
-
-  var html = document.documentElement;
-  var iconDark = document.getElementById('icon-dark');
-  var iconLight = document.getElementById('icon-light');
-
-  function updateIcons(theme) {
-    if (theme === 'dark') {
-      iconDark.style.display = 'none';
-      iconLight.style.display = 'inline';
-    } else {
-      iconDark.style.display = 'inline';
-      iconLight.style.display = 'none';
-    }
-  }
-
-  toggle.addEventListener('click', function() {
-    var current = html.getAttribute('data-theme');
-    var next = current === 'dark' ? 'light' : 'dark';
-    html.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
-    updateIcons(next);
-  });
-
-  updateIcons(html.getAttribute('data-theme'));
-});
