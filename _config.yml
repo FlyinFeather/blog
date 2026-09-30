@@ -5,11 +5,11 @@
 ### the initial set up you won't need to come back to this file often.
 ###########################################################
 
+permalink: /:year/:title/
+
 ############################
 # --- Required options --- #
 ############################
-
-permalink: /:year/:title/
 
 # Name of website
 title: 翠翔羽翥
