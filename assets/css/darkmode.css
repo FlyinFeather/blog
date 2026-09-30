@@ -155,3 +155,11 @@ html[data-bs-theme="dark"] #nav-search-exit:hover { color: #fff; }
     margin-left: 0.35rem;/* 与链接组的间距 */
   }
 }
+
+/* ---- 7. 缩小导航栏链接间距 ---- */
+@media (min-width: 1200px) {
+  .navbar-expand-xl .navbar-nav .nav-link {
+    padding-left: 0.5rem;    /* 原 0.9375rem(15px) → 8px */
+    padding-right: 0.5rem;
+  }
+}
