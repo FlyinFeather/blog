@@ -9,13 +9,13 @@
 # --- Required options --- #
 ############################
 
+permalink: /:year/:title/
+
 # Name of website
 title: 翠翔羽翥
 
 # Your name to show in the footer
 author: FlyinFeather
-
-permalink: /:year/:title/
 
 ###############################################
 # --- List of links in the navigation bar --- #
