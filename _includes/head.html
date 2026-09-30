@@ -2,6 +2,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- ============================================================
+       暗色模式补丁（参照 LizardByte/beautiful-jekyll-next）
+       本文件覆盖了主题自带的 _includes/head.html，唯一目的是在
+       <head> 最前注入防闪烁脚本（FOUC）。
+       ⚠ 升级 Beautiful Jekyll 后，请重新对比上游 head.html 并套用本段。
+       ============================================================ -->
+  <script src="{{ '/assets/js/theme-init.js' | relative_url }}"></script>
+
   {% capture pagetitle %}
     {%- if page.share-title -%}
       {{ page.share-title | strip_html | xml_escape }}
@@ -172,12 +180,4 @@
     {% endfor %}
   {% endif %}
 
-<script>
-  (function() {
-    var saved = localStorage.getItem('theme');
-    var preferred = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    document.documentElement.setAttribute('data-theme', preferred);
-  })();
-</script>
-  
 </head>
