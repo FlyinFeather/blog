@@ -99,6 +99,8 @@ html[data-bs-theme="dark"] #nav-search-exit:hover { color: #fff; }
   line-height: 1;
   padding: 0.5rem 0.75rem;
   align-self: center;
+  position: relative;   /* 让 z-index 生效 */
+  z-index: 20;          /* 在 navbar 内部也确保开关位于最上，压过任何兄弟覆盖 */
 }
 .theme-toggle:hover,
 .theme-toggle:focus { color: var(--hover-col); outline: none; }
@@ -118,7 +120,10 @@ html[data-bs-theme="dark"] #nav-search-exit:hover { color: #fff; }
 
 /* container-fluid 退出布局流（其横向 padding 丢失，下一行补回） */
 .navbar-custom > .container-fluid { display: contents; }
-.navbar-custom { padding-left: 0.5rem; padding-right: 0.5rem; }
+/* 抬升整个固定导航栏层级：B J 的页头大头像在 DOM 中排在 navbar 之后，
+   会画在 fixed 导航栏之上并拦截开关点击（顶端可见、下滑消失即为证据）。
+   抬高 navbar 的 z-index，让开关整体位于头像之上。 */
+.navbar-custom { padding-left: 0.5rem; padding-right: 0.5rem; z-index: 1050; }
 
 /* 视觉顺序：电脑 Home ····· ☯ 链接组；手机 Home ····· ☯ ☰（开关在汉堡左侧） */
 .theme-toggle {
