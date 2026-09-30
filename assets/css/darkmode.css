@@ -89,8 +89,8 @@ html[data-bs-theme="dark"] #nav-search-input:focus {
 html[data-bs-theme="dark"] #nav-search-input::placeholder { color: #8b949e; }
 html[data-bs-theme="dark"] #nav-search-exit:hover { color: #fff; }
 
-/* ---- 4. 主题切换按钮样式（配合 _includes/theme-toggle.html，全局生效） ---- */
-#theme-toggle {
+/* ---- 4. 主题切换按钮基础样式（桌面/手机两处实例通用） ---- */
+.theme-toggle {
   background: none;
   border: none;
   cursor: pointer;
@@ -100,5 +100,30 @@ html[data-bs-theme="dark"] #nav-search-exit:hover { color: #fff; }
   padding: 0.5rem 0.75rem;
   align-self: center;
 }
-#theme-toggle:hover,
-#theme-toggle:focus { color: var(--hover-col); outline: none; }
+.theme-toggle:hover,
+.theme-toggle:focus { color: var(--hover-col); outline: none; }
+
+/* ---- 5. 按钮位置（v2）：桌面在链接组最左端，手机在汉堡左侧、下拉菜单外 ----
+   按钮渲染两份：nav.html 折叠区内一份（桌面端用，需手动在 nav.html 的
+   <div class="collapse navbar-collapse"> 内、<ul> 之前加 {% include theme-toggle.html %}）；
+   navbar-extra 注入一份（手机端用，位于折叠区外）。以下规则按断点二选一显示。 */
+
+/* 桌面（≥1200px）：隐藏折叠区外的实例；折叠区内的实例推到链接组左侧 */
+@media (min-width: 1200px) {
+  .navbar-custom > .container-fluid > .theme-toggle { display: none; }
+  .navbar-custom .navbar-collapse > .theme-toggle { margin-left: auto; }
+  .navbar-custom .navbar-collapse > .navbar-nav { margin-left: 0; }
+}
+
+/* 手机/平板（<1200px）：折叠区内的实例不进下拉菜单；
+   折叠区外的实例与汉堡按钮组成右侧按钮组（汉堡保持最右） */
+@media (max-width: 1199px) {
+  .navbar-custom .navbar-collapse > .theme-toggle { display: none; }
+  .navbar-custom .container-fluid > .theme-toggle {
+    order: 1;
+    margin-left: auto;    /* 吸收剩余空间，把开关和汉堡推到右侧 */
+    margin-right: 0.35rem;
+  }
+  .navbar-custom .navbar-toggler { order: 2; }
+  .navbar-custom .navbar-collapse { order: 3; }
+}
