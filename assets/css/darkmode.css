@@ -127,3 +127,12 @@ html[data-bs-theme="dark"] #nav-search-exit:hover { color: #fff; }
 
 /* 手机端若想改为开关在汉堡右侧（☰ ☯）：把 .navbar-toggler 与
    .theme-toggle 的 order 值对调（1↔2），其余不变 */
+
+/* 桌面端：BS4 给 .navbar-collapse 标了 flex-grow:1（占据全部剩余宽度），
+   它吃光空隙后按钮的 margin-left:auto 就失效了（开关被挤到 Home 旁的根因：
+   flex 空隙先被 grow 分配，auto margin 只能拿 grow 分剩的，而 grow=1 分不剩）。
+   归零 grow，让空隙回流给按钮的 margin-left:auto。
+   手机端 collapse 收起时为 display:none，grow 本就不生效，此规则无影响。 */
+@media (min-width: 1200px) {
+  .navbar-expand-xl .navbar-collapse { flex-grow: 0; }
+}
