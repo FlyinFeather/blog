@@ -103,6 +103,10 @@ html[data-bs-theme="dark"] #nav-search-exit:hover { color: #fff; }
 .theme-toggle:hover,
 .theme-toggle:focus { color: var(--hover-col); outline: none; }
 
+/* SVG 图标显隐（配合 theme-toggle.js v3 的 is-on class） */
+.theme-toggle .theme-icon { display: none; }
+.theme-toggle .theme-icon.is-on { display: block; }
+
 /* ---- 5. 按钮位置（v5）：display:contents 单按钮方案 ----
    原理：navbar-extra 注入的按钮在 .container-fluid 外层，order 无法跨容器
    排序（v4 电脑端链接组贴左的根因：压掉 ul ml-auto 后 container-fluid 内部
