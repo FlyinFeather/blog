@@ -124,6 +124,10 @@ html[data-bs-theme="dark"] #nav-search-exit:hover { color: #fff; }
    会画在 fixed 导航栏之上并拦截开关点击（顶端可见、下滑消失即为证据）。
    抬高 navbar 的 z-index，让开关整体位于头像之上。 */
 .navbar-custom { padding-left: 0.5rem; padding-right: 0.5rem; z-index: 1050; }
+/* 导航栏内的小头像浮层会盖住中央区域、拦截链接点击（toggle、About me 同根）。
+   设为不拦截指针事件，点击穿透到下层链接；头像本身链首页，左侧品牌名可替代。
+   若想保留头像可点击，改用：.navbar-custom .avatar-container { z-index: -1; } */
+.navbar-custom .avatar-container { z-index: -1; }
 
 /* 视觉顺序：
    手机端 Home ····· ☯ ☰（开关在汉堡左侧、不进菜单，维持原状）；
