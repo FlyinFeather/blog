@@ -1,4 +1,6 @@
-<!-- Beautiful Jekyll 暗色模式：导航栏主题切换按钮（经 navbar-extra 注入点加载） -->
-<button id="theme-toggle" type="button" aria-label="切换主题">
-  <span id="theme-icon" class="fas fa-circle-half-stroke"></span>
+<!-- Beautiful Jekyll 暗色模式：主题切换按钮
+     放两份：nav.html 折叠区内（桌面端用）+ navbar-extra 注入（手机端用）
+     CSS 按断点各自显示其一。用 class 而非 id，以支持多实例。 -->
+<button class="theme-toggle" type="button" aria-label="切换主题">
+  <span class="theme-icon fas fa-circle-half-stroke"></span>
 </button>
