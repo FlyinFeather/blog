@@ -103,27 +103,24 @@ html[data-bs-theme="dark"] #nav-search-exit:hover { color: #fff; }
 .theme-toggle:hover,
 .theme-toggle:focus { color: var(--hover-col); outline: none; }
 
-/* ---- 5. 按钮位置（v2）：桌面在链接组最左端，手机在汉堡左侧、下拉菜单外 ----
-   按钮渲染两份：nav.html 折叠区内一份（桌面端用，需手动在 nav.html 的
-   <div class="collapse navbar-collapse"> 内、<ul> 之前加 {% include theme-toggle.html %}）；
-   navbar-extra 注入一份（手机端用，位于折叠区外）。以下规则按断点二选一显示。 */
+/* ---- 5. 按钮位置（v4）：单按钮，flex order 视觉重排 ----
+   按钮只有一份（折叠区外，navbar-extra 注入），nav.html 无需任何改动。
+   桌面端：order 调到折叠区之前 → 紧贴链接组左侧；
+   手机端：与汉堡组成右侧按钮组 → 紧贴汉堡左侧、不进下拉菜单。
+   原理：BS4 navbar 的 .container-fluid 是 flex 容器，order 决定视觉顺序；
+   avatar 是 absolute 定位不参与 flex 流，不受影响。
+   ⚠ nav.html 若为 navbar-expand-lg（而非 xl），把断点 1200 改成 992。
+   ⚠ 改版后先 Ctrl+F5 强刷再验证（浏览器/Pages CDN 缓存）。 */
 
-/* 桌面（≥1200px）：隐藏折叠区外的实例；折叠区内的实例推到链接组左侧 */
-@media (min-width: 1200px) {
-  .navbar-custom > .container-fluid > .theme-toggle { display: none; }
-  .navbar-custom .navbar-collapse > .theme-toggle { margin-left: auto; }
-  .navbar-custom .navbar-collapse > .navbar-nav { margin-left: 0; }
+.theme-toggle {
+  order: 1;
+  margin-left: auto;    /* 吸收剩余空隙：两端都把按钮及右侧元素推到最右 */
+  margin-right: 0.35rem;
 }
+.navbar-toggler { order: 2; }      /* 汉堡在按钮右边（桌面端隐藏，无影响） */
+.navbar-collapse { order: 3; }     /* 链接组在按钮右边（手机端隐藏，无影响） */
 
-/* 手机/平板（<1200px）：折叠区内的实例不进下拉菜单；
-   折叠区外的实例与汉堡按钮组成右侧按钮组（汉堡保持最右） */
-@media (max-width: 1199px) {
-  .navbar-custom .navbar-collapse > .theme-toggle { display: none; }
-  .navbar-custom .container-fluid > .theme-toggle {
-    order: 1;
-    margin-left: auto;    /* 吸收剩余空间，把开关和汉堡推到右侧 */
-    margin-right: 0.35rem;
-  }
-  .navbar-custom .navbar-toggler { order: 2; }
-  .navbar-custom .navbar-collapse { order: 3; }
+/* 桌面端：压掉 ul 的 ml-auto，避免空隙被瓜分、按钮被推离链接组 */
+@media (min-width: 1200px) {
+  .navbar-collapse .navbar-nav { margin-left: 0 !important; }
 }
