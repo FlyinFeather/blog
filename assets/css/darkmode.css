@@ -103,24 +103,27 @@ html[data-bs-theme="dark"] #nav-search-exit:hover { color: #fff; }
 .theme-toggle:hover,
 .theme-toggle:focus { color: var(--hover-col); outline: none; }
 
-/* ---- 5. 按钮位置（v4）：单按钮，flex order 视觉重排 ----
-   按钮只有一份（折叠区外，navbar-extra 注入），nav.html 无需任何改动。
-   桌面端：order 调到折叠区之前 → 紧贴链接组左侧；
-   手机端：与汉堡组成右侧按钮组 → 紧贴汉堡左侧、不进下拉菜单。
-   原理：BS4 navbar 的 .container-fluid 是 flex 容器，order 决定视觉顺序；
-   avatar 是 absolute 定位不参与 flex 流，不受影响。
-   ⚠ nav.html 若为 navbar-expand-lg（而非 xl），把断点 1200 改成 992。
-   ⚠ 改版后先 Ctrl+F5 强刷再验证（浏览器/Pages CDN 缓存）。 */
+/* ---- 5. 按钮位置（v5）：display:contents 单按钮方案 ----
+   原理：navbar-extra 注入的按钮在 .container-fluid 外层，order 无法跨容器
+   排序（v4 电脑端链接组贴左的根因：压掉 ul ml-auto 后 container-fluid 内部
+   再无元素制造空隙）。将 container-fluid 设为 display:contents 后，其子元素
+   （站名/汉堡/链接组）直接参与 nav 的 flex 排序，按钮与链接组同流。
+   手机端菜单展开依赖 nav 的 flex-wrap（BS4 默认 wrap），不受影响。
+   兼容性：Chrome 65+/Firefox 37+/Safari 11.1+（2018 年后浏览器均支持）。
+   ⚠ 若 nav.html 为 navbar-expand-lg，把 1200 改成 992。⚠ 改后 Ctrl+F5 强刷。 */
 
+/* container-fluid 退出布局流（其横向 padding 丢失，下一行补回） */
+.navbar-custom > .container-fluid { display: contents; }
+.navbar-custom { padding-left: 0.5rem; padding-right: 0.5rem; }
+
+/* 视觉顺序：电脑 Home ······ ☯ 链接组；手机 Home ······ ☰ ☯ */
+.navbar-toggler { order: 1; }
 .theme-toggle {
-  order: 1;
-  margin-left: auto;    /* 吸收剩余空隙：两端都把按钮及右侧元素推到最右 */
-  margin-right: 0.35rem;
+  order: 2;
+  margin-left: auto;     /* 吸收剩余空隙，把右侧元素推到最右 */
+  margin-right: 0.35rem; /* 与链接组/汉堡的间距 */
 }
-.navbar-toggler { order: 2; }      /* 汉堡在按钮右边（桌面端隐藏，无影响） */
-.navbar-collapse { order: 3; }     /* 链接组在按钮右边（手机端隐藏，无影响） */
+.navbar-collapse { order: 3; }
 
-/* 桌面端：压掉 ul 的 ml-auto，避免空隙被瓜分、按钮被推离链接组 */
-@media (min-width: 1200px) {
-  .navbar-collapse .navbar-nav { margin-left: 0 !important; }
-}
+/* 手机端若想按钮在汉堡左侧（☯ ☰）：把 .navbar-toggler 与 .theme-toggle
+   的 order 值对调（1↔2），其余不变 */
