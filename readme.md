@@ -1,5 +1,6 @@
 ---
 layout: page
+title: 关于本项目
 permalink: /readme/
 ---
 
@@ -9,9 +10,9 @@ permalink: /readme/
 
 ## 访问地址
 
-- 主站：https://b.0c.xyz
-- 备用：https://chron.cuixyz.cc
-- RSS：https://b.0c.xyz/feed.xml
+- 主站：[https://b.0c.xyz](https://b.0c.xyz)
+- 备用：[https://chron.cuixyz.cc](https://chron.cuixyz.cc)
+- RSS：[https://b.0c.xyz/feed.xml](https://b.0c.xyz/feed.xml)
 
 ## 技术栈
 
