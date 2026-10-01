@@ -16,7 +16,7 @@
         {{ site.author }}
       {% endif %}
       {% if site.posts %}
-        ·&nbsp;<span style="font-size:.9em; opacity:.7">Updated on </span>
+        ·&nbsp;<span class="theme-by text-muted">>Updated on </span>
         {{ site.posts.first.date | date: "%Y-%m-%d" }}
       {% endif %}
       {% if site.matomo %}
@@ -33,9 +33,8 @@
        {% endif%}
 
       </p>
-        
+      <img src="https://hitscounter.dev/api/hit?url=b.0C.xyz&label=%E2%84%96&icon=eye&color=%23198754&message=&style=flat&tz=Asia%2FShanghai">
       {% unless site.remove-ads %}<p class="theme-by text-muted">
-        <img src="https://hitscounter.dev/api/hit?url=b.0C.xyz&label=%E2%84%96&icon=eye&color=%23198754&message=&style=flat&tz=Asia%2FShanghai">
         Powered by
         <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
         <span id="site-badge"></span>
