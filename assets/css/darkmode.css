@@ -124,10 +124,14 @@ html[data-bs-theme="dark"] #nav-search-exit:hover { color: #fff; }
    会画在 fixed 导航栏之上并拦截开关点击（顶端可见、下滑消失即为证据）。
    抬高 navbar 的 z-index，让开关整体位于头像之上。 */
 .navbar-custom { padding-left: 0.5rem; padding-right: 0.5rem; z-index: 1050; }
-/* 导航栏内的小头像浮层会盖住中央区域、拦截链接点击（toggle、About me 同根）。
-   设为不拦截指针事件，点击穿透到下层链接；头像本身链首页，左侧品牌名可替代。
-   若想保留头像可点击，改用：.navbar-custom .avatar-container { z-index: -1; } */
-.navbar-custom .avatar-container { z-index: -1; }
+
+/* 修复：导航栏内的小头像（.avatar-container，绝对定位、居中、顶端可见）
+   会盖住导航栏中央区域。做法：容器整体保持"点击穿透"(pointer-events:none)，
+   仅让可见的头像图片(.avatar-img)重新可点——这样左侧 About me 等链接（位于
+   头像圆框之外）依旧可点，而头像本身可链到 README / 关于页等独立目标，
+   与左侧 Home 链接不再功能重复（详见 INSTALL.md v5.11）。 */
+.navbar-custom .avatar-container { pointer-events: none; }
+.navbar-custom .avatar-container .avatar-img { pointer-events: auto; }
 
 /* 视觉顺序：
    手机端 Home ····· ☯ ☰（开关在汉堡左侧、不进菜单，维持原状）；
@@ -159,7 +163,9 @@ html[data-bs-theme="dark"] #nav-search-exit:hover { color: #fff; }
 /* ---- 6. 头像 hover 浮起（真·划过头像才反应）----
    第 5 节已让 .avatar-img 恢复 pointer-events:auto（头像链 README，可点击），
    所以现在能对头像直接做真 hover：鼠标划过头像才放大+提亮+投影，
-   既美观也暗示"头像可点"。容器仍 pointer-events:none，放大后也不挡左侧链接。 */
+   既美观也暗示"头像可点"。容器仍 pointer-events:none，放大后也不挡左侧链接。
+   若想让整个圆形边框(.avatar-img-border)一起浮起，把下方两个选择器里的
+   .avatar-img 换成 .avatar-img-border 即可（边框随划过图片触发，同样不挡点击）。 */
 .navbar-custom .avatar-container .avatar-img {
   transition: transform 0.2s ease, filter 0.2s ease;
 }
@@ -168,10 +174,15 @@ html[data-bs-theme="dark"] #nav-search-exit:hover { color: #fff; }
   filter: brightness(1.15) drop-shadow(0 2px 8px rgba(0, 0, 0, .4));
 }
 
-/* ---- 7. 缩小导航栏链接间距 ---- */
+/* ---- 7. 缩小导航栏链接间距 ----
+   原版桌面端每个链接左右内边距 0.9375rem(≈15px)，相邻链接间隔≈30px。
+   覆盖为 0.5rem(≈8px) 让链接更紧凑；数值可自行调整（如 0.625rem=10px）。
+   最后一个链接的 padding-right:0（原版 last-child 规则，specificity 更高）
+   保持不变，链接组最右边缘仍贴齐，开关间距不受影响。
+   若 nav.html 为 navbar-expand-lg，把选择器改为 .navbar-expand-lg… 且断点用 992。 */
 @media (min-width: 1200px) {
   .navbar-expand-xl .navbar-nav .nav-link {
-    padding-left: 0.5rem;    /* 原 0.9375rem(15px) → 8px */
+    padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
 }
