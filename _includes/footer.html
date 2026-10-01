@@ -16,7 +16,8 @@
         {{ site.author }}
       {% endif %}
       {% if site.posts %}
-        ·&nbsp;<span title="Updated on {{ site.posts.first.date | date: '%Y-%m-%d' }}">{{ site.posts.first.date | date: "%Y-%m-%d" }}</span>
+        ·&nbsp;<span style="font-size:.82em; opacity:.7">Updated on </span>
+        <span title="Updated on {{ site.posts.first.date | date: '%Y-%m-%d' }}">{{ site.posts.first.date | date: "%Y-%m-%d" }}</span>
       {% endif %}
       {% if site.matomo %}
         {% if site.matomo.opt-out %}
