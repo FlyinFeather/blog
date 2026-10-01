@@ -156,6 +156,18 @@ html[data-bs-theme="dark"] #nav-search-exit:hover { color: #fff; }
   }
 }
 
+/* ---- 6. 头像 hover 浮起（真·划过头像才反应）----
+   第 5 节已让 .avatar-img 恢复 pointer-events:auto（头像链 README，可点击），
+   所以现在能对头像直接做真 hover：鼠标划过头像才放大+提亮+投影，
+   既美观也暗示"头像可点"。容器仍 pointer-events:none，放大后也不挡左侧链接。 */
+.navbar-custom .avatar-container .avatar-img {
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.navbar-custom .avatar-container .avatar-img:hover {
+  transform: scale(1.08);
+  filter: brightness(1.15) drop-shadow(0 2px 8px rgba(0, 0, 0, .4));
+}
+
 /* ---- 7. 缩小导航栏链接间距 ---- */
 @media (min-width: 1200px) {
   .navbar-expand-xl .navbar-nav .nav-link {
