@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 关于本项目
+title: 关于本站
 permalink: /readme/
 ---
 
