@@ -14,9 +14,10 @@
         ©&nbsp;2022
       {% if site.author %}
         {{ site.author }}
-      
       {% endif %}
-        ·&nbsp;Updated on {{ site.posts.first.date | date: "%Y-%m-%d" }}
+      {% if site.posts %}
+        ·<span title="Updated on{{ site.posts.first.date | date: '%Y-%m-%d' }}">{{ site.posts.first.date | date: "%Y-%m-%d" }}</span>
+      {% endif %}
       {% if site.matomo %}
         {% if site.matomo.opt-out %}
           &nbsp;·&nbsp;
