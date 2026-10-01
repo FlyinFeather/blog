@@ -17,4 +17,3 @@ gemspec
 gem "rake"
 gem "thor"
 gem "appraisal"
-gem "jekyll-github-metadata"
