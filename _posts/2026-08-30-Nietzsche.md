@@ -1,7 +1,6 @@
 ---
 reviewCount: 5
 noteCount: 45
-isbn: 9787111555377
 layout: post
 date: 2026-08-30
 slug: nietzsche-swept
@@ -10,6 +9,7 @@ author: 欧文·亚隆
 categories: 仁者不忧
 tags:
   - 读书
+  - ob
 share: "true"
 ---
 # 元数据
