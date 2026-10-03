@@ -27,7 +27,7 @@ navbar-links:
     - 标签: "/tags/"
   Resources:
     - Learn markdown: "https://www.markdowntutorial.com/"
-    - WorkFlowy下载: "https://github.com/workflowy/download-android/releases"
+    - WorkFlowy: "https://github.com/workflowy/download-android/releases"
     - 般若冰凌: "https://www.icesofts.com/"
 #  About me: "/aboutme"
 #  Author's home: "https://cuixyz.com"
