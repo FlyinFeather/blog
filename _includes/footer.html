@@ -10,15 +10,26 @@
           {% endfor %}
         </div>
       {% endif %}
+
+      <p class="visit text-muted">
+        <img src="https://hitscounter.dev/api/hit?url=b.0C.xyz&label=%E2%84%96&icon=eye&color=%23198754&message=&style=flat&tz=Asia%2FShanghai">
+        {% if site.posts %}
+        ·&nbsp;<span style="font-size:.9em; opacity:.7">Updated on </span>
+        {{ site.posts.first.date | date: "%Y-%m-%d" }}
+      {% endif %}
+      {% if site.edit_page_button and site.github.repository_url %}
+       <a title="Edit this page on GitHub" href="{{ site.github.repository_url }}/edit/{{ site.github.source.branch }}/{{ page.path }}" class="text_muted">
+          <span class="badge badge-secondary">{{ site.github.build_revision | slice: 0, 7 }}</span></a>
+       {% endif%}
+
+      </p>
+        
       <p class="copyright text-muted">
         ©&nbsp;2022
       {% if site.author %}
         {{ site.author }}
       {% endif %}
-      {% if site.posts %}
-        ·&nbsp;<span style="font-size:.9em; opacity:.7">Updated on </span>
-        {{ site.posts.first.date | date: "%Y-%m-%d" }}
-      {% endif %}
+      <a href="https://www.0c.xyz">0C.xyz</a>
       {% if site.matomo %}
         {% if site.matomo.opt-out %}
           &nbsp;·&nbsp;
@@ -26,15 +37,10 @@
         {% endif %}
       {% endif%}
 
-      {% if site.edit_page_button and site.github.repository_url %}
-        
-        <a title="Edit this page on GitHub" href="{{ site.github.repository_url }}/edit/{{ site.github.source.branch }}/{{ page.path }}" class="text_muted">
-          <span class="badge badge-secondary">{{ site.github.build_revision | slice: 0, 7 }}</span></a>
-       {% endif%}
-
       </p>
+        
       <p class="theme-by text-muted">
-      <img src="https://hitscounter.dev/api/hit?url=b.0C.xyz&label=%E2%84%96&icon=eye&color=%23198754&message=&style=flat&tz=Asia%2FShanghai">
+      
       {% unless site.remove-ads %}
         Powered by
         <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
