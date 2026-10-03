@@ -11,10 +11,10 @@
         </div>
       {% endif %}
 
-      <p class="visit text-muted">
+      <p class="theme-by text-muted">
         <img src="https://hitscounter.dev/api/hit?url=b.0C.xyz&label=%E2%84%96&icon=eye&color=%23198754&message=&style=flat&tz=Asia%2FShanghai">
         {% if site.posts %}
-        ·&nbsp;<span style="font-size:.9em; opacity:.7">Updated on </span>
+        <span style="font-size:.9em; opacity:.7">Updated on </span>
         {{ site.posts.first.date | date: "%Y-%m-%d" }}
       {% endif %}
       {% if site.edit_page_button and site.github.repository_url %}
@@ -29,7 +29,7 @@
       {% if site.author %}
         {{ site.author }}
       {% endif %}
-      <a href="https://www.0c.xyz">0C.xyz</a>
+      ·&nbsp;<a href="https://www.0c.xyz">0C.xyz</a>
       {% if site.matomo %}
         {% if site.matomo.opt-out %}
           &nbsp;·&nbsp;
