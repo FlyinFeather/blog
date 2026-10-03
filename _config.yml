@@ -20,7 +20,6 @@ author: FlyinFeather
 ###############################################
 
 navbar-links:
-  About Me: "/aboutme"
   Archive: 
     - 归档: "/archive"
     - 分类: "/categories"
@@ -28,7 +27,8 @@ navbar-links:
   Resources:
     - Learn markdown: "https://www.markdowntutorial.com/"
     - 般若冰凌: "https://www.icesofts.com/"
-  Author's home: "https://cuixyz.com"
+  About Me: "/aboutme"
+#  Author's home: "https://cuixyz.com"
 
 ################
 # --- Logo --- #
