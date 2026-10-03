@@ -8,7 +8,9 @@ subtitle: 全部文章按年份排列
 {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
 {% for year in posts_by_year %}
-  <h2 id="year-{{ year.name }}">{{ year.name }}&nbsp;({{ year.items | size }})
+  <h2 id="year-{{ year.name }}">
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    &nbsp;{{ year.name }}&nbsp;({{ year.items | size }})
   </h2>
   <ul>
     {% for post in year.items %}
