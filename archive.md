@@ -9,7 +9,7 @@ subtitle: 全部文章按年份排列
 
 {% for year in posts_by_year %}
   <h2 id="year-{{ year.name }}">
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <i class="fas fa-history" aria-hidden="true"></i>
     &nbsp;{{ year.name }}&nbsp;({{ year.items | size }})
   </h2>
   <ul>
