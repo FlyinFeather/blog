@@ -10,5 +10,6 @@ tags:
 share: true
 pub-blog: "true"
 blog-path: _posts
+thumbnail-img: https://img.ellipse.graphics/cdn-cgi/image/width=300,format=auto/2026/09/64aa45cd5913638662d9c6fb2b2cd289.png
 ---
 ![image.png](https://img.ellipse.graphics/2026/09/64aa45cd5913638662d9c6fb2b2cd289.png)
