@@ -3,10 +3,10 @@ layout: page
 title: 归档
 subtitle: 全部文章按年份排列
 ---
-<h4 class="text-right">
+<h3 class="text-right">
   <i class="fas fa-history" aria-hidden="true"></i>
   {{ site.posts | size }}x<a href="#year-{{ site.posts.first.date | date: "%Y" }}">文章</a> · {{ site.categories | size }}x<a href="/categories/">分类</a> · {{ site.tags | size }}x<a href="/tags/">标签</a> 
-</h4>
+</h3>
 
 {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
