@@ -39,7 +39,7 @@
                 <span class="d-none d-md-inline">By </span><strong>{{ page.author | strip_html }}</strong>
                 <span class="middot">&middot;</span>
               {% endif %}
-              <span class="d-none d-md-inline">Posted on </span>{{ page.date | date: date_format }}
+              <span class="d-none d-md-inline">Posted on </span>{{ page.date | date: "%Y-%m-%d" }}
               {% if page.categories.size > 0 %}
                 <span class="middot">&middot;</span>
                 <span class="d-none d-md-inline">Categories: </span>
