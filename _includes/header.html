@@ -36,13 +36,13 @@
           {% if include.type == "post" %}
             <span class="post-meta">
               {% if page.author %}
-                <span class="d-none d-md-inline">By </span><strong>{{ page.author | strip_html }}</strong>
+                <span class="d-none d-md-inline">作者：</span><strong>{{ page.author | strip_html }}</strong>
                 <span class="middot">&middot;</span>
               {% endif %}
-              <span class="d-none d-md-inline">Posted on </span>{{ page.date | date: "%Y-%m-%d" }}
+              <span class="d-none d-md-inline">发布：</span>{{ page.date | date: "%Y-%m-%d" }}
               {% if page.categories.size > 0 %}
                 <span class="middot">&middot;</span>
-                <span class="d-none d-md-inline">Categories: </span>
+                <span class="d-none d-md-inline">分类：</span>
                 {% for category in page.categories %}
                   <a href="{{ '/categories/' | relative_url }}#{{ category }}"><strong>{{ category }}</strong></a>{% unless forloop.last %}, {% endunless %}
                 {% endfor %}
