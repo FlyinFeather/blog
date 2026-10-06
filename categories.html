@@ -10,7 +10,8 @@ title: 'Category Index'
         {{- category | first -}}{%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}
 {%- endcapture -%}
-{%- assign categories_list = site_categories | split:',' | sort -%}
+<!-- {%- assign categories_list = site_categories | split:',' | sort -%} -->
+{%- assign categories_list = site.data.categories -%}
 
 {%- for category in categories_list -%}
     <a href="#{{- category -}}" class="btn btn-warning tag-btn"><i class="fas fa-folder" aria-hidden="true"></i>&nbsp;{{- category -}}&nbsp;({{site.categories[category].size}})</a>
