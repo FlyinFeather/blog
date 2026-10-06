@@ -37,40 +37,50 @@ common-js:
   <script>
   (function () {
     var host = window.location.hostname;
+    var site;
 
-    // 先判断一次，确定当前域名属于哪个站点
     if (host.includes("0c.xyz")) {
-      window.SITE_HOST = "GH";
-      window.SITE_ICON = "https://cdn.simpleicons.org/github/181717";
-      window.SITE_TITLE = "Hosted on GitHub Pages";
-      window.SITE_NAME = "0C.xyz";
-      window.SITE_URL = "https://0C.xyz";
+      site = {
+        host: "GH",
+        icon: "https://cdn.simpleicons.org/github/181717",
+        name: "°C.xyz",
+        url: "https://0C.xyz",
+        badgeTitle: "Hosted on GitHub Pages",   // 图标徽章的 title
+        linkTitle: "0C.xyz"                     // 网站链接的 title
+      };
     } else if (host.includes("cuixyz.cc") || host.includes("workers.dev")) {
-      window.SITE_HOST = "CF";
-      window.SITE_ICON = "https://cdn.simpleicons.org/cloudflare/F38020";
-      window.SITE_TITLE = "Hosted on Cloudflare Pages";
-      window.SITE_NAME = "CuiXYZ.com";
-      window.SITE_URL = "https://CuiXYZ.com";
+      site = {
+        host: "CF",
+        icon: "https://cdn.simpleicons.org/cloudflare/F38020",
+        name: "CuiXYZ.com",
+        url: "https://CuiXYZ.com",
+        badgeTitle: "Hosted on Cloudflare Pages",
+        linkTitle: "CuiXYZ.com"
+      };
     } else {
-      window.SITE_HOST = "";
-      window.SITE_ICON = "";
-      window.SITE_TITLE = "";
-      window.SITE_NAME = "0C.xyz";
-      window.SITE_URL = "https://0c.xyz";
+      site = {
+        host: "",
+        icon: "",
+        name: "0C.xyz",
+        url: "https://0c.xyz",
+        badgeTitle: "",
+        linkTitle: "0c.xyz"
+      };
     }
 
-    // 统一替换站点图标徽章
+    // 图标徽章
     document.querySelectorAll("[data-site-badge]").forEach(function (el) {
-      if (window.SITE_ICON) {
-        el.innerHTML = ' <img src="' + window.SITE_ICON + '" alt="' + window.SITE_HOST + '" title="' + window.SITE_TITLE + '" style="height:16px;vertical-align:middle;">';
+      if (site.icon) {
+        el.innerHTML = ' <img src="' + site.icon + '" alt="' + site.host + '" title="' + site.badgeTitle + '" style="height:16px;vertical-align:middle;">';
       }
     });
 
-    // 统一替换站点名称文字和链接
+    // 网站名称 + 链接 + title
     document.querySelectorAll("[data-site-name]").forEach(function (el) {
-      el.textContent = window.SITE_NAME;
+      el.textContent = site.name;
+      el.title = site.linkTitle;
       if (el.tagName === "A") {
-        el.href = window.SITE_URL;
+        el.href = site.url;
       }
     });
   })();
