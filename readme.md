@@ -8,7 +8,7 @@ permalink: /readme/
 
 ## 访问地址
 
-- 备用：[https://Chron.Cuixyz.Cc](https://chron.cuixyz.cc)
+- 主站：[https://Chron.Cuixyz.Cc](https://chron.cuixyz.cc)
 - 镜像：[https://B.0C.XYZ](https://b.0c.xyz)
 - RSS：[https://chron.cuixyz.cc/feed.xml](https://chron.cuixyz.cc/feed.xml)
 
