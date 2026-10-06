@@ -4,13 +4,13 @@ title: 关于本站
 permalink: /readme/
 ---
 
-欢迎来到「翠翔羽翥」的时间戳，这里记录生活随想、影音笔记和一些技术折腾。
+欢迎来到「翠翔羽翥」的时间戳，这里记录个人生活随想、阅读笔记和各色折腾。
 
 ## 访问地址
 
-- 主站：[https://B.0C.XYZ](https://b.0c.xyz)
 - 备用：[https://Chron.Cuixyz.Cc](https://chron.cuixyz.cc)
-- RSS：[https://b.0c.xyz/feed.xml](https://b.0c.xyz/feed.xml)
+- 镜像：[https://B.0C.XYZ](https://b.0c.xyz)
+- RSS：[https://chron.cuixyz.cc/feed.xml](https://chron.cuixyz.cc/feed.xml)
 
 ## 技术栈
 
