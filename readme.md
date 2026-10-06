@@ -9,8 +9,8 @@ permalink: /readme/
 ## 访问地址
 
 - 主站：[https://Chron.Cuixyz.Cc](https://chron.cuixyz.cc)
-- 镜像：[https://b.0C.XYZ](https://b.0c.xyz)
-- RSS：[https://b.0C.XYZ/feed.xml](https://b.0c.xyz/feed.xml)
+- 镜像：[https://b.0C.xyz](https://b.0c.xyz)
+- RSS：[https://b.0C.xyz/feed.xml](https://b.0c.xyz/feed.xml)
 
 ## 技术栈
 
