@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 归档
+title: Archive
 subtitle: 全部文章按年份排列
 ---
 <h3 class="text-right">
