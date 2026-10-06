@@ -28,7 +28,7 @@
       {% if site.author %}
         <a href="/aboutme">{{ site.author }}</a>
       {% endif %}
-      @&nbsp;<a title="0C.xyz" href="https://0C.xyz">°C.xyz</a>
+      @&nbsp;<a title="0C.xyz" href="https://0C.xyz" data-site-name>°C.xyz</a>
       {% if site.matomo %}
         {% if site.matomo.opt-out %}
           <a href="http://{{- site.matomo.uri -}}/index.php?module=CoreAdminHome&action=optOut" target="_blank" class="text_muted">Do-not-Track</a>
@@ -43,21 +43,10 @@
         Powered by
         <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
       {% endunless %}
-      &nbsp;<span id="site-badge"></span>
+      &nbsp;<span data-site-badge></span>
       </p>
       </div>
     </div>
   </div>
 </footer>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var badge = document.getElementById("site-badge");
-    if (!badge) return;
-    var host = window.location.hostname;
-    if (host.includes("0c.xyz")) {
-      badge.innerHTML = ' <img src="https://cdn.simpleicons.org/github/181717" alt="GH" title="Hosted on GitHub Pages" style="height:16px;vertical-align:middle;">';
-    } else if (host.includes("cuixyz.cc") || host.includes("workers.dev")) {
-      badge.innerHTML = ' <img src="https://cdn.simpleicons.org/cloudflare/F38020" alt="CF" title="Hosted on Cloudflare Pages" style="height:16px;vertical-align:middle;">';
-    }
-  });
-</script>
+
