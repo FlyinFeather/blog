@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'About This Site'
+title: 'Site Info'
 permalink: /readme/
 ---
 
