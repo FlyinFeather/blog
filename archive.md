@@ -2,15 +2,15 @@
 layout: page
 title: 'Archive Index'
 ---
-<div class="text-center" style="margin-bottom: 20px;">
+<div style="margin-bottom: 20px;">
   <a href="#year-{{ site.posts.first.date | date: '%Y' }}" class="btn btn-primary tag-btn">
-    <i class="fas fa-book" aria-hidden="true"></i>&nbsp;{{ site.posts | size }} 篇文章
+    <i class="fas fa-file-alt" aria-hidden="true"></i>&nbsp;文章 ({{ site.posts | size }})
   </a>
-  <a href="/categories/" class="btn btn-primary tag-btn">
-    <i class="fas fa-folder" aria-hidden="true"></i>&nbsp;{{ site.categories | size }} 个分类
+  <a href="/categories/" class="btn btn-warning tag-btn">
+    <i class="fas fa-folder" aria-hidden="true"></i>&nbsp;分类 ({{ site.categories | size }})
   </a>
-  <a href="/tags/" class="btn btn-primary tag-btn">
-    <i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{ site.tags | size }} 个标签
+  <a href="/tags/" class="btn btn-success tag-btn">
+    <i class="fas fa-tag" aria-hidden="true"></i>&nbsp;标签 ({{ site.tags | size }})
   </a>
 </div>
 
