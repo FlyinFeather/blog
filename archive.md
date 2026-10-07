@@ -2,9 +2,16 @@
 layout: page
 title: 'Archive Index'
 ---
-<div class="text-left">
-  <i class="fas fa-history" aria-hidden="true"></i>
-  {{ site.posts | size }}x<a href="#year-{{ site.posts.first.date | date: "%Y" }}">文章</a> · {{ site.categories | size }}x<a href="/categories/">分类</a> · {{ site.tags | size }}x<a href="/tags/">标签</a> 
+<div class="text-center" style="margin-bottom: 20px;">
+  <a href="#year-{{ site.posts.first.date | date: '%Y' }}" class="btn btn-primary tag-btn">
+    <i class="fas fa-book" aria-hidden="true"></i>&nbsp;{{ site.posts | size }} 篇文章
+  </a>
+  <a href="/categories/" class="btn btn-primary tag-btn">
+    <i class="fas fa-folder" aria-hidden="true"></i>&nbsp;{{ site.categories | size }} 个分类
+  </a>
+  <a href="/tags/" class="btn btn-primary tag-btn">
+    <i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{ site.tags | size }} 个标签
+  </a>
 </div>
 
 {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
