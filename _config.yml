@@ -21,7 +21,6 @@ author: FlyinFeather
 ###############################################
 
 navbar-links:
-  About: "/readme"
   Archive: 
     - 归档: "/archive"
     - 分类: "/categories"
@@ -30,7 +29,9 @@ navbar-links:
     - Learn markdown: "https://www.markdowntutorial.com/"
     - WorkFlowy: "https://github.com/workflowy/download-android/releases"
     - 般若冰凌: "https://www.icesofts.com/"
-#  About me: "/aboutme"
+  About: 
+    - 关于本站: "/readme"
+    - 关于博主: "/aboutme"
 #  Author's home: "https://cuixyz.com"
 
 ################
