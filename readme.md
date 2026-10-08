@@ -4,7 +4,7 @@ title: 'Site Info'
 permalink: /readme/
 ---
 
-欢迎来到「翠翔羽翥」的时间戳，这里有生活随笔、阅影感记和各色折腾。
+欢迎来到[翠翔羽翥](/aboutme)的「时间戳」，这里有生活随笔、阅影感记和各色折腾。
 
 ## 访问地址
 
@@ -16,7 +16,7 @@ permalink: /readme/
 
 - 静态站点生成器：Jekyll
 - 主题：Beautiful Jekyll
-- 托管：GitHub Pages + Cloudflare Pages
+- 托管：GitHub Pages + Cloudflare Workers
 
 ## 许可
 
