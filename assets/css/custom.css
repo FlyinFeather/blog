@@ -1,9 +1,10 @@
 /* ===== 首页手机端缩略图放大 ===== */
 @media (max-width: 500px) {
   .post-preview .post-image-small img {
-    display: block;
-    max-width: 66%;
-    height: auto;
-    margin: 0 auto;
-   }
+    max-width: 90% !important;
+    width: 90% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
 }
