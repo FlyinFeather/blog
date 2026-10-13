@@ -193,12 +193,3 @@ html[data-bs-theme="dark"] #nav-search-exit:hover { color: #fff; }
   }
 }
 
-/* ===== 首页手机端缩略图放大 ===== */
-@media (max-width: 500px) {
-.post-preview .post-image-small img {
-display: block;
-max-width: 66%;
-height: auto;
-margin: 0 auto;
-   }
-}
