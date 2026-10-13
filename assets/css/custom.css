@@ -2,6 +2,7 @@
 @media (max-width: 500px) {
   .post-preview .post-image-small img {
     max-width: 21rem !important;
-    max-height: 17rem !important;
+    max-height: 14rem !important;
+    height: auto !important;
   }
 }
