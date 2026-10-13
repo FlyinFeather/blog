@@ -3,7 +3,5 @@
   .post-preview .post-image-small img {
     max-width: 21rem !important;
     max-height: 17rem !important;
-    width: auto !important;
-    height: auto !important;
   }
 }
