@@ -2,6 +2,7 @@
 layout: page
 title: 'Archive Index'
 ---
+
 <div style="margin-bottom: 20px;">
   <a href="#year-{{ site.posts.first.date | date: '%Y' }}" class="btn btn-primary tag-btn">
     <i class="fas fa-file-alt" aria-hidden="true"></i>&nbsp;文章 ({{ site.posts | size }})
@@ -15,6 +16,7 @@ title: 'Archive Index'
 </div>
 
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+{% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
 <div id="full-tags-list">
 {%- for year in posts_by_year -%}
