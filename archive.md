@@ -24,7 +24,7 @@ title: 'Archive Index'
   <ul>
     {% for post in year.items %}
       <li>
-        <span>{{ post.date | date: "%m-%d" }}</span>
+        <span>{{ post.date | date: "%Y-%m-%d" }}</span>
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
