@@ -314,6 +314,7 @@ plugins:
 
 site-css:
   - "/assets/css/darkmode.css"
+  - "/assets/css/custom.css"
 
 site-js:
   - "/assets/js/theme-toggle.js"
