@@ -21,6 +21,7 @@ title: 'Archive Index'
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
     &nbsp;{{ year.name }}&nbsp;({{ year.items | size }})
   </h2>
+  <div class="post-list">
   <ul>
     {% for post in year.items %}
       <li>
@@ -29,4 +30,5 @@ title: 'Archive Index'
       </li>
     {% endfor %}
   </ul>
+  </div>
 {% endfor %}
