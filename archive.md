@@ -14,17 +14,21 @@ title: 'Archive Index'
   </a>
 </div>
 
-{% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 
-{% for year in posts_by_year %}
-  <h2 id="year-{{ year.name }}" class="linked-section">
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    &nbsp;{{ year.name }}&nbsp;({{ year.items | size }})
-  </h2>
-  <div class="post-list">
-    {% for post in year.items %}
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    {% endfor %}
-  </div>
-{% endfor %}
+<div id="full-tags-list">
+{%- for year in posts_by_year -%}
+    <h2 id="{{- year.name -}}" class="linked-section">
+        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+        &nbsp;{{- year.name -}}&nbsp;({{ year.items | size }})
+    </h2>
+    <div class="post-list">
+        {%- for post in year.items -%}
+            <div class="tag-entry">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+                <a href="{{ post.url | relative_url }}">{{- post.title | strip_html -}}</a>
+            </div>
+        {%- endfor -%}
+    </div>
+{%- endfor -%}
+</div>
