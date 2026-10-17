@@ -1,3 +1,6 @@
+## FF's Clone v0.1 (2026-09-25)
+
+
 ## Unreleased version
 - BREAKING CHANGE: Allow changing the order of the social network links that appear in the footer (#1152)
 - BREAKING CHANGE: `google-scholar` social network link no longer requires the prefix `citations?user=`; if you previously set this parameter, it needs to be updated (#1189)
