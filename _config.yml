@@ -318,10 +318,6 @@ site-css:
 
 site-js:
   - "/assets/js/theme-toggle.js"
-  - "/assets/bootstrap/js/jquery-3.5.1.slim.min.js"
-  - "/assets/bootstrap/js/popper.min.js"
-  - "/assets/bootstrap/js/bootstrap.min.js"
-
 
 navbar-extra:
   - "theme-toggle.html"
