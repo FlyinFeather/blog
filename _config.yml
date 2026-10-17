@@ -21,17 +21,17 @@ author: FlyinFeather
 ###############################################
 
 navbar-links:
-  Archive: 
-    - 归档: "/archive"
-    - 分类: "/categories"
-    - 标签: "/tags/"
-  Resources:
-    - Learn markdown: "https://www.markdowntutorial.com/"
-    - WorkFlowy: "https://github.com/workflowy/download-android/releases"
-    - 般若冰凌: "https://www.icesofts.com/"
-  About: 
-    - 关于本站: "/readme"
-    - 关于博主: "/aboutme"
+Archive: 
+  - 归档: "/archive"
+  - 分类: "/categories"
+  - 标签: "/tags/"
+Resources:
+  - Learn markdown: "https://www.markdowntutorial.com/"
+  - WorkFlowy: "https://github.com/workflowy/download-android/releases"
+  - 般若冰凌: "https://www.icesofts.com/"
+About: 
+  - 关于本站: "/readme"
+  - 关于博主: "/aboutme"
 #  Author's home: "https://cuixyz.com"
 
 ################
