@@ -6,3 +6,10 @@
     height: auto !important;
   }
 }
+
+/* ==== 保底字体 ==== */
+body, h1, h2, h3, h4, h5, h6, p, li, a, .navbar {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               "Microsoft YaHei", "PingFang SC", "Helvetica Neue",
+               Helvetica, Arial, sans-serif !important;
+}
