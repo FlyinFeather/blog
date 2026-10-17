@@ -7,6 +7,14 @@
   }
 }
 
+/* 手机端缩小首页副标题，避免一行放不下 */
+@media (max-width: 767px) {
+  .intro-header .page-heading .page-subheading {
+    font-size: 1.1rem;   /* 原 27px，手机缩到约 18px */
+    line-height: 1.3;    /* 万一换行，行距也更舒服 */
+  }
+}
+
 /* 仅文章正文用雅黑，首页不受影响 */
 .blog-post {
   font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
