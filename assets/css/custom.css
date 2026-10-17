@@ -13,10 +13,6 @@
   text-align: left;        /* 诗节内部左对齐 */
   line-height: 1.5;
 }
-/* 二、四行（to... 从句）缩进 */
-.intro-header .page-heading .page-subheading .indent {
-  padding-left: 1.6em;
-}
 
 /* 手机端缩小首页标题和副标题，避免一行放不下 */
 @media (max-width: 500px) {
