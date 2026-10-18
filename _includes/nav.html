@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom {% if page.nav-short %}top-nav-short-permanent{% else %}top-nav-regular{% endif %}">
 
   {%- if site.title-img -%}
-    <a class="navbar-brand navbar-brand-logo" href="{{ '/' | absolute_url }}"><img title="FlyinFeather's Blog" alt="Site Seal" src="{{ site.title-img | relative_url}}"/>{{ site.title }}</a>
+    <a class="navbar-brand navbar-brand-logo" href="{{ '/' | absolute_url }}"><img title="🏠羽FF's Blog" alt="Site Seal" src="{{ site.title-img | relative_url}}"/>{{ site.title }}</a>
   {%- elsif site.title -%}
     <a class="navbar-brand" href="{{ '/' | absolute_url }}"><i class="fas fa-house"></i>{{ site.title }}</a>
   {%- endif -%}
@@ -50,7 +50,7 @@
   {% if site.avatar and page.show-avatar != false %}
     <div class="avatar-container">
       <div class="avatar-img-border">
-        <a href="{{ '/readme/' | relative_url }}" title="羽FF">
+        <a href="{{ '/readme/' | relative_url }}" title="羽FF's Site Info">
           <img alt="Site Info" class="avatar-img" src="{{ site.avatar | relative_url }}" />
         </a>
       </div>
