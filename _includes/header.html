@@ -39,7 +39,7 @@
                 <i class="fas fa-user" aria-hidden="true" title="作者"></i><strong>{{ page.author | strip_html }}</strong>
                 <span class="middot">&middot;</span>
               {% endif %}
-                <i class="fas fa-calendar-alt" aria-hidden="true" title="发布"></i>{{ page.date | date: "%Y-%m-%d" }}
+                <i class="fas fa-calendar-alt" aria-hidden="true" title="日期"></i><strong>{{ page.date | date: "%Y-%m-%d" }}</strong>
               {% if page.categories.size > 0 %}
                 <span class="middot">&middot;</span>
                 <i class="fas fa-folder" aria-hidden="true" title="分类"></i>
