@@ -36,13 +36,13 @@
           {% if include.type == "post" %}
             <span class="post-meta">
               {% if page.author %}
-                <i class="fas fa-user" aria-hidden="true" title="作者"></i><strong>{{ page.author | strip_html }}</strong>
+                <i class="fas fa-user d-none d-md-inline" aria-hidden="true" title="作者"></i><strong>{{ page.author | strip_html }}</strong>
                 <span class="middot">&middot;</span>
               {% endif %}
-                <i class="fas fa-calendar-alt" aria-hidden="true" title="日期"></i><strong>{{ page.date | date: "%Y-%m-%d" }}</strong>
+                <i class="fas fa-calendar-alt d-none d-md-inline" aria-hidden="true" title="日期"></i><strong>{{ page.date | date: "%Y-%m-%d" }}</strong>
               {% if page.categories.size > 0 %}
                 <span class="middot">&middot;</span>
-                <i class="fas fa-folder" aria-hidden="true" title="分类"></i>
+                <i class="fas fa-folder d-none d-md-inline" aria-hidden="true" title="分类"></i>
                 {% for category in page.categories %}
                   <a href="{{ '/categories/' | relative_url }}#{{ category }}"><strong>{{ category }}</strong></a>{% unless forloop.last %}, {% endunless %}
                 {% endfor %}
