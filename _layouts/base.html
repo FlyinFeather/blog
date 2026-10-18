@@ -87,7 +87,7 @@ common-js:
     // 网站名称 + 链接 + title
     document.querySelectorAll("[data-site-name]").forEach(function (el) {
       el.textContent = site.name;
-      el.title = site.linkTitle;
+      # el.title = site.linkTitle;
       if (el.tagName === "A") {
         el.href = site.url;
       }
