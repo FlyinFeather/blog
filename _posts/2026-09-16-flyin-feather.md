@@ -1,5 +1,5 @@
 ---
-title: 翩如羽翔~~矫若云翥^^
+title: 昵称诞生记
 date: 2023-03-05
 author: ©XYZ
 layout: post
@@ -8,13 +8,14 @@ slug: flyin-feather
 tags:
   - 数学
 share: true
+thumbnail-img: https://img.ellipse.graphics/cdn-cgi/image/width=400,format=auto/2026/10/a3e22b8b5a41eaec23759e8c2fa1fe40.png
 ---
 ### 翠翔羽翥 
-始/2021立春
-
+#### 起/2021立春
 ---
-#### 羽毛飞翔 婉若游波
-起/2023惊蛰
+### 羽毛飞翔 婉若游波
+#### 承/2023惊蛰
+![](https://img.ellipse.graphics/2026/10/a3e22b8b5a41eaec23759e8c2fa1fe40.png)
 
 滚滚的历史车轮上，人生起伏，变幻莫测，自己能作主的只是一个很小很小的圆圈。
 
@@ -22,11 +23,11 @@ share: true
 
 你看，这飞舞的羽毛，在天空中划过一条条优美的曲线，像不像那弦波。  
 
-p.s. 游波，燕子旧称
+`p.s. 游波，燕子旧称
 
 ---
-#### 翩如羽翔 矫若云翥
-更/2026秋分🍂
+### 翩如羽翔 矫若云翥
+#### 转/2026秋分🍂
 
 > 翩若惊鸿，婉若游龙。
 
