@@ -23,7 +23,7 @@ thumbnail-img: https://img.ellipse.graphics/cdn-cgi/image/width=500,format=auto/
 
 你看，这飞舞的羽毛，在天空中划过一条条优美的曲线，像不像那弦波。  
 
-`p.s. 游波，燕子旧称
+`p.s. 游波，燕子旧称`
 
 ---
 ### 翩如羽翔 矫若云翥
