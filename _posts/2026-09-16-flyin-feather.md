@@ -8,7 +8,7 @@ slug: flyin-feather
 tags:
   - 数学
 share: true
-thumbnail-img: https://img.ellipse.graphics/cdn-cgi/image/width=500,format=auto/2026/10/a3e22b8b5a41eaec23759e8c2fa1fe40.png
+thumbnail-img: https://img.ellipse.graphics/cdn-cgi/image/width=400,format=auto/2026/10/a3e22b8b5a41eaec23759e8c2fa1fe40.png
 ---
 ### 翠翔羽翥 
 #### （起/2021立春）
