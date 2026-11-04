@@ -12,9 +12,12 @@
       {% endif %}
 
        <div class="footer-custom-content">
-        <span id="vercount_value_site_pv">--</span> / 
-        <span id="vercount_value_site_uv">--</span>
+        <span class="badge badge-secondary" style="font-size: 0.85rem; padding: 4px 8px;">
+          <i class="fas fa-eye"></i><span id="vercount_value_site_pv">--</span>/<i class="fas fa-shoe-prints"></i><span id="vercount_value_site_uv">--</span>
+        </span>
+        <!-- 
         <img src="https://hitscounter.dev/api/hit?url=b.0C.xyz&label=%E2%84%96&icon=eye&color=%236c757d&message=&style=flat&tz=Asia%2FShanghai">
+         -->
         {% if site.posts %}
         <span style="font-size:1em; opacity:.7">Last updated </span>
         <a title="Archive" href="/archive">{{ site.posts.first.date | date: "%Y-%m-%d" }}</a>
