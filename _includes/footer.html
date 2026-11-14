@@ -12,19 +12,19 @@
       {% endif %}
 
         <div class="footer-custom-content">
-          <img id="hitcounter-img" src="https://hitscounter.dev/api/hit?url=b.0C.xyz&label=%E2%84%96&icon=eye&color=%236c757d&message=&style=flat&tz=Asia%2FShanghai" alt="Visitors" onerror="switchToVercount()>
+          <img id="hitcounter-img" src="https://hitscounter.dev/api/hit?url=b.0C.xyz&label=%E2%84%96&icon=eye&color=%236c757d&message=&style=flat&tz=Asia%2FShanghai" alt="Visitors" onerror="switchToVercount()">
           <span id="vercount-badge" class="badge badge-secondary" style="font-size: 0.8rem; padding: 2px 6px; display: none;">
             <i class="fas fa-eye"></i>&nbsp;<span id="vercount_value_site_pv">--</span>&nbsp;&nbsp;<i class="fas fa-shoe-prints"></i>&nbsp;<span id="vercount_value_site_uv">--</span>
           </span>
         
         {% if site.posts %}
-        <span style="font-size:1em; opacity:.7">Last updated </span>
-        <a title="Archive" href="/archive">{{ site.posts.first.date | date: "%Y-%m-%d" }}</a>
-      {% endif %}
-      {% if site.edit_page_button and site.github.repository_url %}
-       <a title="Edit this page on GitHub" href="{{ site.github.repository_url }}/edit/{{ site.github.source.branch }}/{{ page.path }}" class="text_muted">
+          <span style="font-size:1em; opacity:.7">Last updated </span>
+          <a title="Archive" href="/archive">{{ site.posts.first.date | date: "%Y-%m-%d" }}</a>
+        {% endif %}
+        {% if site.edit_page_button and site.github.repository_url %}
+          <a title="Edit this page on GitHub" href="{{ site.github.repository_url }}/edit/{{ site.github.source.branch }}/{{ page.path }}" class="text_muted">
           <span class="badge badge-secondary" style="font-size: 0.8rem; padding: 2px 6px;">{{ site.github.build_revision | slice: 0, 7 }}</span></a>
-       {% endif%}
+         {% endif%}
        </div>
         
       <p class="copyright text-muted">
