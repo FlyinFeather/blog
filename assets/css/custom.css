@@ -30,17 +30,18 @@
   font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
 }
 
-/* 1. 平时强制保持正常颜色 */
+/* 1. 站名平时：强制使用导航栏原本的字体颜色（深色/白色），并去掉下划线 */
 #nav-archive-text {
-  color: var(--text-col) !important; 
+  color: var(--navbar-text-col) !important; 
+  text-decoration: none !important;
 }
 
-/* 2. 阻断悬停图标时父级的传染（哪怕鼠标在图标上，文字也纹丝不动） */
-.navbar-brand:hover ~ #nav-archive-text {
-  color: var(--text-col) !important;
+/* 2. 悬停图标时：通过父级容器锁死文字颜色，绝对不跟着变蓝 */
+.navbar-brand:hover #nav-archive-text {
+  color: var(--navbar-text-col) !important;
 }
 
-/* 3. 只有鼠标悬停在文字自己身上时，才变成蓝色 */
+/* 3. 悬停文字自己时：才变成主题的蓝色 */
 #nav-archive-text:hover {
-  color: var(--link-col) !important;
+  color: var(--hover-col) !important;
 }
