@@ -30,14 +30,17 @@
   font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
 }
 
-/* 1. 平时：强制保持黑色/白色，不去继承蓝色 */
-.navbar-brand:hover .nav-archive-link,
-a.nav-archive-link {
-  color: inherit !important;
-  text-decoration: none;
+/* 1. 平时强制保持正常颜色 */
+#nav-archive-text {
+  color: var(--text-col) !important; 
 }
 
-/* 2. 悬停在自己身上时：才变色（变为主色调） */
-a.nav-archive-link:hover {
-  color: var(--link-col, #008aff) !important;
+/* 2. 阻断悬停图标时父级的传染（哪怕鼠标在图标上，文字也纹丝不动） */
+.navbar-brand:hover ~ #nav-archive-text {
+  color: var(--text-col) !important;
+}
+
+/* 3. 只有鼠标悬停在文字自己身上时，才变成蓝色 */
+#nav-archive-text:hover {
+  color: var(--link-col) !important;
 }
