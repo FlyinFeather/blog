@@ -30,3 +30,14 @@
   font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
 }
 
+/* 1. 平时：强制保持黑色/白色，不去继承蓝色 */
+.navbar-brand:hover .nav-archive-link,
+a.nav-archive-link {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+/* 2. 悬停在自己身上时：才变色（变为主色调） */
+a.nav-archive-link:hover {
+  color: var(--link-col, #008aff) !important;
+}
