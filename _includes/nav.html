@@ -1,10 +1,17 @@
 <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom {% if page.nav-short %}top-nav-short-permanent{% else %}top-nav-regular{% endif %}">
 
   {%- if site.title-img -%}
-    <a class="navbar-brand navbar-brand-logo" href="{{ '/' | absolute_url }}"><img title="🏠羽FF's Blog" alt="Site Seal" src="{{ site.title-img | relative_url}}"/></a>
-      <a title="Archive" href="/archive/" >{{ site.title }}</a>
-  {%- elsif site.title -%}
-    <a class="navbar-brand" href="{{ '/' | absolute_url }}"><i class="fas fa-house"></i>{{ site.title }}</a>
+    <!-- 
+    <a class="navbar-brand navbar-brand-logo" href="{{ '/' | absolute_url }}"><img title="🏠羽FF's Blog" alt="Site Seal" src="{{ site.title-img | relative_url}}"/>{{ site.title }}</a>
+    -->
+    <div class="navbar-brand navbar-brand-logo d-flex align-items-center" style="gap: 0.5rem;">
+      <a title="🏠羽FF's Blog" href="/" style="margin: 0; padding: 0;">
+        <img alt="Site Seal" src="{{ site.title-img | relative_url }}" style="margin: 0;"/>
+      </a>
+      <a title="Archive" href="/archive/" class="text-decoration-none" style="color: inherit; font-weight: 800; margin: 0; padding: 0;">
+        {{ site.title }}
+      </a>
+    </div>
   {%- endif -%}
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
