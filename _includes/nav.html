@@ -4,15 +4,17 @@
     <!-- 
     <a class="navbar-brand navbar-brand-logo" href="{{ '/' | absolute_url }}"><img title="🏠羽FF's Blog" alt="Site Seal" src="{{ site.title-img | relative_url}}"/>{{ site.title }}</a>
     -->
-    <!-- 图标 -->
-    <a class="navbar-brand" title="🏠羽FF's Blog" href="/" style="padding-right: 0; margin-right: 0;">
-      <img alt="Site Seal" src="{{ site.title-img | relative_url}}" style="margin-right: 8px;"/>
-    </a>
+    <div class="navbar-brand d-flex align-items-center" style="padding: 0; margin: 0;">
+      <!-- 图标 -->
+      <a class="navbar-brand-logo" title="🏠羽FF's Blog" href="/" style="padding: 0; margin-right: 8px;">
+        <img alt="Site Seal" src="{{ site.title-img | relative_url}}"/>
+      </a>
     
-    <!-- 站名（关键：加了特定的 id 或 class） -->
-    <a id="nav-archive-text" title="Archive" href="/archive/" class="text-decoration-none" style="font-weight: 800;">
-      {{ site.title }}
-    </a>
+      <!-- 站名 -->
+      <a id="nav-archive-text" title="Archive" href="/archive/" class="text-decoration-none" style="font-weight: 800; font-family: var(--header-font);">
+        {{ site.title }}
+      </a>
+    </div>
   {%- endif -%}
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
