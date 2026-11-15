@@ -30,18 +30,3 @@
   font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
 }
 
-/* 1. 站名平时：保持导航栏原本的字体颜色 */
-#nav-archive-text {
-  color: var(--navbar-text-col) !important; 
-  text-decoration: none !important;
-}
-
-/* 2. 悬停图标（父容器）时：锁死文字颜色，防传染 */
-.navbar-brand:hover #nav-archive-text {
-  color: var(--navbar-text-col) !important;
-}
-
-/* 3. 悬停文字自己时：打破父级的锁，强行变蓝！ */
-.navbar-brand #nav-archive-text:hover {
-  color: var(--hover-col) !important;
-}
