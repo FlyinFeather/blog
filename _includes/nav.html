@@ -10,8 +10,13 @@
         <img alt="Site Seal" src="{{ site.title-img | relative_url}}"/>
       </a>
     
-      <!-- 站名 -->
-      <a id="nav-archive-text" title="Archive" href="/archive/" class="text-decoration-none" style="font-weight: 800; font-family: var(--header-font);">
+      <a id="nav-archive-text" 
+         title="Archive" 
+         href="/archive/" 
+         class="text-decoration-none" 
+         style="font-weight: 800; font-family: var(--header-font); color: var(--navbar-text-col);"
+         onmouseover="this.style.setProperty('color', 'var(--hover-col)', 'important')"
+         onmouseout="this.style.setProperty('color', 'var(--navbar-text-col)', 'important')">
         {{ site.title }}
       </a>
     </div>
