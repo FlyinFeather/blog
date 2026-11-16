@@ -16,13 +16,13 @@ title: 'Archive Index'
 </div>
 -->
 <div class="d-flex flex-wrap mb-4" style="gap: 6px;">
-  <a href="#year-{{ site.posts.first.date | date: '%Y' }}" class="btn btn-primary tag-btn m-0 px-2 py-1" style="font-size: 0.85rem;">
+  <a href="#year-{{ site.posts.first.date | date: '%Y' }}" class="btn btn-primary tag-btn m-0" style="font-size: 0.9rem; padding: 6px 12px;">
     <i class="fas fa-file-alt" aria-hidden="true"></i>&nbsp;文章 ({{ site.posts | size }})
   </a>
-  <a href="/categories/" class="btn btn-warning tag-btn m-0 px-2 py-1" style="font-size: 0.85rem;">
+  <a href="/categories/" class="btn btn-warning tag-btn m-0" style="font-size: 0.9rem; padding: 6px 12px;">
     <i class="fas fa-folder" aria-hidden="true"></i>&nbsp;分类 ({{ site.categories | size }})
   </a>
-  <a href="/tags/" class="btn btn-success tag-btn m-0 px-2 py-1" style="font-size: 0.85rem;">
+  <a href="/tags/" class="btn btn-success tag-btn m-0" style="font-size: 0.9rem; padding: 6px 12px;">
     <i class="fas fa-tag" aria-hidden="true"></i>&nbsp;标签 ({{ site.tags | size }})
   </a>
 </div>
