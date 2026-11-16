@@ -3,7 +3,7 @@ layout: page
 title: 'Archive Index'
 ---
 
-<div style="margin-bottom: 20px;">
+<div style="margin-bottom: 10px;">
   <a href="#year-{{ site.posts.first.date | date: '%Y' }}" class="btn btn-primary tag-btn">
     <i class="fas fa-file-alt" aria-hidden="true"></i>&nbsp;文章 ({{ site.posts | size }})
   </a>
