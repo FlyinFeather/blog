@@ -4,7 +4,7 @@ title: 'Site Info'
 permalink: /readme/
 ---
 
-CX>_欢迎来到[翠翔羽翥](/aboutme)「时间戳」：这里有日常随笔、书影漫想、稀松折腾<span style="font-size: 1.4em; vertical-align: sub; font-weight: bold;">∞</span>
+CX>_欢迎来到[翠翔羽翥](/aboutme)「时间戳」：这里有日常随笔、书影漫想、稀松折腾<span style="font-size: 1.4em; vertical-align: middle; font-weight: bold;">∞</span>
 
 ## 访问地址
 
