@@ -6,12 +6,12 @@
     -->
     <div class="navbar-brand d-flex align-items-center" style="padding: 0; margin: 0;">
       <!-- 图标 -->
-      <a class="navbar-brand-logo" title="🏠羽FF's Blog" href="/" style="padding: 0; margin-right: 8px;">
+      <a class="navbar-brand-logo" title="🏠羽FF's Blog" href="/" style="padding: 0; margin-right: 0px;">
         <img alt="Site Seal" src="{{ site.title-img | relative_url}}"/>
       </a>
     
       <a id="nav-archive-text" 
-         title="Archive" 
+         title="浏览全部文章（Archive）" 
          href="/archive/" 
          class="text-decoration-none" 
          style="font-weight: 800; font-family: var(--header-font); color: var(--navbar-text-col);"
@@ -66,7 +66,7 @@
   {% if site.avatar and page.show-avatar != false %}
     <div class="avatar-container">
       <div class="avatar-img-border">
-        <a href="{{ '/readme/' | relative_url }}" title="羽FF's Site Info">
+        <a href="{{ '/readme/' | relative_url }}" title="了解本站（Site Info）">
           <img alt="Site Info" class="avatar-img" src="{{ site.avatar | relative_url }}" />
         </a>
       </div>
