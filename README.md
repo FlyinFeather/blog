@@ -12,9 +12,10 @@
 
 - 静态站点生成器：Jekyll
 - 主题：Beautiful Jekyll
-- 托管：GitHub Pages + Cloudflare Pages
+- 托管：GitHub Pages + Cloudflare Workers
 
 ## 许可
 
 文章内容采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，代码部分采用 [MIT](https://opensource.org/licenses/MIT) 许可。
 > 页脚 GitHub、Cloudflare 图标为其各自所有者商标，仅用于标识本博客所使用的技术栈。
+> The GitHub and Cloudflare icons are registered trademarks of their respective owners. Their use here is strictly for identifying the technologies used by this blog. 
